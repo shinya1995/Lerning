@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>18.5.5. ストリーム (コルーチンベースの API) &#8212; Python 3.6.10 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Python 3.6.10 ドキュメント 内を検索"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="このドキュメントについて" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="copyright" title="著作権" href="../copyright.html" />
+    <link rel="next" title="18.5.6. サブプロセス" href="asyncio-subprocess.html" />
+    <link rel="prev" title="18.5.4. Transports and protocols (callback based API)" href="asyncio-protocol.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+    <link rel="canonical" href="https://docs.python.org/3/library/asyncio-stream.html" />
+    
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/switchers.js"></script>
+    
+    
+ 
+
+  </head><body>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="asyncio-subprocess.html" title="18.5.6. サブプロセス"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="asyncio-protocol.html" title="18.5.4. Transports and protocols (callback based API)"
+             accesskey="P">前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="ipc.html" ><span class="section-number">18. </span>プロセス間通信とネットワーク</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="asyncio.html" accesskey="U"><span class="section-number">18.5. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> --- 非同期 I/O、イベントループ、コルーチンおよびタスク</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="streams-coroutine-based-api">
+<span id="asyncio-streams"></span><h1><span class="section-number">18.5.5. </span>ストリーム (コルーチンベースの API)<a class="headerlink" href="#streams-coroutine-based-api" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p><strong>ソースコード:</strong> <a class="reference external" href="https://github.com/python/cpython/tree/3.6/Lib/asyncio/streams.py">Lib/asyncio/streams.py</a></p>
+<div class="section" id="stream-functions">
+<h2><span class="section-number">18.5.5.1. </span>ストリーム関数<a class="headerlink" href="#stream-functions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>このモジュール内のトップレベル関数は、便利なラッパーとしてのみ意図されています。特別なことは何もありませんし、それらが思い通りに動作しない場合は、ご自由にコードをコピーしてください。</p>
+</div>
+<dl class="function">
+<dt id="asyncio.open_connection">
+<em class="property">coroutine </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">open_connection</code><span class="sig-paren">(</span><em class="sig-param">host=None</em>, <em class="sig-param">port=None</em>, <em class="sig-param">*</em>, <em class="sig-param">loop=None</em>, <em class="sig-param">limit=None</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.open_connection" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_connection" title="asyncio.AbstractEventLoop.create_connection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_connection()</span></code></a> のラッパーで (reader, writer) ペアを返します。</p>
+<p>返されたリーダーは <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> のインスタンスで、ライターは <a class="reference internal" href="#asyncio.StreamWriter" title="asyncio.StreamWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamWriter</span></code></a> のインスタンスです。</p>
+<p>引数は <em>protocol_factory</em> を除き、 <a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_connection" title="asyncio.AbstractEventLoop.create_connection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AbstractEventLoop.create_connection()</span></code></a> の通常の引数です; 最も一般的なものは位置引数のホストとポートで、その後にオプションのキーワード引数が続きます。</p>
+<p>追加のキーワード引数 <em>loop</em> には使用するイベントループインスタンスを、<em>limit</em> には <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> に渡すバッファーリミットを設定します。</p>
+<p>この関数は <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="asyncio.start_server">
+<em class="property">coroutine </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">start_server</code><span class="sig-paren">(</span><em class="sig-param">client_connected_cb</em>, <em class="sig-param">host=None</em>, <em class="sig-param">port=None</em>, <em class="sig-param">*</em>, <em class="sig-param">loop=None</em>, <em class="sig-param">limit=None</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.start_server" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>各クライアントが接続するコールバックでソケットサーバーを開始します。戻り値は <a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_server" title="asyncio.AbstractEventLoop.create_server"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_server()</span></code></a> と同じです。</p>
+<p><em>client_connected_cb</em> 引数は <em>client_reader</em> と <em>client_writer</em>  という 2 個の引数で呼び出されます。
+<em>client_reader</em> は <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> オブジェクトで、<em>client_writer</em> は <a class="reference internal" href="#asyncio.StreamWriter" title="asyncio.StreamWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamWriter</span></code></a> オブジェクトです。
+<em>client_connected_cb</em> 引数には単純なコールバック関数か <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン関数</span></a> のどちらかを指定できます; コルーチン関数の場合、自動的に <a class="reference internal" href="asyncio-task.html#asyncio.Task" title="asyncio.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">Task</span></code></a> に変換されます。</p>
+<p>残りの引数は <em>protocol_factory</em> を除きすべて <a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_server" title="asyncio.AbstractEventLoop.create_server"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_server()</span></code></a> の通常の引数です; 最も一般的なのは位置引数 <em>host</em> と <em>port</em> で、さまざまなオプションのキーワード引数が続きます。</p>
+<p>追加のキーワード引数 <em>loop</em> には使用するイベントループインスタンスを、<em>limit</em> には <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> に渡すバッファーリミットを設定します。</p>
+<p>この関数は <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="asyncio.open_unix_connection">
+<em class="property">coroutine </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">open_unix_connection</code><span class="sig-paren">(</span><em class="sig-param">path=None</em>, <em class="sig-param">*</em>, <em class="sig-param">loop=None</em>, <em class="sig-param">limit=None</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.open_unix_connection" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_unix_connection" title="asyncio.AbstractEventLoop.create_unix_connection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_unix_connection()</span></code></a> のラッパーで (reader, writer) ペアを返します。</p>
+<p>戻り値やその他詳細については <a class="reference internal" href="#asyncio.open_connection" title="asyncio.open_connection"><code class="xref py py-func docutils literal notranslate"><span class="pre">open_connection()</span></code></a> を参照してください。</p>
+<p>この関数は <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+<p>利用できる環境: UNIX。</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="asyncio.start_unix_server">
+<em class="property">coroutine </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">start_unix_server</code><span class="sig-paren">(</span><em class="sig-param">client_connected_cb</em>, <em class="sig-param">path=None</em>, <em class="sig-param">*</em>, <em class="sig-param">loop=None</em>, <em class="sig-param">limit=None</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.start_unix_server" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>接続された各クライアントごとのコールバックとともに UNIX ドメインソケットサーバーを開始します。</p>
+<p>戻り値やその他詳細については <a class="reference internal" href="#asyncio.start_server" title="asyncio.start_server"><code class="xref py py-func docutils literal notranslate"><span class="pre">start_server()</span></code></a> を参照してください。</p>
+<p>この関数は <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+<p>利用できる環境: UNIX。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="streamreader">
+<h2><span class="section-number">18.5.5.2. </span>StreamReader<a class="headerlink" href="#streamreader" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="class">
+<dt id="asyncio.StreamReader">
+<em class="property">class </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">StreamReader</code><span class="sig-paren">(</span><em class="sig-param">limit=_DEFAULT_LIMIT</em>, <em class="sig-param">loop=None</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>このクラスは <a class="reference internal" href="asyncio-dev.html#asyncio-multithreading"><span class="std std-ref">スレッド安全ではありません</span></a>。</p>
+<p>The <em>limit</em> argument's default value is set to _DEFAULT_LIMIT which is 2**16 (64 KiB)</p>
+<dl class="method">
+<dt id="asyncio.StreamReader.exception">
+<code class="sig-name descname">exception</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.exception" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>例外を取得します。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.feed_eof">
+<code class="sig-name descname">feed_eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.feed_eof" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>EOF の肯定応答を行います。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.feed_data">
+<code class="sig-name descname">feed_data</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.feed_data" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>バイト列 <em>data</em> を内部バッファーに取り込みます。データを待っているあらゆる処理が再開されます。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.set_exception">
+<code class="sig-name descname">set_exception</code><span class="sig-paren">(</span><em class="sig-param">exc</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.set_exception" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>例外を設定します。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.set_transport">
+<code class="sig-name descname">set_transport</code><span class="sig-paren">(</span><em class="sig-param">transport</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.set_transport" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートを設定します。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.read">
+<em class="property">coroutine </em><code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param">n=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.read" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><em>n</em> バイト読み込みます。<em>n</em> が指定されないか <code class="docutils literal notranslate"><span class="pre">-1</span></code> が指定されていた場合 EOF になるまで読み込み、全データを返します。</p>
+<p>EOF に達しており内部バッファーが空であれば、空の <code class="docutils literal notranslate"><span class="pre">bytes</span></code> オブジェクトを返します。</p>
+<p>このメソッドは <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.readline">
+<em class="property">coroutine </em><code class="sig-name descname">readline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.readline" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>1 行読み込みます。 &quot;行&quot; とは、<code class="docutils literal notranslate"><span class="pre">\n</span></code> で終了するバイト列のシーケンスです。</p>
+<p>EOF を受信し、かつ <code class="docutils literal notranslate"><span class="pre">\n</span></code> が見つからない場合、このメソッドは読み込んだ分の不完全なバイト列を返します。</p>
+<p>EOF に達しており内部バッファーが空であれば、空の <code class="docutils literal notranslate"><span class="pre">bytes</span></code> オブジェクトを返します。</p>
+<p>このメソッドは <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.readexactly">
+<em class="property">coroutine </em><code class="sig-name descname">readexactly</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.readexactly" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>厳密に <em>n</em> バイト読み込みます。<em>n</em> バイト読み込む前にストリームの終端に達したとき、<a class="reference internal" href="#asyncio.IncompleteReadError" title="asyncio.IncompleteReadError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IncompleteReadError</span></code></a> を送出します。例外の <a class="reference internal" href="#asyncio.IncompleteReadError.partial" title="asyncio.IncompleteReadError.partial"><code class="xref py py-attr docutils literal notranslate"><span class="pre">IncompleteReadError.partial</span></code></a> 属性に、読み込んだ分の不完全なバイト列が格納されます。</p>
+<p>このメソッドは <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.readuntil">
+<em class="property">coroutine </em><code class="sig-name descname">readuntil</code><span class="sig-paren">(</span><em class="sig-param">separator=b'\n'</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.readuntil" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">separator</span></code> が見つかるまでストリームからデータを読み込みます。</p>
+<p>成功時には、データと区切り文字は内部バッファから削除されます (消費されます)。返されるデータの最後には区切り文字が含まれます。</p>
+<p>設定したストリームの制限は、結果を検証するために使用されます。制限により、返すことのできるデータの最大長さ (区切り文字を含まず) が設定されます。</p>
+<p>EOF が発生し、完全な区切り文字が見つからない場合には、<a class="reference internal" href="#asyncio.IncompleteReadError" title="asyncio.IncompleteReadError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IncompleteReadError</span></code></a> 例外が創出されるとともに、内部バッファはリセットされます。 <a class="reference internal" href="#asyncio.IncompleteReadError.partial" title="asyncio.IncompleteReadError.partial"><code class="xref py py-attr docutils literal notranslate"><span class="pre">IncompleteReadError.partial</span></code></a> 属性に、区切り文字が部分的に含まれる場合があります。</p>
+<p>制限超過のためにデータを読み取ることができない場合、<a class="reference internal" href="#asyncio.LimitOverrunError" title="asyncio.LimitOverrunError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">LimitOverrunError</span></code></a> 例外が送出され、データは内部バッファ内に残ります。そのため、データを再度読み取ることができます。</p>
+<div class="versionadded">
+<p><span class="versionmodified added">バージョン 3.5.2 で追加.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamReader.at_eof">
+<code class="sig-name descname">at_eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReader.at_eof" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>バッファーが空で <a class="reference internal" href="#asyncio.StreamReader.feed_eof" title="asyncio.StreamReader.feed_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">feed_eof()</span></code></a> が呼ばれていた場合 <code class="docutils literal notranslate"><span class="pre">True</span></code> を返します。</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="streamwriter">
+<h2><span class="section-number">18.5.5.3. </span>StreamWriter<a class="headerlink" href="#streamwriter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="class">
+<dt id="asyncio.StreamWriter">
+<em class="property">class </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">StreamWriter</code><span class="sig-paren">(</span><em class="sig-param">transport</em>, <em class="sig-param">protocol</em>, <em class="sig-param">reader</em>, <em class="sig-param">loop</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートをラップします。</p>
+<p>これは <a class="reference internal" href="#asyncio.StreamWriter.write" title="asyncio.StreamWriter.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a>、<a class="reference internal" href="#asyncio.StreamWriter.writelines" title="asyncio.StreamWriter.writelines"><code class="xref py py-meth docutils literal notranslate"><span class="pre">writelines()</span></code></a>、<a class="reference internal" href="#asyncio.StreamWriter.can_write_eof" title="asyncio.StreamWriter.can_write_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">can_write_eof()</span></code></a>、<a class="reference internal" href="#asyncio.StreamWriter.write_eof" title="asyncio.StreamWriter.write_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write_eof()</span></code></a>、<a class="reference internal" href="#asyncio.StreamWriter.get_extra_info" title="asyncio.StreamWriter.get_extra_info"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_extra_info()</span></code></a> および <a class="reference internal" href="#asyncio.StreamWriter.close" title="asyncio.StreamWriter.close"><code class="xref py py-meth docutils literal notranslate"><span class="pre">close()</span></code></a> メソッドを提供します。フロー制御を待機できる任意の <a class="reference internal" href="asyncio-task.html#asyncio.Future" title="asyncio.Future"><code class="xref py py-class docutils literal notranslate"><span class="pre">Future</span></code></a> を返す <a class="reference internal" href="#asyncio.StreamWriter.drain" title="asyncio.StreamWriter.drain"><code class="xref py py-meth docutils literal notranslate"><span class="pre">drain()</span></code></a> メソッドを追加します。また、<code class="xref py py-class docutils literal notranslate"><span class="pre">Transport</span></code> を直接参照する transport 属性も追加します。</p>
+<p>このクラスは <a class="reference internal" href="asyncio-dev.html#asyncio-multithreading"><span class="std std-ref">スレッド安全ではありません</span></a>。</p>
+<dl class="attribute">
+<dt id="asyncio.StreamWriter.transport">
+<code class="sig-name descname">transport</code><a class="headerlink" href="#asyncio.StreamWriter.transport" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートです。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.can_write_eof">
+<code class="sig-name descname">can_write_eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.can_write_eof" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートが <a class="reference internal" href="#asyncio.StreamWriter.write_eof" title="asyncio.StreamWriter.write_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write_eof()</span></code></a> をサポートしている場合は <a class="reference internal" href="constants.html#True" title="True"><code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code></a> を、していない場合は <a class="reference internal" href="constants.html#False" title="False"><code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></a> を返します。<a class="reference internal" href="asyncio-protocol.html#asyncio.WriteTransport.can_write_eof" title="asyncio.WriteTransport.can_write_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">WriteTransport.can_write_eof()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.close" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートを閉じます: <a class="reference internal" href="asyncio-protocol.html#asyncio.BaseTransport.close" title="asyncio.BaseTransport.close"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BaseTransport.close()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.drain">
+<em class="property">coroutine </em><code class="sig-name descname">drain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.drain" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>下層のトランスポートの書き込みバッファーがフラッシュされる機会を与えます。</p>
+<p>意図されている用途は書き込みです:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">yield from</span> <span class="n">w</span><span class="o">.</span><span class="n">drain</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>トランスポートバッファのサイズが最高水位点に達した場合 (プロトコルが一時停止された場合)、バッファサイズが最低水位点まで引き出されて、プロトコルが再開されるまで、ブロックします。待機するものがなくなると、直ちに yield-from を続行します。</p>
+<p><a class="reference internal" href="#asyncio.StreamWriter.drain" title="asyncio.StreamWriter.drain"><code class="xref py py-meth docutils literal notranslate"><span class="pre">drain()</span></code></a> から yield することにより、ループは書き込み操作をスケジュールし、バッファのフラッシュを行うことができます。このことは、トランスポートに大量のデータが書き込まれる可能性がある場合に非常に有用で、コルーチンは <a class="reference internal" href="#asyncio.StreamWriter.write" title="asyncio.StreamWriter.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a> 呼び出しの間に yield-from を行いません。</p>
+<p>このメソッドは <a class="reference internal" href="asyncio-task.html#coroutine"><span class="std std-ref">コルーチン</span></a> です。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.get_extra_info">
+<code class="sig-name descname">get_extra_info</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.get_extra_info" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>オプションのトランスポート情報を返します: <a class="reference internal" href="asyncio-protocol.html#asyncio.BaseTransport.get_extra_info" title="asyncio.BaseTransport.get_extra_info"><code class="xref py py-meth docutils literal notranslate"><span class="pre">BaseTransport.get_extra_info()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.write" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>トランスポートにバイト列 <em>data</em> を書き込みます: <a class="reference internal" href="asyncio-protocol.html#asyncio.WriteTransport.write" title="asyncio.WriteTransport.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">WriteTransport.write()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.writelines">
+<code class="sig-name descname">writelines</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.writelines" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>バイト列のデータのリスト (またはリテラブル) をトランスポートに書き込みます: <a class="reference internal" href="asyncio-protocol.html#asyncio.WriteTransport.writelines" title="asyncio.WriteTransport.writelines"><code class="xref py py-meth docutils literal notranslate"><span class="pre">WriteTransport.writelines()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="asyncio.StreamWriter.write_eof">
+<code class="sig-name descname">write_eof</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamWriter.write_eof" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>バッファーされたデータをフラッシュした後送信側のトランスポートをクローズします: <a class="reference internal" href="asyncio-protocol.html#asyncio.WriteTransport.write_eof" title="asyncio.WriteTransport.write_eof"><code class="xref py py-meth docutils literal notranslate"><span class="pre">WriteTransport.write_eof()</span></code></a> を参照してください。</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="streamreaderprotocol">
+<h2><span class="section-number">18.5.5.4. </span>StreamReaderProtocol<a class="headerlink" href="#streamreaderprotocol" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="class">
+<dt id="asyncio.StreamReaderProtocol">
+<em class="property">class </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">StreamReaderProtocol</code><span class="sig-paren">(</span><em class="sig-param">stream_reader</em>, <em class="sig-param">client_connected_cb=None</em>, <em class="sig-param">loop=None</em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.StreamReaderProtocol" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p><a class="reference internal" href="asyncio-protocol.html#asyncio.Protocol" title="asyncio.Protocol"><code class="xref py py-class docutils literal notranslate"><span class="pre">Protocol</span></code></a> と <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> を適合させる些末なヘルパークラスです。<a class="reference internal" href="asyncio-protocol.html#asyncio.Protocol" title="asyncio.Protocol"><code class="xref py py-class docutils literal notranslate"><span class="pre">Protocol</span></code></a> のサブクラスです。</p>
+<p><em>stream_reader</em> は <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> のインスタンスです。<em>client_connected_cb</em> は接続されたときに (stream_reader, stream_writer) を引数として呼び出されるオプションの関数です。<em>loop</em> は使用するイベントループのインスタンスです。</p>
+<p>(これは <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> 自身を <a class="reference internal" href="asyncio-protocol.html#asyncio.Protocol" title="asyncio.Protocol"><code class="xref py py-class docutils literal notranslate"><span class="pre">Protocol</span></code></a> のサブクラスとする代わりのヘルパークラスです。<a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> はその他の潜在的な用途を持つため、そして <a class="reference internal" href="#asyncio.StreamReader" title="asyncio.StreamReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamReader</span></code></a> の利用者が誤って不適切なプロトコルのメソッドを呼び出すことを回避するためこのように実装されています)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="incompletereaderror">
+<h2><span class="section-number">18.5.5.5. </span>IncompleteReadError<a class="headerlink" href="#incompletereaderror" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="exception">
+<dt id="asyncio.IncompleteReadError">
+<em class="property">exception </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">IncompleteReadError</code><a class="headerlink" href="#asyncio.IncompleteReadError" title="この定義へのパーマリンク">¶</a></dt>
+<dd><blockquote>
+<div><p>不完全な読み込みエラーです。<a class="reference internal" href="exceptions.html#EOFError" title="EOFError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">EOFError</span></code></a> のサブクラスです。</p>
+</div></blockquote>
+<dl class="attribute">
+<dt id="asyncio.IncompleteReadError.expected">
+<code class="sig-name descname">expected</code><a class="headerlink" href="#asyncio.IncompleteReadError.expected" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>想定されていたバイト数 (<a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) です。</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="asyncio.IncompleteReadError.partial">
+<code class="sig-name descname">partial</code><a class="headerlink" href="#asyncio.IncompleteReadError.partial" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>ストリームの終端に達する前に読み込んだバイト文字列 (<a class="reference internal" href="stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>) です。</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="limitoverrunerror">
+<h2><span class="section-number">18.5.5.6. </span>LimitOverrunError<a class="headerlink" href="#limitoverrunerror" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="exception">
+<dt id="asyncio.LimitOverrunError">
+<em class="property">exception </em><code class="sig-prename descclassname">asyncio.</code><code class="sig-name descname">LimitOverrunError</code><a class="headerlink" href="#asyncio.LimitOverrunError" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>区切り文字を探している間にバッファリミットに到達しました。</p>
+<dl class="attribute">
+<dt id="asyncio.LimitOverrunError.consumed">
+<code class="sig-name descname">consumed</code><a class="headerlink" href="#asyncio.LimitOverrunError.consumed" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>未消費のバイトの合計数。</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="stream-examples">
+<h2><span class="section-number">18.5.5.7. </span>ストリームの例<a class="headerlink" href="#stream-examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="tcp-echo-client-using-streams">
+<span id="asyncio-tcp-echo-client-streams"></span><h3><span class="section-number">18.5.5.7.1. </span>ストリームを使った TCP Echo クライアント<a class="headerlink" href="#tcp-echo-client-using-streams" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference internal" href="#asyncio.open_connection" title="asyncio.open_connection"><code class="xref py py-func docutils literal notranslate"><span class="pre">asyncio.open_connection()</span></code></a> 関数を使った TCP Echo クライアントです:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+
+<span class="nd">@asyncio</span><span class="o">.</span><span class="n">coroutine</span>
+<span class="k">def</span> <span class="nf">tcp_echo_client</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">loop</span><span class="p">):</span>
+    <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">open_connection</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">8888</span><span class="p">,</span>
+                                                        <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Send: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Received: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Close the socket&#39;</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;Hello World!&#39;</span>
+<span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">tcp_echo_client</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">loop</span><span class="p">))</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">参考</p>
+<p><a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_connection" title="asyncio.AbstractEventLoop.create_connection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AbstractEventLoop.create_connection()</span></code></a> メソッドを使った <a class="reference internal" href="asyncio-protocol.html#asyncio-tcp-echo-client-protocol"><span class="std std-ref">TCP Echo クライアントプロトコル</span></a> の例</p>
+</div>
+</div>
+<div class="section" id="tcp-echo-server-using-streams">
+<span id="asyncio-tcp-echo-server-streams"></span><h3><span class="section-number">18.5.5.7.2. </span>ストリームを使った TCP Echo サーバー<a class="headerlink" href="#tcp-echo-server-using-streams" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference internal" href="#asyncio.start_server" title="asyncio.start_server"><code class="xref py py-func docutils literal notranslate"><span class="pre">asyncio.start_server()</span></code></a> 関数を使った TCP Echo サーバーです:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+
+<span class="nd">@asyncio</span><span class="o">.</span><span class="n">coroutine</span>
+<span class="k">def</span> <span class="nf">handle_echo</span><span class="p">(</span><span class="n">reader</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    <span class="n">addr</span> <span class="o">=</span> <span class="n">writer</span><span class="o">.</span><span class="n">get_extra_info</span><span class="p">(</span><span class="s1">&#39;peername&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Received </span><span class="si">%r</span><span class="s2"> from </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">addr</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Send: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">message</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">yield from</span> <span class="n">writer</span><span class="o">.</span><span class="n">drain</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Close the client socket&quot;</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+<span class="n">coro</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span><span class="n">handle_echo</span><span class="p">,</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">8888</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+<span class="n">server</span> <span class="o">=</span> <span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">coro</span><span class="p">)</span>
+
+<span class="c1"># Serve requests until Ctrl+C is pressed</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Serving on </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">server</span><span class="o">.</span><span class="n">sockets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">getsockname</span><span class="p">()))</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_forever</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Close the server</span>
+<span class="n">server</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">server</span><span class="o">.</span><span class="n">wait_closed</span><span class="p">())</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">参考</p>
+<p><a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_server" title="asyncio.AbstractEventLoop.create_server"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AbstractEventLoop.create_server()</span></code></a> メソッドを使った <a class="reference internal" href="asyncio-protocol.html#asyncio-tcp-echo-server-protocol"><span class="std std-ref">TCP Echo サーバープロトコル</span></a> の例</p>
+</div>
+</div>
+<div class="section" id="get-http-headers">
+<h3><span class="section-number">18.5.5.7.3. </span>HTTP ヘッダーの取得<a class="headerlink" href="#get-http-headers" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>コマンドラインから渡された URL の HTTP ヘッダーを問い合わせる簡単な例です:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nd">@asyncio</span><span class="o">.</span><span class="n">coroutine</span>
+<span class="k">def</span> <span class="nf">print_http_headers</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">url</span><span class="o">.</span><span class="n">scheme</span> <span class="o">==</span> <span class="s1">&#39;https&#39;</span><span class="p">:</span>
+        <span class="n">connect</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">open_connection</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">hostname</span><span class="p">,</span> <span class="mi">443</span><span class="p">,</span> <span class="n">ssl</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">connect</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">open_connection</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">hostname</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+    <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">connect</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;HEAD </span><span class="si">{path}</span><span class="s1"> HTTP/1.0</span><span class="se">\r\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;Host: </span><span class="si">{hostname}</span><span class="se">\r\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">url</span><span class="o">.</span><span class="n">path</span> <span class="ow">or</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="n">hostname</span><span class="o">=</span><span class="n">url</span><span class="o">.</span><span class="n">hostname</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">))</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">reader</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;HTTP header&gt; </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">line</span><span class="p">)</span>
+
+    <span class="c1"># Ignore the body, close the socket</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">ensure_future</span><span class="p">(</span><span class="n">print_http_headers</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>使い方:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">page</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<p>または HTTPS を使用:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">page</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="register-an-open-socket-to-wait-for-data-using-streams">
+<span id="asyncio-register-socket-streams"></span><h3><span class="section-number">18.5.5.7.4. </span>ストリームを使ってデータを待つオープンソケットの登録<a class="headerlink" href="#register-an-open-socket-to-wait-for-data-using-streams" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference internal" href="#asyncio.open_connection" title="asyncio.open_connection"><code class="xref py py-func docutils literal notranslate"><span class="pre">open_connection()</span></code></a> 関数を使ってソケットがデータを受信するまで待つコルーチンです:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">socket</span> <span class="kn">import</span> <span class="n">socketpair</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">asyncio.windows_utils</span> <span class="kn">import</span> <span class="n">socketpair</span>
+
+<span class="nd">@asyncio</span><span class="o">.</span><span class="n">coroutine</span>
+<span class="k">def</span> <span class="nf">wait_for_data</span><span class="p">(</span><span class="n">loop</span><span class="p">):</span>
+    <span class="c1"># Create a pair of connected sockets</span>
+    <span class="n">rsock</span><span class="p">,</span> <span class="n">wsock</span> <span class="o">=</span> <span class="n">socketpair</span><span class="p">()</span>
+
+    <span class="c1"># Register the open socket to wait for data</span>
+    <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">open_connection</span><span class="p">(</span><span class="n">sock</span><span class="o">=</span><span class="n">rsock</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+
+    <span class="c1"># Simulate the reception of data from the network</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">call_soon</span><span class="p">(</span><span class="n">wsock</span><span class="o">.</span><span class="n">send</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+
+    <span class="c1"># Wait for data</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="k">yield from</span> <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="c1"># Got data, we are done: close the socket</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Received:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># Close the second socket</span>
+    <span class="n">wsock</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">wait_for_data</span><span class="p">(</span><span class="n">loop</span><span class="p">))</span>
+<span class="n">loop</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">参考</p>
+<p><a class="reference internal" href="asyncio-protocol.html#asyncio-register-socket"><span class="std std-ref">プロトコルを使ってデータを待つオープンソケットの登録</span></a> の例では <a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.create_connection" title="asyncio.AbstractEventLoop.create_connection"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AbstractEventLoop.create_connection()</span></code></a> メソッドによって作成された低レベルプロトコルを使用しています。</p>
+<p><a class="reference internal" href="asyncio-eventloop.html#asyncio-watch-read-event"><span class="std std-ref">読み込みイベント用のファイル記述子の監視</span></a> の例では、ソケットのファイル記述子を登録するのに低水準の <a class="reference internal" href="asyncio-eventloop.html#asyncio.AbstractEventLoop.add_reader" title="asyncio.AbstractEventLoop.add_reader"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AbstractEventLoop.add_reader()</span></code></a> メソッドを使用しています。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../contents.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">18.5.5. ストリーム (コルーチンベースの API)</a><ul>
+<li><a class="reference internal" href="#stream-functions">18.5.5.1. ストリーム関数</a></li>
+<li><a class="reference internal" href="#streamreader">18.5.5.2. StreamReader</a></li>
+<li><a class="reference internal" href="#streamwriter">18.5.5.3. StreamWriter</a></li>
+<li><a class="reference internal" href="#streamreaderprotocol">18.5.5.4. StreamReaderProtocol</a></li>
+<li><a class="reference internal" href="#incompletereaderror">18.5.5.5. IncompleteReadError</a></li>
+<li><a class="reference internal" href="#limitoverrunerror">18.5.5.6. LimitOverrunError</a></li>
+<li><a class="reference internal" href="#stream-examples">18.5.5.7. ストリームの例</a><ul>
+<li><a class="reference internal" href="#tcp-echo-client-using-streams">18.5.5.7.1. ストリームを使った TCP Echo クライアント</a></li>
+<li><a class="reference internal" href="#tcp-echo-server-using-streams">18.5.5.7.2. ストリームを使った TCP Echo サーバー</a></li>
+<li><a class="reference internal" href="#get-http-headers">18.5.5.7.3. HTTP ヘッダーの取得</a></li>
+<li><a class="reference internal" href="#register-an-open-socket-to-wait-for-data-using-streams">18.5.5.7.4. ストリームを使ってデータを待つオープンソケットの登録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="asyncio-protocol.html"
+                        title="前の章へ"><span class="section-number">18.5.4. </span>Transports and protocols (callback based API)</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="asyncio-subprocess.html"
+                        title="次の章へ"><span class="section-number">18.5.6. </span>サブプロセス</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../bugs.html">バグ報告</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.6/Doc/library/asyncio-stream.rst"
+            rel="nofollow">ソースコードを表示
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="asyncio-subprocess.html" title="18.5.6. サブプロセス"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="asyncio-protocol.html" title="18.5.4. Transports and protocols (callback based API)"
+             >前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="ipc.html" ><span class="section-number">18. </span>プロセス間通信とネットワーク</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="asyncio.html" ><span class="section-number">18.5. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> --- 非同期 I/O、イベントループ、コルーチンおよびタスク</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="../copyright.html">著作権</a> 2001-2020, Python Software Foundation.
+    <br />
+    Python Software Foundation は非営利団体です。
+    <a href="https://www.python.org/psf/donations/">寄付</a>
+    <br />
+    最終更新: 6月 10, 2020
+    <a href="../bugs.html">バグを見つけたら</a>?
+    <br />
+    このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.3.1 を使って作成されました。
+    </div>
+
+  </body>
+</html>

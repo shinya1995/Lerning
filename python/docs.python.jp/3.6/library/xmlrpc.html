@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>21.25. xmlrpc --- XMLRPC サーバーとクライアントモジュール &#8212; Python 3.6.10 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Python 3.6.10 ドキュメント 内を検索"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="このドキュメントについて" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="copyright" title="著作権" href="../copyright.html" />
+    <link rel="next" title="21.26. xmlrpc.client --- XML-RPC クライアントアクセス" href="xmlrpc.client.html" />
+    <link rel="prev" title="21.24. http.cookiejar --- HTTP クライアント用の Cookie 処理" href="http.cookiejar.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+    <link rel="canonical" href="https://docs.python.org/3/library/xmlrpc.html" />
+    
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/switchers.js"></script>
+    
+    
+ 
+
+  </head><body>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="xmlrpc.client.html" title="21.26. xmlrpc.client --- XML-RPC クライアントアクセス"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="http.cookiejar.html" title="21.24. http.cookiejar --- HTTP クライアント用の Cookie 処理"
+             accesskey="P">前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="internet.html" accesskey="U"><span class="section-number">21. </span>インターネットプロトコルとサポート</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="xmlrpc-xmlrpc-server-and-client-modules">
+<h1><span class="section-number">21.25. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">xmlrpc</span></code> --- XMLRPC サーバーとクライアントモジュール<a class="headerlink" href="#xmlrpc-xmlrpc-server-and-client-modules" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>XML-RPC は HTTP 経由の XML を使って遠隔手続き呼び出し (Remote Procedure Call) を実現する方法です。XML-RPC を使うと、クライアントはリモートサーバー (サーバーは URI で名前付けられます) 上のメソッドを引数付きで呼び出して、構造化されたデータを受け取る事ができます。</p>
+<p><code class="docutils literal notranslate"><span class="pre">xmlrpc</span></code> パッケージは XML-RPC のサーバーとクライアントを実装したモジュールを持っています。モジュール一覧:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="xmlrpc.client.html#module-xmlrpc.client" title="xmlrpc.client: XML-RPC client access."><code class="xref py py-mod docutils literal notranslate"><span class="pre">xmlrpc.client</span></code></a></p></li>
+<li><p><a class="reference internal" href="xmlrpc.server.html#module-xmlrpc.server" title="xmlrpc.server: Basic XML-RPC server implementations."><code class="xref py py-mod docutils literal notranslate"><span class="pre">xmlrpc.server</span></code></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="http.cookiejar.html"
+                        title="前の章へ"><span class="section-number">21.24. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.cookiejar</span></code> --- HTTP クライアント用の Cookie 処理</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="xmlrpc.client.html"
+                        title="次の章へ"><span class="section-number">21.26. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">xmlrpc.client</span></code> --- XML-RPC クライアントアクセス</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../bugs.html">バグ報告</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.6/Doc/library/xmlrpc.rst"
+            rel="nofollow">ソースコードを表示
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="xmlrpc.client.html" title="21.26. xmlrpc.client --- XML-RPC クライアントアクセス"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="http.cookiejar.html" title="21.24. http.cookiejar --- HTTP クライアント用の Cookie 処理"
+             >前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="internet.html" ><span class="section-number">21. </span>インターネットプロトコルとサポート</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="../copyright.html">著作権</a> 2001-2020, Python Software Foundation.
+    <br />
+    Python Software Foundation は非営利団体です。
+    <a href="https://www.python.org/psf/donations/">寄付</a>
+    <br />
+    最終更新: 6月 10, 2020
+    <a href="../bugs.html">バグを見つけたら</a>?
+    <br />
+    このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.3.1 を使って作成されました。
+    </div>
+
+  </body>
+</html>

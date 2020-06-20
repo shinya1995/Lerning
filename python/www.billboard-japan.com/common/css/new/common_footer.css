@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+/* footer
+--------------------------------------------------*/
+
+#footer {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 6.4%;
+  position :relative;
+  background : #000;
+  /*margin-top: 8.5%;*/
+  margin-top: calc(8.5% + 80px);
+}
+
+#footer .footer_inner {
+  width: 100%;
+}
+
+#footer .inner {
+  width: 94.8%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* reset */
+
+#footer iframe {
+  /*display: none;*//* iframeで高さが出てしまうことの防止 */
+}
+
+#footer ul {
+  margin-bottom: 0;
+}
+
+#footer ul li {
+  padding: 0;
+}
+
+#footer address,
+#footer p {
+  padding: 0;
+}
+
+/* pagetop */
+
+#footer #pagetop {
+  position: fixed;
+  right: 2.6%;
+  bottom: 10.5%;
+  z-index: 100;
+  width: 9.8%;
+}
+
+#footer #pagetop img {
+  width: 100%;
+}
+
+
+/*--------------------
+ f_menu_01
+--------------------*/
+
+#footer .f_menu_01 {
+  overflow: hidden;
+}
+
+#footer .f_menu_01 li {
+  width: 100%;
+  display: block;
+  float: none;
+  margin: 0;
+  border: 0;
+  text-align: left;
+  border-bottom: 1px solid #333333;
+  background: url(/common/img/arrow_footer_w.png) right 8% center no-repeat;
+  background-size: 22px auto;
+  font-size: 15px;
+}
+
+@media all and (max-width: 767px){
+
+  /* チャートインサイト ショッピングカート */
+  #footer .f_menu_01 li.pc_chart,
+  #footer .f_menu_01 li.pc_shopcart {
+    display: none;
+  }
+  
+}
+
+#footer .f_menu_01 li a {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 6.6%;
+  box-sizing: border-box;
+}
+
+#footer .f_menu_01 .accordion {
+  background: transparent;/* →なし */
+}
+
+/* accordion */
+
+#footer .f_menu_01 .accordion p {
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+}
+
+#footer .f_menu_01 li .aco_ttl {
+  position: relative;
+}
+
+#footer .f_menu_01 li .aco_ttl span {
+  position: absolute;
+  right: calc(8% - 15px);
+  top: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+}
+#footer .f_menu_01 li .aco_ttl.minus {
+  font-size: 30px;
+}
+
+#footer .f_menu_01 li .aco_content {
+  background: #333333;
+}
+
+#footer .f_menu_01 li .aco_content li {
+  border-top: 1px solid #4c4c4c;
+}
+
+#footer .f_menu_01 li .aco_content li a {
+  padding-left: 10.5%;
+}
+
+/* アイコン */
+
+#footer .f_menu_01 .blank:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: url(/common/img/icon_header_blank.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+#footer .f_menu_01 .btn_shopcart:after {
+  content: '';
+  width: 22px;
+  height: 16px;
+  background: url(/common/img/icon_header_cart.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+
+/*--------------------
+ f_menu_02
+--------------------*/
+
+#footer .f_menu_02 {
+  padding: 5.6% 4.2%;
+  border-bottom: 1px solid #333333;
+  box-sizing: border-box;
+}
+
+#footer .f_menu_02 li {
+  float: left;
+  width: 50%;
+  padding: 1em 0;
+  margin: 0;
+  border: 0;
+  text-align: left;
+  font-size: 12px;
+  /* 游明朝体 */
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-weight: 500;
+}
+
+#footer .f_menu_02 a {
+  color: #878787;
+}
+
+/* google翻訳 */
+#footer .f_menu_02 #google_translate_element {
+  margin-left: 0;
+}
+
+
+/*--------------------
+ f_menu_03
+--------------------*/
+
+#footer .f_menu_03 {
+  padding: 9% 4.2%;
+  box-sizing: border-box;
+}
+
+#footer .f_menu_03 li {
+  float: left;
+  width: 50%;
+  padding: 0.5em 0;
+  margin: 0;
+  border: 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+#footer .f_menu_03 li a {
+  color: #fff;
+}
+
+
+/*--------------------
+ copy
+--------------------*/
+
+#footer #copy{
+  padding: 0;
+  margin: 0 auto;
+}
+
+#footer #copy .logo img {
+  width: 52%;
+  margin-bottom: 2%;
+}
+
+#footer #copy address,
+#footer #copy p ,
+#footer #copy a {
+  width: 81.5%;
+  margin: 2% auto 0;
+  color: #a3a3a3;
+}
+
+
+@media all and (min-width: 768px) {
+  
+  #footer {
+    width:100%;
+    padding: 40px 0;
+    margin-top: 30px;
+  }
+  
+  #footer .footer_inner {
+    width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  
+  #footer .inner {
+    width: 100%;
+  }
+  
+  /* レイアウト */
+  
+  .menu_wrapper {
+    width: 510px;
+    float: left;
+    padding-left: 10px;
+    
+    border-right: 1px solid #4a4a4a;
+  }
+  
+  #footer #copy{
+    width: 330px;
+    float: right;
+  }
+  
+  /* pagetop */
+  
+  #footer #pagetop {
+    position: fixed;
+    right: 3%;
+    bottom: 10.5%;
+    z-index: 100;
+    width: 45px;
+  }
+  
+  #footer #pagetop img {
+    width: 100%;
+  }
+  
+  
+  /*--------------------
+   f_menu_01
+  --------------------*/
+  
+  #footer .f_menu_01 {
+    width: 510px;
+    float: left;
+    margin-bottom: 10px;
+  }
+  
+  #footer .f_menu_01 ul {
+    width: 33%;
+    float: left;
+  }
+  
+  #footer .f_menu_01 ul:nth-child(2) {
+    margin-right: -50px;
+  }
+  
+  #footer .f_menu_01 li {
+    margin: 0;
+    border: 0;
+    text-align: left;
+    border-bottom: 0;
+    background: none;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  
+  /* チャートインサイト ショッピングカート */
+  #footer .f_menu_01 li.sp_shopcart,
+  #footer .f_menu_01 li.sp_chart {
+    display: none;
+  }
+  
+  #footer .f_menu_01 li p {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  
+  #footer .f_menu_01 li a {
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    height: auto;
+    line-height: 1.18;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+  
+  #footer .f_menu_01 li .aco_ttl span {
+    display: none;
+  }
+  
+  #footer .f_menu_01 li .aco_contents {
+    background: red;
+  }
+  
+  #footer .f_menu_01 .btn_shopcart:after {
+    display: none;
+  }
+  
+  #footer .f_menu_01 li .aco_content {
+    background: transparent;
+    margin-top: -16px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  
+  #footer .f_menu_01 li .aco_content li {
+    border-top: 0;
+    line-height: 20px;
+  }
+  
+  #footer .f_menu_01 li .aco_content li a {
+    padding-left: 0;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 20px;
+    display: block;
+  }
+  
+  /* spは削除　上書き */
+  #footer .f_menu_01 li .aco_content li.sp_obj {
+    display: none;
+  }
+  
+  /*--------------------
+   f_menu_02
+  --------------------*/
+  
+  #footer .f_menu_02 {
+    width: 510px;
+    padding: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  #footer .f_menu_02 li {
+    float: left;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  #footer .f_menu_02 li:nth-child(3n+2) {
+    width: 35%;
+  }
+  
+  #footer .f_menu_02 li a,
+  #footer .f_menu_02 li a:hover {
+    color: #b0b0b0;
+  }
+  
+  #footer .f_menu_02 li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /*--------------------
+   f_menu_03
+  --------------------*/
+  
+  #footer .f_menu_03 {
+    padding: 0;
+    box-sizing: border-box;
+    width: 198px;
+    float: left;
+    padding-left: 40px;
+    margin-top: -8px;
+  }
+  
+  #footer .f_menu_03 li {
+    width: 100%;
+    padding: 0.5em 0;
+    margin: 0;
+    border: 0;
+    margin-right: 46px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  
+  #footer .f_menu_03 li:last-child {
+    margin-right: 0;
+  }
+  
+  
+  /*--------------------
+   copy
+  --------------------*/
+  
+  #footer #copy{
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  #footer #copy .logo {
+    text-align: center;
+  }
+  
+  #footer #copy .logo img {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  
+  #footer #copy address,
+  #footer #copy p {
+    width: 100%;
+    margin: 15px auto 0;
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 1.58;
+  }
+  
+  #footer #copy a,
+  #footer #copy a:hover {
+    color: #b0b0b0;
+  }
+  
+  #footer #copy a:hover {
+    text-decoration: underline;
+  }
+  
+}

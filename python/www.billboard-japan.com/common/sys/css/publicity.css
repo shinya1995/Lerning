@@ -1,0 +1,23 @@
+ /* 広告用エリア　デフォルトで非表示 */
+#cm_wrapper{
+    display:none;
+/*	position:fixed;
+	top:0;
+	left:0;
+    margin-left:200px;
+    margin-top:100px;
+	background:#ffffff;
+	*/
+	z-index: 1001;
+}
+
+ /* 白塗り背景　メインコンテンツエリア外で文字列等が表示されてしまった時のため */
+#whiteBack{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#ffffff;
+	z-index: 1000;
+}

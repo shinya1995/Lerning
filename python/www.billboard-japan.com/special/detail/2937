@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+        <meta name="keywords" content="ビルボードジャパン,Billboard JAPAN,チャート,音楽,洋楽,邦楽,ミュージック,アーティスト,ランキング,ニュース" />                <meta name="description" content="米国で最も権威のある音楽チャート・Billboard（ビルボード）の日本公式サイト。洋楽チャート、邦楽チャート、音楽ニュース、プレゼント情報などを提供。" />      <meta property="og:locale"      content="ja_JP">
+  <meta property="og:site_name"   content="Billboard JAPAN">
+  <meta property="og:title"       content="Billboard Japan 2020年上半期チャート発表　Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に | Special | Billboard JAPAN">
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="http://www.billboard-japan.com/special/detail/2937">
+    <meta property="og:image"       content="http://www.billboard-japan.com/scale/special/00000002/2937/x200_image.jpg">
+    <meta property="og:description" content="米国で最も権威のある音楽チャート・Billboard（ビルボード）の日本公式サイト。洋楽チャート、邦楽チャート、音楽ニュース、プレゼント情報などを提供。">
+    <title>Billboard Japan 2020年上半期チャート発表　Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に | Special | Billboard JAPAN</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@billbord_JAPAN">
+  <meta name="twitter:url" content="http://www.billboard-japan.com/special/detail/2937">
+  <meta name="twitter:title" content="Billboard Japan 2020年上半期チャート発表　Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="http://www.billboard-japan.com/common/sys/img/special/00000002/2937/image.jpg">
+  
+      <script src="/common/js/jquery.min.js"></script>
+    <script src="/common/js/jquery.common.js"></script>
+  <script src="/common/js/jquery.carouFredSel.js"></script>
+  <script src="/common/js/jquery.tile.js"></script>
+  <script src="/common/sys/js/jquery.cookie.js"></script>
+  <script src="/common/sys/js/accordion_list.js"></script>
+  <script type="text/javascript" src="/common/js/ydn.js"></script>
+  <script src="/common/js/jquery.easing.1.3.js" type="text/javascript"></script>
+      <script src="/common/sys/js/publicity.js"></script>
+  <script src="/common/sys/js/side_chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="/common/css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/common/sys/css/publicity.css">
+  <link rel="stylesheet" type="text/css" href="/common/sys/css/accordion_list.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/socialcomment.css">
+  <script src="/common/js/search.js"></script>
+    <!--[if lt IE 9]>
+  <script src="/common/js/IE9.js"></script>
+  <![endif]-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32178381-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/new/buyarea_slide.css" />
+	<script type="text/javascript" src="/common/js/jquery.heightLine.js"></script>
+	<script type="text/javascript" src="/common/js/slick.min.js"></script>
+	<script type="text/javascript" src="/common/js/new/buyarea_slide.js"></script>
+	<script type="text/javascript">
+	$(document).ready(
+		function ()
+		{
+			if($("div#html_contents_1").size() > 0)
+			{
+       	        $("div#pager").css("display", "block");
+				initialDispPage("1");
+			}
+		}
+	);
+
+
+	function initialDispPage(pageNo){
+	    switchDispPage(pageNo);
+	}
+
+ 	function dispPage(pageNo)
+ 	{
+        switchDispPage(pageNo);
+	    $("html,body").scrollTop($("#specialImport").offset().top);
+	}
+
+ 	function switchDispPage(pageNo)
+ 	{
+        var no            = parseInt(pageNo);
+        var sp_page_total = $("input#sp_page_total").val();
+
+		if(pageNo == "1")
+		{
+   	        $("li#sp_prev").html("＜　Prev");
+   	        $("li#sp_next").html("<a href=\"#\" onclick=\"dispPage(" + (no + 1) + "); return false;\">Next　＞</a>");
+		}
+		else if(pageNo == sp_page_total)
+		{
+   	        $("li#sp_prev").html("<a href=\"#\" onclick=\"dispPage(" + (no - 1) + "); return false;\">＜　Prev</a>");
+   	        $("li#sp_next").html("Next　＞");
+	    }
+		else
+		{
+   	        $("li#sp_prev").html("<a href=\"#\" onclick=\"dispPage(" + (no - 1) + "); return false;\">＜　Prev</a>");
+   	        $("li#sp_next").html("<a href=\"#\" onclick=\"dispPage(" + (no + 1) + "); return false;\">Next　＞</a>");
+		}
+
+        for (i=1; i<=5; i++)
+        {
+	        if($("li#sp_link_" + i).size() <= 0)
+	        {
+                continue;
+	        }
+
+			if ("html_contents_" + i == "html_contents_" + pageNo)
+			{
+       	        $("li#sp_link_" + i).html(i);
+				$("li#sp_link_" + i).addClass("select");
+    			$("div#html_contents_" + i).css("display", "block");
+			}
+			else
+			{
+                $("li#sp_link_" + i).removeClass("select");
+               	$("li#sp_link_" + i).html("<a href=\"#\" onclick=\"dispPage(" + i + "); return false;\">" + i + "</a>");
+        	    $("div#html_contents_" + i).css("display", "none");
+			}
+        }
+	}
+	</script>
+	<SCRIPT LANGUAGE="JavaScript" src="/common/special/award/js/jquery.fancybox.js  "></SCRIPT>
+	<link rel="stylesheet" type="text/css" href="/common/special/award/200605_midyear/css/midyear2020_Tmp.css" />
+	<link rel="stylesheet" type="text/css" href="/common/special/award/css/jquery.fancybox.css  " />    <meta name="google-translate-customization" content="adb8cdd56f6046dc-072c0ff82a717427-gb7c019822dddd6a7-17">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <script type="text/javascript">
+  if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)) {
+      document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+    }else{
+      document.write('<meta name="viewport" content="width=1300">');
+    }
+  </script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!--ここから追記分-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common_header.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common_footer.css">
+  <script src="/common/js/new/new_common.js"></script>
+  <!--ここまで追記分-->
+  <script type="text/javascript" src="https://www.fourmtagservices.com/f.js"></script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {
+};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script type="text/javascript">
+  var path_value = location.pathname.substr(0, 40);
+  var parameter_value = location.search.substr(0, 40);
+  var ref_value = "null";
+  if (document.referrer) {
+  var ref_array = [];
+  ref_array = document.referrer.split("/");
+  ref_value = ref_array[2];
+  }
+  
+  googletag.cmd.push(function () {
+  googletag.pubads().setTargeting('URLs', path_value).setTargeting('Para', parameter_value).setTargeting('Ref', ref_value);
+  googletag.pubads().collapseEmptyDivs();
+  });
+  </script> 
+
+<script>googletag.cmd.push(function() {
+    // Size mapping for div-gpt-ad-pc_all_header, div-gpt-ad-pc_all_billboard, div-gpt-ad-pc_article_right_1, div-gpt-ad-pc_article_right_2, div-gpt-ad-pc_all_footer(request only on desktop: width > 480px)
+var mapping1 = googletag.sizeMapping()
+  .addSize([728, 0], [[1, 1], [300, 250], [300, 600], [320, 50], [320, 100], [320, 180], [336, 280], [1130, 220], 'fluid', [728, 90], [970, 250], [970, 90]])
+  .addSize([481, 0], [[1, 1], [300, 250], [300, 600], [320, 50], [320, 100], [320, 180], [336, 280], 'fluid'])
+  .build();
+// Size mapping for div-gpt-ad-sp_all_header, div-gpt-ad-sp_home_undertitle, div-gpt-ad-sp_home_inarticle, div-gpt-ad-sp_article_underarticle, div-gpt-ad-sp_all_footer(request only on smartphone: width <= 480px)
+var mapping2 = googletag.sizeMapping()
+  .addSize([481, 0], [])
+  .addSize([336, 0], [[1, 1], [300, 250], [320, 50], [320, 100], [320, 180], [336, 280], 'fluid'])
+  .addSize([0, 0], [[1, 1], [300, 250], [320, 50], [320, 100], [320, 180], 'fluid'])
+  .build();
+
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_header', [], 'div-gpt-ad-pc_all_header').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_billboard', [], 'div-gpt-ad-pc_all_billboard').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_article_right_1', [], 'div-gpt-ad-pc_article_right_1').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_article_right_2', [], 'div-gpt-ad-pc_article_right_2').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_footer', [], 'div-gpt-ad-pc_all_footer').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_all_header', [], 'div-gpt-ad-sp_all_header').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_home_undertitle', [], 'div-gpt-ad-sp_home_undertitle').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_article_underarticle', [], 'div-gpt-ad-sp_article_underarticle').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_all_footer', [], 'div-gpt-ad-sp_all_footer').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true,true);
+googletag.enableServices();
+});</script>
+  <!--Taboola-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/billboard-japan/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+  <!--Taboola-->
+	<!-- google ad -->
+<!-- google ad -->
+</head><body class="special_dit">
+<div id="cm_wrapper">
+  
+  <div style="display:none;">
+<span id="js_cm_title"></span>
+</div>
+<div id="cm_header" class="cf">
+<header>
+  <h1 id="cm_sitelogo"><a href="/"><img src="/common/img/img_sitelogo.png" alt="Billboard JAPAN"></a></h1>
+  <a href="javascript:showMain();" class="button skip">このページをスキップする</a>
+</header>
+</div>
+<div id="cm_content"  class="cf">
+<input type ="hidden" id ="js_publicity_url" value = "">
+<div id="widebanner"></div>
+    <article>
+	<!-- CM -->
+    <div id="cm">
+    <p>
+    </p>
+    </div>
+	<!-- /CMここまで -->
+    </article>
+    <br />
+</div>  
+</div>
+<!-- / #cm_wrapper -->
+
+<div id="wrapper">
+  
+    <!-- ヘッダーここから -->
+  <div id="header" class="cf">
+    <header class="inner">
+      <div class="header_inner cf">
+        <h1 id="sitelogo"><a class="hover" href="/"><img src="/common/img/img_header_sitelogo.png" alt="Billboard JAPAN"></a></h1>
+        <div id="topbanner" class="pc_obj">
+
+<!-- /83555300/hcl-c/billboard-japan/pc_all_header -->
+<div id='div-gpt-ad-pc_all_header' style='height:90px; width:728px;' class="hover">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_header'); });
+</script>
+</div>
+		  
+        </div>
+        <!-- / #topbanner -->
+        <div class="menu_toggle sp_obj"><img src="/common/img/icon_menu_close.gif" alt=""></div>
+        <p class="search_btn search_toggle sp_obj"><img src="/common/img/icon_search_close.gif" alt="検索"></p>
+        <div class="form_area">
+          <form method="get" action="/common/search/index.html">
+            <fieldset>
+              <input id="searchtext" title="アーティスト名で検索" type="search" name="q" value="" placeholder="アーティスト名で検索" required />
+              <input class="hover" type="submit" id="searchsubmit" name="searchsubmit" value="検索" />
+            </fieldset>
+          </form>
+          <p class="search_toggle sp_obj">閉じる</p>
+        </div>
+        <!-- / .form_area -->
+      </div>
+      <!-- / .header_inner -->
+<noscript>
+<div class="no_script">
+<p>現在お使いのブラウザではJavascriptが有効となっていないため、サイトのコンテンツが正常に表示・動作されません。<br />
+Javascriptを有効にしてください。詳しくはお使いのブラウザのヘルプをご覧ください。</p>
+</div>
+</noscript>
+      <div class="menu_area">
+        <nav id="globalNavi">
+          <ul class="cf">
+            <li class="pc_chart"><a href="/chart_insight/">CHART INSIGHT</a></li>
+            <li class="sp_chart"><a href="/chart_insight/">CHART INSIGHT</a></li>
+            <li class="toggle_menu">
+              <a href="/charts/" class="sp_nolink slide_btn">CHARTS<span class="sp_obj">＋</span></a>
+              <div class="slide_menu">
+                <div class="slide_content">
+                  <!--<p class="sp_obj"><a href="/charts/">CHATRS TOP</a></p>-->
+                  <ul>
+                    <li><a href="/charts/">JAPAN CHARTS</a></li>
+                    <li><a href="/charts/oversea/">WORLD CHARTS</a></li>
+                    <li><a href="/charts/year_end/">YEAR END (JAPAN)</a></li>
+                    <li><a href="/charts/year_end_oversea/">YEAR END (WORLD)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- / .slide_menu -->
+            </li>
+            <li class="toggle_menu">
+              <a href="/d_news/" class="sp_nolink slide_btn">NEWS<span class="sp_obj">＋</span></a>
+              <div class="slide_menu">
+                <div class="slide_content">
+                  <!--<p class="sp_obj"><a href="/d_news/">NEWS TOP</a></p>-->
+                  <ul>
+                    <li><a href="/d_news/">ALL</a></li>
+                    <li><a href="/d_news/jpn/">JAPAN</a></li>
+                    <li><a href="/d_news/overseas/">OVERSEAS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- / .slide_menu -->
+            </li>
+            <li><a href="/special/">SPECIAL</a></li>
+            <li><a href="http://www.billboard-live.com/" target="_blank" class="blank">BILLBOARD LIVE</a></li>
+            <li class="pc_shopcart"><a href="http://www.vanda.co.jp/billboard/cart/" class="btn_shopcart">SHOPPING CART</a></li>
+            <li class="sp_shopcart"><a href="http://www.vanda.co.jp/billboard/sp/cart/" class="btn_shopcart">SHOPPING CART</a></li>
+          </ul>
+        </nav>
+        <!-- / #globalNavi -->
+        <div id="sns_navi">
+          <ul>
+            <li><a class="hover" href="https://twitter.com/Billboard_JAPAN" target="_blank"><img class="js_img_switch" src="/common/img/twitter_btn_pc.png" alt="twitter"></a></li>
+            <li><a class="hover" href="https://www.facebook.com/pages/Billboard-JAPAN/635768896442966?fref=ts" target="_blank"><img class="js_img_switch" src="/common/img/facebook_btn_pc.png"alt="facebook"></a></li>
+            <li><a class="hover" href="https://line.me/ti/p/%40oa-billboardnews" target="_blank"><img class="js_img_switch" src="/common/img/line_btn_pc.png" alt="LINE"></a></li>
+            <li><a class="hover" href="http://applemusic.com/billboard-japan"><img class="js_img_switch" src="/common/img/apple_icon_pc.png" alt="iTunes Store"></a></li>
+			<li><a class="hover" href="https://www.tiktok.com/@billboard_japan" target="_blank"><img class="js_img_switch" src="/common/img/tiktok_btn_pc.png" alt="Tik Tok"></a></li>
+            <li><a class="hover" href="http://www.billboard-japan.com/d_news/doc.xml"><img class="js_img_switch" src="/common/img/rss_btn_pc.png" alt="rss"></a></li>
+          </ul>
+        </div>
+        <!-- / #sns_navi -->
+      </div>
+      <!-- / .menu_area -->
+    <div class="chart_area scroll_wrap">
+      <div class="scroll_area">
+        <ul>
+          <li><a href="/tagindex/detail/4">Chart</a></li>
+          <li><a href="/tagindex/detail/32">Hot100</a></li>
+          <li><a href="/tagindex/detail/13">Report</a></li>
+          <li><a href="/tagindex/detail/31">Review</a></li>
+          <li><a href="/tagindex/detail/30">Interview</a></li>
+          <li><a href="/tagindex/detail/9">Movie</a></li>
+<!--          <li><a href="/tagindex/detail/20">BBL</a></li>-->
+          <li><a href="/tagindex/detail/1">Japan</a></li>
+          <li><a href="/tagindex/detail/26">Overseas</a></li>
+<!--		  <li><a href="/tagindex/detail/33">Hackasong</a></li>-->
+		  <li><a href="/tagindex/detail/38">コロナウイルス</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- / .chart_area -->
+
+    </header>
+    <div class="overlay search_toggle"></div><!-- 検索オーバーレイ -->
+  </div>
+  <!-- ヘッダーここまで -->
+  
+  <div id="content2" class="cf">
+    <div class="inner">
+            <div class="sp_obj"><!-- /83555300/hcl-c/billboard-japan/sp_all_header -->
+<div id='div-gpt-ad-sp_all_header' class="ad_area hover adjust_banner">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-sp_all_header'); });
+</script>
+</div></div><!-- Header Banner -->
+      <div class="pc_obj"><!-- /83555300/hcl-c/billboard-japan/pc_all_billboard -->
+<div id='div-gpt-ad-pc_all_billboard' class="top_banner hover adjust_banner">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_billboard'); });
+</script>
+</div></div><!-- Super Wide Banner -->
+            <div class="leftBox">
+        <div id="main2">
+                                          
+<div class="sp_only_inner">
+<!-- スペシャルここから -->
+    <div id="specialContent">
+    <article>
+    <script src="/common/js/jquery.sharrre-1.3.2.js"></script>
+      <!-- socialbtn -->
+  <div id="socialbtn">
+    <ul>
+      <li class="shareme" data-url="http://www.billboard-japan.com/special/detail/2937"></li>
+    </ul>
+  </div>
+  <!-- #socialbtn -->
+  <script>$('.shareme').sharrre({share: {twitter: true,facebook: true},template: '<div class="box"><div class="middle"><a class="facebook">Like!</a><a class="twitter">tweet</a><p class="total">0</p></div></div>',enableHover: false,enableTracking: true,render: function(api, options){$(api.element).on('click', '.twitter', function() {api.openPopup('twitter');});$(api.element).on('click', '.facebook', function() {api.openPopup('facebook');});}});</script>
+    <hgroup>
+    <h2><img src="/common/img/title_specialcontents.png" alt="Special Contents"></h2>
+    <h3>Billboard Japan 2020年上半期チャート発表　Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に</h3>
+    <ul>
+        </ul>
+    </hgroup>
+  	<!-- HTML挿入部分 -->
+    <section>
+    <div id="specialImport">
+    <p>
+    <div id="html_contents_1">﻿
+<!-- HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分  HTML挿入部分 -->
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('.imgPhoto a,#photothumb a').fancybox({
+padding: 0,
+openEffect : 'elastic',
+openSpeed  : 150,
+loop:false,
+closeEffect : 'elastic',
+closeSpeed  : 150,
+closeClick : true,
+helpers : {
+	overlay : null
+}
+});
+});
+$('a.caption').fancybox({
+	maxWidth	: 600,
+	fitToView	: false,
+	width		: '70%',
+	height		: '70%',
+	autoSize	: true,
+	closeClick	: false,
+	openEffect	: 'none',
+	closeEffect	: 'none',
+});
+
+</script>
+<style>
+<!--
+.itembox{ width:25%; float:left; padding:10px; -webkit-border-radius: 5px; border-radius: 5px; margin:0 40px 20px 0;}
+.itembox h7{ font-size:12px; font-size:1.2rem; margin:10px 0; }
+#maintext .itembox p{ padding:0 !important; }
+
+.tg  {border-collapse:collapse;border-spacing:0; border-color:#A4A4A4}
+.tg td{font-size:14px;padding: 10px 20px;;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-size:14px;font-weight:normal;padding: 10px 20px;;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-bsv2{background-color:#F2F2F2}
+
+<!--
+.c_artist1{ color:#000080; }
+.c_interviewer{ color:#72654c; }
+-->
+-->
+</style>
+<hgroup>
+<p><img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/top.jpg" alt="ランキング2020" width="100%"></p>
+<div><br>
+<p>　世界的な天災となったコロナウィルス。国内音楽業界もまた大きな影響を受け、2月最終週から始まったライブ開催自粛に続き、小売店や流通がストップして新譜発売も多くが6月以降へ延期となった。これにより、フィジカルからデジタルへ、ヒットを生みだすプラットフォームの移行がこれまで以上に加速し、ヒット曲を生みだす新しいサイクルが急ピッチで整いつつある。激動の時代の始まりを告げた今年度上半期、どのような楽曲がBillboard JAPANチャートを彩ったのか、各チャートをみていこう。</p>
+
+<p>　
+</p>
+
+<p>※集計期間：2019年11月25日（月）～2020年5月24日（日）</p>
+</p>
+</p>
+
+</div>
+</hgroup>
+
+
+<div id="top"></div>
+
+<div id="maintext">
+<p></p>
+ <h9>HOT 100</h9>  
+<br><br>
+ <h8>Official髭男dismとKing Gnuの大躍進</h8><p></p>
+
+
+<p>　Official髭男dism「Pretender」が、ストリーミング、動画、カラオケで1位となり、2020年上半期JAPAN HOT 100総合首位を獲得した。コンスタントにストリーミングと動画再生指標でのポイントを積み上げる一方で、12月の地上波TV音楽特番での大量露出、特にNHK『紅白歌合戦』でのパフォーマンスがダウンロードを押し上げて新たなファン層を拡大、上半期上位を守り続けた。総合2位には1月にデジタル解禁、2月にフィジカル発売された同「I LOVE…」が、ラジオ、ダウンロード、ルックアップで1位となり、「Pretender」とは総合約2万ポイント差まで急追していて、下半期での逆転なるか、今後の展開に注目だ。総合100位圏内にヒゲダンは9曲を送り込んでおり、昨年度年間首位の米津玄師からヒゲダンへ、マーケットの拡がりが感じられる結果となった。</p>
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/TQ8WlA2GXbk?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「Pretender」MV / Official髭男dism</b><br /><br />	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/bt8wNQJaKAk?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「I LOVE...」MV / Official髭男dism</b></center><br /><br />		
+
+<p>　Official髭男dismとKing Gnuが、アーティスト認知を浸透させていった今年度上半期において、楽曲で認知を拡げた筆頭が総合4位のLiSA「紅蓮華」だ。少年ジャンプ連載からアニメ放映で全国的な人気に火が付いた『鬼滅の刃』主題歌として昨年度から長らくチャートを賑わせ、昨年度年間総合26位から総合4位に大きく順位を上げた。ジャンプ連載は終了したが、下半期にはゲームや映画等での展開が既にアナウンスされており、最近のウィークリー・チャートでは最高位となる総合2位を3度マークするなど、まだまだ期待が持てる展開だ。</p>	
+	
+<p>　ジャニ―ズ初の同日デビューが大きく注目されたSnow Man「D.D.」とSixTONES「Imitation Rain」は、上半期でみると、「D.D.」が総合6位、「Imitation Rain」が総合9位という結果となった。ストリーミングやダウンロードも未解禁の楽曲で100位圏内にランクインした楽曲はわずか5曲で、いずれもジャニーズ系アーティスト。2月下旬からコロナ禍が音楽業界に直撃、発売延期によるフィジカルでポイントを稼ぐタイプのアーティストが軒並み苦戦を強いられるなか、両楽曲は発売以来累計売上枚数が『D.D.』は957,973枚、『Imitation Rain』は896,415枚（いずれも5月25日時点）と堅調なセールスを続けていて、両アーティストの次作も注目だ。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/rSD7jb4Xjq8?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「D.D.」MV / Snow Man</b><br /><br />
+	<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/pTh-ncw31ZA?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「Imitation Rain」MV / SixTONES</b></center><br /><br />		
+	
+<p>　フィジカルがチャート占有率を大きく減少させる一方で、オーディオと動画ストリーミングからダウンロードなど他指標にも影響を与える楽曲が増え、新人アーティストがチャート上位に食い込む展開が増加傾向だ。YOASOBI「夜に駆ける」（総合25位）、ヨルシカ「ただ君に晴れ」（総合35位）、瑛人「香水」（総合52位）など数多く、特に瑛人「香水」はTiKTokで火が付いて、動画からオーディオ・ストリーミングへとヒットが伝播、他指標にも影響を及ぼしつつあり、米国では顕著となっているヒットのトリガーが、ここ日本でも定着することとなるか、こちらも下半期のヒットのトレンドとして注目したいポイントといえる。
+</p>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div class="cf">
+	<div class="discBoxThree">
+    <p></p>
+      
+     <p>
+      <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/pretender.jpg" width="100%"  class="jk"vspace="10">
+    <center>
+      <h3>#1</h3><br><h7>「Pretender」</h7><br>
+        <h8>Official髭男dism</h8>  
+</center>
+    <p></p>    </p>
+   
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+    <p>
+    <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/ilove.jpg" width="100%" class="jk"vspace="10" >
+    
+      <center>
+     <h3>#2</h3><br><h7>「I LOVE…」</h7><br>
+        <h8>Official髭男dism</h8>  
+</center>  <p></p>
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+    <p>
+   <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/hakujitu.jpg" width="100%" class="jk" vspace="10">
+     <center>
+     <h3>#3</h3><br><h7>「白日」</h7><br>
+        <h8>King Gnu</h8>  
+</center>  <p></p>
+    </div></div>
+
+<div class="section group">
+	<div class="col span_1_of_2">
+	<img src="http://www.billboard-japan.com/scale/jackets/00000126/200x200_P2_G2937389W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#4</h0><h8>「紅蓮華」<br>LiSA<br></h8><br class="br-sp">
+
+<p></p>
+    <img src="http://www.billboard-japan.com/scale/jackets/00000127/200x200_P2_G8388312W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#5</h0><h8>「宿命」<br>Official髭男dism<br></h8><br class="br-sp">
+
+<p></p>
+ <img src="http://www.billboard-japan.com/scale/jackets/00000129/200x200_P2_G4422997W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#6</h0><h8>「D.D.」<br>Snow Man<br></h8><br class="br-sp">
+
+<p></p>
+ <img src="http://www.billboard-japan.com/scale/jackets/00000128/200x200_P2_G4415723W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#7</h0><h8>「イエスタデイ」<br>Official髭男dism<br></h8><br class="br-sp">
+	</div><br class="br-sp">
+	<div class="col span_1_of_2">
+<img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/ms.jpg" width="150px" alt="1" class="jk" vspace="15">
+        <br><br>
+      <h0>#8</h0><h8>「まちがいさがし」<br>菅田将暉<br></h8><br class="br-sp">
+
+     
+<p></p>   
+ <img src="http://www.billboard-japan.com/scale/jackets/00000130/200x200_P2_G6411282W.JPG" width="150px" alt="1" class="jk" vspace="15">
+        <br><br>
+ <h0>#9</h0><h8>「Imitation Rain」<br>SixTONES<br></h8><br class="br-sp">
+
+<p></p>
+
+        
+ <img src="http://www.billboard-japan.com/scale/jackets/00000121/200x200_P2_G4407922W.JPG" width="150px" alt="1" class="jk" vspace="15">
+        <br><br>
+ <h0>#10</h0><h8>「マリーゴールド」<br>あいみょん<br></h8><br class="br-sp">
+
+	</div>
+
+</div>
+
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88637"target="_blank"><h1>HOT 100<br>上半期チャートはこちらから</h1></a></div>	
+<p></p><p></p>
+
+
+
+<hr>
+<p></p><p></p>
+<div class="box-css"><h8>Official髭男dism <br class="br-sp">インタビュー抜粋</h8></div><p></p><p></p>	
+<p>「こんなにもたくさんの方が自分たちの音楽を聴いて下さっているという事に感謝の気持ちが溢れています。本当にありがとうございます。」―藤原聡</p>
+<div class="box4">
+	<a href="http://www.billboard-japan.com/special/detail/2936"target="_blank"><h1>インタビュー全文はこちらから</h1></a></div>		
+<p></p><p></p>
+
+
+<p style="text-align: right;"><a href="#top">▲ TOP</a></p>
+<hr>
+
+<p></p>
+ <h9>HOT Albums</h9> 
+ <br><br>
+ <h8>King Gnu『CEREMONY』が総合首位、<br class="br-sp">Official髭男dism『Traveler』が続く</h8><p></p>
+
+
+<p>　2020年度上半期の総合アルバム・チャート“HOT Albums”では、King Gnuの通算3作目のアルバムとなる『CEREMONY』が総合首位を獲得した。</p>
+
+
+<p>　2020年1月15日にリリースされた同作は、初週に244,976枚を売り上げてCDセールス1位、29,377DLを売り上げてダウンロード1位、そしてPC等によるCD読み取り回数を示すルックアップでも1位と、チャート構成指標すべてでトップをマーク。その後も2020年5月25日付の総合アルバム・チャートまで18週連続でトップ10圏内をキープし続けた。2019年2月22日に配信リリースした「白日」が大きなヒットとなり、その後も8月9日に「飛行艇」、10月11日に「傘」を配信リリース。そして『第70回NHK紅白歌合戦』に出場し、より広く世間に認知されたタイミングでのアルバムリリースであったことも、その後のロングヒットにつながった要因の1つだろう。結果的に上半期累計では、402,011枚でCDセールス1位、73,392DLでダウンロード1位と、セールス2指標で1位を獲得。ルックアップでは惜しくも2位となったが、3位以下には大きくポイント差をつけており、堂々の記録で上半期首位の座に輝くことになった。また、2019年1月16日にリリースされた2作目のアルバム『Sympa』がCDセールスでは40位だったものの、ダウンロードで6位、ルックアップで7位を記録し、総合17位にチャートインしたことからも、いかに2020年度の上半期のKing Gnuに勢いがあったのかが分かるだろう。</p>
+
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/ony539T074w?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「白日」MV / King Gnu</b></center><br /><br />	
+
+<p>　続く総合2位を獲得したのは、2019年10月9日にリリースされたOfficial髭男dismのメジャー・ファースト・アルバム『Traveler』だ。こちらもロングヒットを記録している作品であり、リリース以降33週連続トップ10圏内をキープ。上半期累計では178,966枚でCDセールス5位、49,672DLでダウンロード2位と、リリース序盤が集計期間外であるものの高い順位を記録した。そして、ルックアップは集計期間内に通算16週の1位を記録しており、上半期チャートにおいても1位を記録した。ルックアップはレンタル動向も観測できる指標であり、通算16週で1位を記録していることからも、作品の需要が長期的に続いていることがうかがえる結果となった。</p>
+
+<p>　『CEREMONY』に次いでCDセールスで2位を記録したのはBTS『MAP OF THE SOUL : 7』で、売上枚数は262,264枚、総合では3位にチャートインした。一方、ダウンロードで『CEREMONY』、『Traveler』に次いで3位にチャートインしたのは、総合9位のRADWIMPS『天気の子 complete version』で、30,921DLを記録している。リリース後もコンスタントにダウンロードのポイントを獲得しており、リリース以降トップ40をキープしていたことが上半期ダウンロード3位に結びついたことになる。また、CDセールスが32位だったのに対し、ルックアップが19位だったのも特徴的だ。CDセールスよりルックアップの順位が高いのは2020年度上半期の総合アルバム・チャートのトップ10の内、本作と『Traveler』のみだった。5月15日にRADWIMPSが2005年のメジャーデビュー以降にリリースした全作品をストリーミング解禁したこともあり、『天気の子 complete version』も引き続き注目だ。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/mPVDGOVjRQ0?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「ON」MV / BTS</b></center><br /><br />	
+	
+<p>　新型コロナウイルスによる様々な影響が音楽のシーンにも表れてきており、チャート上でもTikTokで大きな話題となったアーティスト、特にボカロシーンや弾き語りの新人アーティストが上位にチャートインする傾向が強まってきた。今後も大きくカルチャー、そして音楽の世界が変動するであろうその中で、2020年度の年間総合アルバム・チャートはどういったラインナップとなるのか。下半期の動向も引き続き注視していきたい。</p>	
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div class="cf">
+	<div class="discBoxThree">
+    <p></p>
+     <p>
+      <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/ceremony.jpg" width="100%"  class="jk"vspace="10">
+    <center>
+<h3>#1</h3><br><h7>『CEREMONY』</h7><br>
+        <h8>King Gnu</h8>  
+</center>
+    <p></p>    </p>
+
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+    <p>
+    <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/traveler.jpg" width="100%" class="jk"vspace="10" >
+    
+      <center>
+<h3>#2</h3><br><h7>『Traveler』</h7><br>
+        <h8>Official髭男dism</h8>  
+</center>  <p></p>
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+
+    <p>
+   <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/map.jpg" width="100%" class="jk"vspace="10">
+     <center>
+<h3>#3</h3><br><h7>『MAP OF THE SOUL : 7』</h7><br>
+        <h8>BTS</h8>  
+</center>  <p></p>
+    </div></div>
+    
+
+<div class="section group">
+	<div class="col span_1_of_2">
+
+
+    <img src="http://www.billboard-japan.com/scale/jackets/00000131/200x200_P2_G3628688W.JPG" width="150px" alt="1" class="jk"  vspace="15">
+    <br><br>
+      <h0>#4</h0><h8>『W trouble』<br>ジャニーズWEST<br></h8><br class="br-sp">
+	<p></p>	
+	<img src="http://www.billboard-japan.com/scale/jackets/00000131/200x200_P2_G8438673W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#5</h0><h8>『To-y2』<br>Kis-My-Ft2<br></h8><br class="br-sp">		
+	<p></p>	
+	<img src="http://www.billboard-japan.com/scale/jackets/00000129/200x200_P2_G2970958W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#6</h0><h8>『Bad Ass Temple Funky Sounds』<br>Bad Ass Temple<br></h8>	<br class="br-sp">	
+<p></p>
+ <img src="http://www.billboard-japan.com/scale/jackets/00000129/200x200_P2_G6410612W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+		<h0>#7</h0><h8>『Go with the Flow』<br>木村拓哉<br></h8><br class="br-sp"></div><br class="br-sp">
+
+	<div class="col span_1_of_2">
+	<img src="http://www.billboard-japan.com/scale/jackets/00000131/200x200_P2_G3628619W.JPG" width="150px" alt="1" class="jk" vspace="15">
+    <br><br>
+      <h0>#8</h0><h8>『RAISE THE FLAG』<br>三代目 J SOUL BROTHERS from EXILE TRIBE<br></h8><br class="br-sp">		
+     
+<p></p>   
+ <img src="http://www.billboard-japan.com/scale/jackets/00000128/200x200_P2_G2964849W.JPG" width="150px" alt="1" class="jk" vspace="15">
+        <br><br>
+ <h0>#9</h0><h8>『天気の子 complete version』<br>RADWIMPS<br></h8><br class="br-sp">
+<p></p>
+
+        
+ <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/sn.jpg" width="150px" alt="1" class="jk" vspace="15">
+        <br><br>
+ <h0>#10</h0><h8>『すとろべりーねくすとっ！』<br>すとぷり<br></h8><br class="br-sp">
+<p></p>
+			
+	</div>
+
+</div>
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88670"target="_blank"><h1>HOT Albums<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+
+<hr>
+<p></p><p></p>
+<div class="box-css"><h8>King Gnu<br class="br-sp">コメント</h8></div><p></p><p></p>	
+<p>「2020年の上半期は『CEREMONY』のリリースにはじまり、LIVEリハーサルも繰り返して、いよいよ初のアリーナツアーを迎える直前のタイミングで新型コロナウイルスの影響が出はじめました。音楽やLIVEに限らず様々な世界での常識や価値観が変わる中で、僕たちの音楽がこんなにも広く求められて、多くの人に届いたことを光栄に思います。」</p>
+	
+<p></p><p></p>
+
+
+<p style="text-align: right;"><a href="#top">▲ TOP</a></p>
+<hr>
+
+<p></p>
+ <h9>TOP Artists</h9>  
+<br><br>
+  <h8>ここでもOfficial髭男dismとKing Gnuの大躍進、<br class="br-sp">Mrs. GREEN APPLEジワリ前進</h8><p></p>
+
+<p>　昨年度のあいみょんと米津玄師からOfficial髭男dismとKing Gnuに1位、2位が交代。Official髭男dismとKing Gnuは、JAPAN HOT 100でのパフォーマンスに加え、総合アルバム・チャートJAPAN HOT Albumsでも存在感を発揮、共に総合100位圏内に3タイトルを送り込んだ。とはいえ、あいみょんと米津玄師は総合3位と4位に付けていて、大きく順位を落としたわけではないところをみると、ストリーミングが牽引するコンテンツ市場の多様化に起因する結果と位置付けるべきだろう。特にヒゲダンはラジオ、ダウンロード、ストリーミング、ルックアップ、動画、カラオケで1位となり、6冠を達成。今年度年間でもトップは確実か。
+</p>
+<br /><center>	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/ToayN8uwgjU?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲  「宿命（SWEET LOVE SHOWER 2019）」 / Official髭男dism</b></center><br /><br />	
+
+<p>　また、昨年度年間15位だったMrs. GREEN APPLEが総合7位にジャンプ・アップ。JAPAN HOT 100では「インフェルノ」「青と夏」「僕のこと」など100位圏内に5曲、JAPAN HOT Albumsでは『Attitude』が48位にチャート・インと、こちらもストリーミングが牽引して、3曲に留まった昨年度年間HOT 100のよりも曲数を増加させ、各曲の順位も上げている。
+</p>
+
+<br /><center>	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/wfCcs0vLysk?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲  「インフェルノ」MV / Mrs. GREEN APPLE</b></center><br /><br />	
+
+
+<p>　また、JAPAN HOT 100ではSnow Man「D.D.」とSixTONES「Imitation Rain」の後塵を拝し、最高位が「Turning Up」の総合27位に留まった嵐だが、アルバムでは『5×20 All the BEST!! 1999-2019』、楽曲では「Turning Up」「A-RA-SHI : Reborn」「Love so sweet」を総合100位圏内に送り込み、Snow Man（総合8位）SixTONES（同11位）を抑えて総合6位に。特に、満を持して解禁したダウンロードとストリーミングでのポイント積み上げが大きな要因だった。
+</p>
+
+<br /><center>	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/PhSdewBIQsc?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲  「Turning Up」MV / ARASHI</b></center><br /><br />	
+
+
+
+<p>　コロナ禍が一旦の落ち着きをみせ、延期されていたフィジカル・リリースが再開され、リリース・ラッシュが予想される今年度下半期、コンスタントな拡大をみせるデジタル領域による高いチャート占有率がこのまま維持されるか、それともフィジカルの巻き返しによるチャートの変動が起きるのか、激動のBillboard JAPANチャート各々に引き続きご注目頂きたい。
+</p>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div class="cf">
+	<div class="discBoxThree">
+    <p></p>
+     <p>
+      <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/ohd.jpg" width="100%"  class="jk" vspace="10">
+    <center>
+  <h3>#1</h3><br><h7>Official髭男dism</h7>
+     </center>
+    <p></p>    </p>
+
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+    <p>
+    <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/kg.jpg" width="100%" class="jk" vspace="10">
+    
+      <center>
+    <h3>#2</h3><br><h7>King Gnu</h7>
+       </center></p>  <p></p>
+    </div>
+
+	<div class="discBoxThree">
+    <p></p><br class="br-sp"><br class="br-sp">
+    <p>
+   <img src="http://www.billboard-japan.com/common/special/award/200605_midyear/img/aimyon_sm.jpg" width="100%" class="jk" vspace="10">
+     <center>
+<h3>#3</h3><br><h7>あいみょん</h7>
+     </center>  </p>  <p></p>
+    </div></div>
+
+<div class="section group">
+	<div class="col span_1_of_2">
+    <h0>#4</h0>　<h8>米津玄師</h8><br>
+     <h0>#5</h0>　<h8>BTS</h8><br>
+     <h0>#6</h0>　<h8>嵐</h8><br>
+     <h0>#7</h0>　<h8>Mrs. GREEN APPLE</h8><br>
+     <h0>#8</h0>　<h8>Snow Man</h8><br>
+     <h0>#9</h0>　<h8>LiSA</h8><br>
+     <h0>#10</h0>　<h8>back number</h8><br>
+	  <h0>#11</h0>　<h8>SixTONES</h8><br>
+     <h0>#12</h0>　<h8>TWICE</h8><br>
+     </div>
+	<div class="col span_1_of_2">
+     
+    <h0>#13</h0>　<h8>菅田将暉</h8><br>
+     <h0>#14</h0>　<h8>RADWIMPS</h8><br>
+	 <h0>#15</h0>　<h8>ONE OK ROCK</h8><br>
+     <h0>#16</h0>　<h8>乃木坂46</h8><br>
+	 <h0>#17</h0>　<h8>ビリー・アイリッシュ</h8><br>
+     <h0>#18</h0>　<h8>JO1</h8><br>
+	 <h0>#19</h0>　<h8>三代目 J SOUL BROTHERS from EXILE TRIBE</h8><br>
+     <h0>#20</h0>　<h8>ヨルシカ</h8><br>
+</div></div>
+
+<p></p>
+<div class="box3">
+<a href="http://www.billboard-japan.com/common/special/award/200605_midyear/ar.html"target="_blank"><h1>指標別アーティスト・ランキングはこちらから</h1></a></div>	
+<p></p><p></p>
+
+<p style="text-align: right;"><a href="#top">▲ TOP</a></p>
+
+
+
+
+
+<p></p><p></p>
+	
+
+<div id="pager" class="cf">
+   <span>NEXT PAGE</span>
+    <ol>
+    <li id="sp_prev"><a href="#">＜　Prev</a></li>
+    <li>その他の上半期チャートへ</li>
+    <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+</div>
+
+<p></p><p></p>
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="http://www.billboard-japan.com/charts/" target="_blank">Billboard JAPAN Chart</a></li>
+<li><a href="http://www.billboard-japan.com/chart_insight/" target="_blank">CHART insight</a></li>
+
+</ul>
+	
+<p class="writerName"></p>
+
+	
+</div><!-- #maintext -->
+</div></div><div id="html_contents_2">﻿
+
+<div id="top2"></div>
+
+<div id="maintext">
+
+<p></p>
+ <h9>HOT Animation</h9> 
+<br><br>
+ <h8>LiSA「紅蓮華」、『鬼滅の刃』ブームで堂々1位</h8><p></p>
+
+
+<p>　“JAPAN HOT 100”からTVアニメ／映画のタイアップ楽曲と、アニメ声優による楽曲を抽出したアニメソング・チャート“HOT Animation”では、TVアニメ『鬼滅の刃』のオープニング曲であるLiSAの「紅蓮華」が1位に輝いた。ラジオ、ダウンロード、ストリーミング、カラオケ、ルックアップで1位を記録した「紅蓮華」は、年末年始の音楽番組の出演、そして『鬼滅の刃』の人気拡大により、集計期間中に9週連続首位を記録し、アニメチャート連続首位記録歴代2位を獲得。『鬼滅』ブームは治まる気配はなく、10月公開の『劇場版「鬼滅の刃」無限列車編』へ注目が集まっていることから、下半期も好調なアクションが期待できる。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/CwkzK-F0Y00?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「紅蓮華」MV / LiSA</b></center><br /><br />	
+	
+	
+<p>　2位にOfficial髭男dismの「イエスタデイ」（映画『HELLO WORLD』主題歌）、3位にMrs. GREEN APPLEの「インフェルノ」（TVアニメ『炎炎ノ消防隊』オープニング曲）、4位にあいみょんの「ハルノヒ」（『映画クレヨンしんちゃん 新婚旅行ハリケーン ～失われたひろし～』主題歌）、そして5位にあいみょんの「空の青さを知る人よ」（映画『空の青さを知る人よ』主題歌）と、トップ5はリリースから半年以上が経ちながら、現在も主にデジタル指標で人気を集める楽曲が並んだ。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/pfGI91CFtRg?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「ハルノヒ」MV / あいみょん</b></center><br /><br />	
+	
+
+<p>　『映画ドラえもん のび太の新恐竜』の主題歌で、3月にリリースされたMr.Childrenの「Birthday」は、CDセールスとルックアップで2位を記録し、主にフィジカルのポイントが大きく牽引して7位にチャートイン。また4月22日に配信されたばかりのヨルシカの新曲「花に亡霊」（映画『泣きたい私は猫をかぶる』主題歌）は、CD発売されていないため、フィジカル・ポイントがないなか、ラジオ2位、ストリーミング9位と奮闘して、10位に入り込んだ。両曲とも、新型コロナウイルス感染拡大防止のため、映画の劇場公開が延期となってしまったが（『泣きたい私は猫をかぶる』はNetflixで6月中旬より全世界配信が決定）、映画公開に向けた今後の動きによって、さらに躍進する可能性も大いにある。</p>
+
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88647"target="_blank"><h1>HOT Animation<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+
+<hr>
+<p></p><p></p>
+<div class="box-css"><h8>LiSA<br class="br-sp">コメント</h8></div><p></p><p></p>	
+<p>「テレビアニメ『鬼滅の刃』放送から、そして『紅蓮華』配信リリースから一年が経ちました。作品と共に長く沢山の方に愛され、とても嬉しいです。傷だらけでも強く生きられると見せ続けてくれる炭治郎たちや、強くなりたいと願う皆様の心に、紅蓮華が咲き誇りつづけますように。ありがとうございます。」</p>
+	
+<p></p><p></p>
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+<hr>
+<p></p>
+
+ <h9>Download Songs</h9> 
+<br><br>
+ <h8>Official髭男dism「I LOVE...」が堂々の1位、<br class="br-sp">LiSA/King Gnuらロング・ヒット作が続く</h8><p></p>
+
+
+<p>　2020年上半期Billboard JAPANダウンロード・ソング・チャート“Download Songs”で、Official髭男dismの「I LOVE...」が堂々の1位に輝いた</p>
+<p>　上半期トップ10入りした楽曲の大半が、昨年リリースされたロング・ヒット作の中、今年1月15日に配信された同曲は、1月27日付チャートで1位に初登場。主題歌に起用されたTBSドラマ『恋はつづくよどこまでも』との相乗効果やフィジカル盤の発売を受けて、その後通算7週にわたり首位を獲得した。Official髭男dismは他にも、3位に「Pretender」、11位に「宿命」、16位に「イエスタデイ」、17位に「115万キロのフィルム」、27位に「パラボラ」、42位に「ノーダウト」がチャートインしており、計7曲を100位圏内へ送り込んだ。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/DuMqFknYHBs?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「イエスタデイ」MV / Official髭男dism</b></center><br /><br />		
+	
+<p>　2位には、TVアニメ『鬼滅の刃』のオープニング主題歌に起用されたLiSAの「紅蓮華」がランクイン。昨夏リリース以降、TOP20圏外へ下落したのはわずか1週のみで、ロング・ヒットを記録している。最新の“Download Songs”では、5度目の首位に返り咲いており、年間チャートでの上位ランクインへの期待も高まる。</p>	
+	
+<p>　前述の「Pretender」を3位に挟み、4位につけたのは「紅蓮華」同様にロング・ヒットを記録しているKing Gnuの「白日」。昨年2月にリリースされた「白日」は、昨年の“Download Songs”年間チャートで10位に食い込んでいたが、上半期チャートでは3位まで上昇している。また、今年1月に発売した最新アルバム『CEREMONY』のセールスが好調だったことが後押しし、「白日」に加えて計6曲がTOP100入りしている。</p>
+	
+<p>　昨年末の“Download Songs”年間チャートを制した米津玄師も依然と強く、「馬と鹿」が5位、「パプリカ」が7位、「Lemon」が10位と年間に引き続き3曲がTOP10入りした。また、昨年末初めてデジタル・シングルをリリースしたことで話題となった嵐は、「A-RA-SHI : Reborn」が9位をマークしたほか、計8曲が100位内にランクインし、その人気を見せつけた。</p>	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/DOzNWs1_zB0?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「A-RA-SHI : Reborn」Official Audio / ARASHI</b></center><br /><br />	
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88678"target="_blank"><h1>Download Songs<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+<hr>
+<p></p>
+
+ <h9>Download Albums</h9> 
+<br><br>
+ <h8>King Gnu『CEREMONY』が首位、<br class="br-sp">ヒプノシスマイク・シリーズが多数チャートイン</h8><p></p>
+
+<p>　King Gnu『CEREMONY』が、2020年上半期ダウンロード・アルバムで首位を獲得した。</p>
+<p>　本作は2020年1月15日にリリースされたKing Gnuの3rdアルバム。初週で29,377ダウンロード（DL）を売り上げ、2020年1月27日付チャートで首位を獲得して以降、通算4回の首位を獲得。上半期チャートの集計期間中、10位圏内をキープし、上半期ダウンロード・アルバムチャートを制した。なお、2019年1月19日にリリースされた前作『Sympa』の初週ダウンロード数は2,432DLで初登場は4位。このことからも、2019年から2020年にかけてKing Gnuがどれだけ飛躍したかが分かるだろう。</p>
+
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/XPUN-w543bc?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「Teenager Forever」MV / King Gnu</b></center><br /><br />	
+	
+<p>　続く2位はOfficial髭男dism『Traveler』。本作は2019年10月9日にリリースされたメジャー1作目のフルアルバムで、2019年の年間チャートでは、集計期間が2か月弱と短かったにも関わらず11位となった。そして、2019年末以降も『紅白歌合戦』への初出場や、主題歌に起用されたドラマ『恋はつづくよどこまでも』のヒットなどで注目を集めたことで、2020年に入ってからもダウンロード・アルバムチャートで通算2度の首位を獲得。上半期で2位となった。</p>
+	
+<p>　そして3位にはRADWIMPSの『天気の子 complete version』がチャートイン。2019年11月27日に発売された本作は映画『天気の子』のサウンドトラックに“Movie edit.”として収録されていた主題歌5曲をフルサイズで収録した作品だ。初週で13,605DLを売り上げた本作は、2019年12月9日付のダウンロード・アルバム・チャートで初登場1位を獲得している。</p>	
+	
+<p>　4位はビリー・アイリッシュ『ホエン・ウィ・オール・フォール・アスリープ、ホエア・ドゥ・ウィ・ゴー?』。本作はビリー・アイリッシュのデビュー・アルバムとして2019年3月29日にリリースされ、2019年の年間チャートでは77位を獲得したが、2020年1月に開催された【第62回グラミー賞授賞式】で、＜最優秀アルバム賞＞、＜最優秀レコード賞＞、＜最優秀楽曲賞＞、＜最優秀新人賞＞の主要4部門を史上最年少で独占。瞬く間に世界中で話題となり、日本でもグラミー賞以降チャートをにぎわせ続けている。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/DyDfgMOUjCI?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「bad guy」MV / Billie Eilish</b></center><br /><br />		
+	
+<p>　その他、2020年上半期チャートではキャラクターラッププロジェクト“ヒプノシスマイク”シリーズが多数チャートイン。ナゴヤ・ディビジョン『Bad Ass Temple Funky Sounds』が8位を獲得したほか、『麻天狼 -Before The 2nd D.R.B-』が17位を獲得するなど、100位以内に計6作がチャートインした。</p>
+	
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88635"target="_blank"><h1>Download Albums<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+
+
+<hr>
+<p></p>
+
+ <h9>Streaming Songs</h9> 
+<br><br>
+ <h8>Official髭男dism「Pretender」が首位獲得、<br class="br-sp">髭男＆King Gnuがチャートを席巻 </h8><p></p>
+
+
+<p>　Official髭男dism「Pretender」が、2020年上半期ストリーミング・チャート“Streaming Songs”で首位を獲得した。</p>
+
+<p>　2019年4月に配信がスタートした「Pretender」は、同年6月3日付チャートで初の1位を獲得後、34週連続で首位の座をキープ。本楽曲を収録したアルバム『Traveler』のロングヒットや、1月にリリースしたシングル「I LOVE...」のヒットとも相まって、この上半期で1.5億回を超える再生数を記録した。なおOfficial髭男dismは、トップ100に計13曲がエントリーしており、その総再生回数はおよそ7.4億回と、上半期で最も聴かれたアーティストとなる。</p>
+
+<p>　また、2位に「白日」がチャートインしたKing Gnuも、トップ100に計13曲をエントリーしている。そのうち8曲は、1月にリリースしたアルバム『CEREMONY』の収録曲だが、2017年リリースの「Vinyl」や、2018年リリースの「Flash!!!」といった過去曲も、併せてトップ100入りを果たした。2019年に頭角を現したOfficial髭男dismとKing Gnu、それぞれのリスナーがしっかりと定着したのがこの上半期と言えるだろう。
+</p>
+<p>　そんな2組に負けず劣らずの存在感を見せているのが、Mrs. GREEN APPLEだ。トップ100にチャートインした楽曲数は計6曲で、これはOfficia髭男dism（13曲）、King Gnu（13曲）、あいみょん（8曲）に次ぐ曲数となる。加えて、2019年の年間ストリーミング・ソング・チャートで44位にチャートインしていた「インフェルノ」は14位に、64位にチャートインしていた「点描の唄 feat. 井上苑子」は27位に、それぞれ順位を上げている。Mrs. GREEN APPLEは、7月8日にベストアルバムのリリースを控えており、年間チャートでのさらなる躍進が期待できそうだ。
+</p>
+<p>　さらに、快進撃を続けるYOASOBI「夜に駆ける」や、チャートインわずか5週にも関わらず40位を獲得した瑛人「香水」など、新人アーティストの台頭にも注目したい。ストリーミング・ソング・チャートでは、この上半期、特に4～5月にかけて、TikTokで話題となった楽曲のヒットが増加している。この傾向が下半期も続くとなれば、有名無名、新旧問わず多彩な楽曲がチャートを賑わせてくれることだろう。
+</p>	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/x8VYWazR5mE?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「夜に駆ける」MV / YOASOBI</b><br /><br />	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/9MjAJSoaoSo?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「香水」MV / 瑛人</b></center><br /><br />			
+	
+	
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88695"target="_blank"><h1>Streaming Songs<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+
+<hr>
+<p></p>
+
+ <h9>TOP Singles Sales</h9> 
+<br><br>
+ <h8>AKB48『失恋、ありがとう』が首位獲得、<br class="br-sp">乃木坂46、Snow Man、SixTONES、日向坂46が続く</h8><p></p>
+<p>　AKB48『失恋、ありがとう』が1,423,467枚の売り上げを記録し、2020年上半期TOP Singles Sales首位を獲得した。</p>
+
+<p>　2020年上半期TOP Singles Salesは、2019年11月25日から2020年5月24日までの約6か月間のサウンドスキャンジャパンでの販売枚数データの累計で決定する。そして、AKB48は2019年年間TOP Singles Salesで『サステナブル』・『ジワるDAYS』・『NO WAY MAN』とトップ3を独占したが、2020年上半期もメジャー57作目のシングルである『失恋、ありがとう』が1,423,467枚の売り上げ首位を獲得し、首位を死守した。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/uo9b-lYK97c?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「失恋、ありがとう」MV / AKB48</b></center><br /><br />	
+		
+	
+<p>　2位は1,156,295枚を売り上げた乃木坂46の25作目のシングル『しあわせの保護色』が獲得、3位は957,973枚を売り上げたSnow Man vs SixTONES『D.D./Imitation Rain』、4位は896,415枚を売り上げたSixTONES vs Snow Man『Imitation Rain/D.D.』と表題曲を入れ替えたジャニーズの新人2組によるデビュー・シングルが上位を占めた。そして日向坂46『ソンナコトナイヨ』が639,726枚を売り上げ躍進する結果となった。</p>
+	
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88654"target="_blank"><h1>TOP Singles Sales<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+	
+<hr>
+<p></p>
+
+ <h9>TOP Albums Sales</h9> 
+<br><br>
+ <h8>King Gnuが初の首位、BTS、Kis-My-Ft2が続く </h8><p></p>
+
+
+<p>　2020年の上半期アルバムセールスチャートは、King Gnu『CEREMONY』が首位を獲得した。</p>
+<p>　本作は1月15日にリリースされたKing Gnuとしては3作目のアルバムで、40,2011枚を売り上げて首位となった。発売週のTOP Albums Salesで首位になって以来、順調にセールスを積み上げた。「白日」のヒットによりファン層を大幅に拡大してきたが、本作の発表でフィジカルでの聴取層にもリーチした模様だ。King Gnuが上半期アルバムセールスで首位となるのは初めて。</p>
+	
+<br />	
+<center><iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/gc0_Acq8dV4?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「どろん」MV / King Gnu</b></center><br /><br />			
+<p>　2位は262,264枚を売り上げたBTS『MAP OF THE SOUL : 7』、3位は203,867枚を売り上げたKis-My-Ft2『To-y2』、4位には20,0717枚を売り上げたジャニーズWEST『W trouble』と続いた。この3組はいずれも初週にその大半を売上げており、しっかりとファンが付いていることを窺わせる。</p>
+<p>　続く5位には178,966枚を売り上げたOfficial髭男dism『Traveler』がついた。上位10作品中では唯一の2019年の作品で、2019年10月9日の発売以来33週にわたってセールスを伸ばしており、常に20位以内をキープし続けている。</p>
+<p>　木村拓哉『Go with the Flow』が170,225枚を売り上げて6位を獲得し、ソロアーティストとしては唯一のTOP10入りを果たした。</p>
+
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88646"target="_blank"><h1>TOP Albums Sales<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+<p style="text-align: right;"><a href="#top2">▲ TOP</a></p>
+
+	<p></p><p></p>
+
+
+<div id="pager" class="cf">
+   <span>NEXT PAGE</span>
+    <ol>
+    <li id="sp_prev"><a href="#">＜　Prev</a></li>
+    <li>作詞・作曲家 上半期ランキング</li>
+    <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+</div>
+
+
+
+<p></p><p></p>
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="http://www.billboard-japan.com/charts/" target="_blank">Billboard JAPAN Chart</a></li>
+<li><a href="http://www.billboard-japan.com/chart_insight/" target="_blank">CHART insight</a></li>
+</ul>
+<p class="writerName"></p>
+	
+</div><!-- #maintext -->
+</div></div><div id="html_contents_3">﻿
+
+<div id="top3"></div>
+
+<div id="maintext">
+<p></p>
+<h7>ビルボードジャパンが提供する<br>チャート分析ツール＜Chart insight＞に<br class="br-sp">作詞・作曲情報が追加</h7>
+<hr>
+<p>　本データは、シンクパワーが保有する作詞家作曲家データを利用。各チャートの順位と同様に、Chart insight非会員は20位まで、Chart insight PRO（個人会員）は100位まで、Chart insight BIZ（法人会員）は全順位の作詞家/作曲家情報を閲覧することができる。</p>	
+	
+<p></p><p></p>
+	
+ <h9>TOP Lyricists</h9> 
+<br><br>
+ <h8>秋元康の独り勝ちから藤原聡、Daiki Tsuneta、米津玄師が逆転</h8><p></p>
+
+<p>　昨年度までのAKB48グループや坂道シリーズを筆頭とする多数のアイドル楽曲の作詞による秋元康の独占首位から、ダウンロードやストリーミングや動画でポイントを積み上げた藤原聡（Official髭男dism）、Daiki Tsuneta（King Gnu）、米津玄師が逆転する展開に。藤原聡はラジオ、ダウンロード、ストリーミング、動画の4冠での首位獲得となった。藤原聡作詞による総合100位圏内の楽曲数は9曲、ストリーミング指標では13曲。Daiki Tsuneta作詞による同じく総合100位圏内の楽曲数は6曲、ストリーミング指標では13曲となっている。ちなみに秋元康作詞による総合100位圏内の楽曲数は5曲、ストリーミング指標では0曲、CDシングル指標では13曲で、同指標では藤原聡1曲、Daiki Tsuneta0曲であり、今年度上半期JAPAN HOT 100ではストリーミングのポイントがいかに大きかったかがよく分かる結果といえるだろう。</p>
+<p>　また、米津玄師は「Lemon」「パプリカ」「まちがいさがし」のカラオケ・ポイントが大きく、昨年度年間に引き続き、カラオケ指標で1位となり、藤原聡が2位で続き、あいみょんは3位に後退。他指標で積み上げるポイントの余勢を駆って、カラオケ指標まで藤原聡とDaiki Tsunetaが米津やあいみょんを下すこととなるか、コロナ禍により休止中のカラオケ指標の合算再開を待ちたい。</p>
+
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88640"target="_blank"><h1>TOP Lyricists<br>上半期ランキングはこちらから</h1></a></div>	
+<p></p>
+<p style="text-align: right;"><a href="#top3">▲ TOP</a></p>
+
+<hr>
+<p></p>
+
+ <h9>TOP Composers</h9> 
+<br><br>
+ <h8>藤原聡、Daiki Tsuneta躍進、草野華余子「紅蓮華」のみで6位にジャンプ・アップ</h8><p></p>
+
+
+<p>　こちらもヒゲダン、King Gnuの躍進により藤原聡、Daiki Tsunetaが1位・2位に。SixTONES「Imitation Rain」作曲が大きく牽引してYOSHIKIが昨年度年間100位圏外から9位へ。一方のSnow Man「D.D.」作曲のHIKARIはキスマイ「Edge of Days」も加え、こちらも圏外から8位に。昨年度年間31位から6位にジャンプ・アップした「紅蓮華」草野華余子など、新しくランキング上位に名を連ねるアーティストも多く、ヨルシカのn-bunaは昨年度年間15位から11位に、Uruは54位から13位に順位を上げ、YOASOBIは21位に初登場となった。</p>
+	
+<p>　また、洋楽やK-POPでは最早普通の制作様式といえる、メロディーをブロックごとに分けて複数で制作する、コライト（共作）様式をとる邦楽曲は、同23位にAndreas Carlsson/Erik Lidbom（嵐「Turning Up」）、46位にRicky Luna/Rolando Luna/Deekei（三代目「Rat-tat-tat」）、53位にNobuhiro Tahara/Saw Arrow（Snow Man「Snow World」）など、まだまだ少ないが、ジャニーズやLDH系では増加傾向にあることがみてとれる。作詞作曲と歌唱が同一のシンガー・ソングライター様式が全盛のJAPAN HOT 100に、洋楽やK-POPのような完全分業型の楽曲も今後加わるのか、作詞作曲のトレンドの変遷にも注目したい。</p>	
+<br />	
+<center>
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/9lVPAWLWtWc?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「花に亡霊」MV / ヨルシカ</b><br /><br />
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/qLMLzBYTTKQ?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「あなたがいることで」MV / Uru </b><br /><br />	
+<iframe style="max-width:100%;" width="760" height="428" src="https://www.youtube.com/embed/rffYRzO-85c?rel=0" frameborder="0" allowfullscreen></iframe><br><b>▲ 「Rat-tat-tat」MV / 三代目 J SOUL BROTHERS from EXILE TRIBE</b>
+</center><br /><br />	
+
+<p></p>
+<div class="box3">
+	<a href="http://www.billboard-japan.com/d_news/detail/88645"target="_blank"><h1>TOP Composers<br>上半期チャートはこちらから</h1></a></div>	
+<p></p>
+
+<p style="text-align: right;"><a href="#top3">▲ TOP</a></p>
+
+
+<p></p><p></p>
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="http://www.billboard-japan.com/charts/" target="_blank">Billboard JAPAN Chart</a></li>
+<li><a href="http://www.billboard-japan.com/chart_insight/" target="_blank">CHART insight</a></li>
+</ul>
+<p class="writerName"></p>
+	
+</div><!-- #maintext -->
+</div></div>    </p>
+    </div>
+	</section>
+    <!-- HTML挿入部分ここまで -->
+	<section>
+    <!-- 記事挿入部分 -->
+    <div id="specialImportBody">
+    <p></p>
+    </div>
+    <!-- 記事挿入部分ここまで -->
+    </section>
+    <nav>
+            <div id="pager" class="cf" style="display:none;">
+    <input type="hidden" id="sp_page_total" value="3">
+    <ol>
+    <li id="sp_prev"><a href="#">＜　Prev</a></li>
+        <li id="sp_link_1"><a href="#" onclick="dispPage(1); return false;">1</a></li>
+        <li id="sp_link_2"><a href="#" onclick="dispPage(2); return false;">2</a></li>
+        <li id="sp_link_3"><a href="#" onclick="dispPage(3); return false;">3</a></li>
+        <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+    </div>
+            </nav>
+    <!-- エレメント：作品情報 -->
+    
+        
+        <section>
+    <div class="tag">
+    <h4>関連キーワード</h4>
+    <ul>
+                    <li><a href="/artists/detail/802246">Ｋｉｎｇ　Ｇｎｕ</a></li>
+                <li><a href="/artists/detail/690860">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ</a></li>
+                </ul>
+        <h4 class="h4Tag">TAG</h4>
+    <ul>
+        <li><a href="/tagindex/detail/4">Chart</a></li>
+        <li><a href="/tagindex/detail/32">Hot100</a></li>
+        <li><a href="/tagindex/detail/1">Japan</a></li>
+        </ul>
+        </div>
+    </section>
+	</article>
+ </div>
+<!-- スペシャルここまで -->
+</div>
+<!-- / .sp_only_inner -->
+
+  <!--sldier-->
+  <div class="buyArea_wrap">
+    <p class="buyArea__ttl">関連商品</p>
+    <div class="buyArea">
+      <!-- ///////////////////////////////PC////////////////////////////////// -->
+      <div class="inner slide_selector pc_obj" id="js-changeList">
+                          <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639101">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639101"><img src="/scale/jackets/00000130/80x80_P2_G2978861W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[Blu-ray Disc]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;6,600(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639101">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639100">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639100"><img src="/scale/jackets/00000130/80x80_P2_G2978860W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[DVD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;6,600(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639100">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639099">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639099"><img src="/scale/jackets/00000130/80x80_P2_G2978862W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639099">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639098">Ｉ　ＬＯＶＥ．．．</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639098"><img src="/scale/jackets/00000130/80x80_P2_G2978863W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｉ　ＬＯＶＥ．．．」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;770(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639098">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/631694">ＣＥＲＥＭＯＮＹ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/631694"><img src="/scale/jackets/00000129/80x80_P2_G3613258W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「ＣＥＲＥＭＯＮＹ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/01/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,190(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/631694">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/631693">ＣＥＲＥＭＯＮＹ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/631693"><img src="/scale/jackets/00000129/80x80_P2_G3613257W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「ＣＥＲＥＭＯＮＹ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/01/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;4,950(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/631693">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624799">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624799"><img src="/scale/jackets/00000128/80x80_P2_G2951006W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;5,500(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624799">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624798">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624798"><img src="/scale/jackets/00000128/80x80_P2_G2951005W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;5,500(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624798">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624797">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624797"><img src="/scale/jackets/00000128/80x80_P2_G4415723W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624797">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/622045">「ＨＥＬＬＯ　ＷＯＲＬＤ」オリジナル・サウンドトラック</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/622045"><img src="/scale/jackets/00000128/80x80_P2_G8405924W.JPG" alt="２０２７Ｓｏｕｎｄ ＡＡＡＭＹＹＹ Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ Ｎｕｌｂａｒｉｃｈ ＯＫＡＭＯＴＯ’Ｓ「「ＨＥＬＬＯ　ＷＯＲＬＤ」オリジナル・サウンドトラック」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/09/18</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,850(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/622045">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/620744">宿命</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/620744"><img src="/scale/jackets/00000127/80x80_P2_G8388312W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「宿命」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/07/31</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;770(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/620744">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/616310">Ｐｒｅｔｅｎｄｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/616310"><img src="/scale/jackets/00000125/80x80_P2_G4412963W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｐｒｅｔｅｎｄｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/05/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,100(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/616310">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/616309">Ｐｒｅｔｅｎｄｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/616309"><img src="/scale/jackets/00000125/80x80_P2_G4412962W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｐｒｅｔｅｎｄｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/05/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,750(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/616309">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602239">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602239"><img src="/scale/jackets/00000124/80x80_P2_G4410927W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602239">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602238">Ｓｙｍｐａ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602238"><img src="/scale/jackets/00000124/80x80_P2_G4410926W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｓｙｍｐａ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,954(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602238">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602237">Ｓｙｍｐａ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602237"><img src="/scale/jackets/00000124/80x80_P2_G4410925W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｓｙｍｐａ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,972(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602237">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/600267">Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/600267"><img src="/scale/jackets/00000121/80x80_P2_G2929775W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/10/17</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,320(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/600267">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/600266">Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/600266"><img src="/scale/jackets/00000121/80x80_P2_G2929774W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/10/17</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,420(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/600266">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/599030">Ｐｒａｙｅｒ　Ｘ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/599030"><img src="/scale/jackets/00000122/80x80_P2_G6401871W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｐｒａｙｅｒ　Ｘ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/09/19</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,019(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/599030">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/617313">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/617313"><img src="/scale/jackets/00000119/80x80_P2_G5971457W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/617313">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/589035">ノーダウト</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/589035"><img src="/scale/jackets/00000119/80x80_P2_G6396012W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ノーダウト」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;550(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/589035">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/588998">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/588998"><img src="/scale/jackets/00000119/80x80_P2_G5971457W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/588998">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/588997">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/588997"><img src="/scale/jackets/00000119/80x80_P2_G5971456W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,850(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/588997">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/566924">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/566924"><img src="/scale/jackets/00000114/80x80_P2_G6375319W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/10/25</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/566924">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/566703">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/566703"><img src="/scale/jackets/00000114/80x80_P2_G6375319W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/10/25</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/566703">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/550313">レポート</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/550313"><img src="/scale/common/80x80_img_noimage.png" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「レポート」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/04/19</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,241(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/550313">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/536545">Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/536545"><img src="/scale/jackets/00000108/80x80_P2_G8286810W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/11/02</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,760(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/536545">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/536544">Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/536544"><img src="/scale/jackets/00000108/80x80_P2_G2820536W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/11/02</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,200(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/536544">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/523846">ＭＡＮ　ＩＮ　ＴＨＥ　ＭＩＲＲＯＲ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/523846"><img src="/scale/jackets/00000105/80x80_P2_G2788103W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ＭＡＮ　ＩＮ　ＴＨＥ　ＭＩＲＲＯＲ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/06/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,650(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/523846">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/486259">ラブとピースは君の中</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/486259"><img src="/scale/jackets/00000096/80x80_P2_G5768470W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ラブとピースは君の中」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2015/04/22</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,980(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/486259">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+              </div>
+      <!-- ////////////////////////////SP///////////////////////////// -->
+      <div class="inner slide_selector sp_obj" id="js-changeList_SP">
+                          <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639101">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639101"><img src="/scale/jackets/00000130/250x250_P2_G2978861W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[Blu-ray Disc]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;6,600(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639101">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639100">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639100"><img src="/scale/jackets/00000130/250x250_P2_G2978860W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[DVD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;6,600(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639100">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639099">Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639099"><img src="/scale/jackets/00000130/250x250_P2_G2978862W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ　ｏｎｅ－ｍａｎ　ｔｏｕｒ　２０１９＠日本武道館」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639099">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/639098">Ｉ　ＬＯＶＥ．．．</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/639098"><img src="/scale/jackets/00000130/250x250_P2_G2978863W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｉ　ＬＯＶＥ．．．」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/02/12</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;770(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/639098">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/631694">ＣＥＲＥＭＯＮＹ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/631694"><img src="/scale/jackets/00000129/250x250_P2_G3613258W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「ＣＥＲＥＭＯＮＹ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/01/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,190(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/631694">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/631693">ＣＥＲＥＭＯＮＹ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/631693"><img src="/scale/jackets/00000129/250x250_P2_G3613257W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「ＣＥＲＥＭＯＮＹ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/01/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;4,950(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/631693">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624799">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624799"><img src="/scale/jackets/00000128/250x250_P2_G2951006W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;5,500(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624799">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624798">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624798"><img src="/scale/jackets/00000128/250x250_P2_G2951005W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;5,500(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624798">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/624797">Ｔｒａｖｅｌｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/624797"><img src="/scale/jackets/00000128/250x250_P2_G4415723W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｔｒａｖｅｌｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/10/09</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/624797">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/622045">「ＨＥＬＬＯ　ＷＯＲＬＤ」オリジナル・サウンドトラック</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/622045"><img src="/scale/jackets/00000128/250x250_P2_G8405924W.JPG" alt="２０２７Ｓｏｕｎｄ ＡＡＡＭＹＹＹ Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ Ｎｕｌｂａｒｉｃｈ ＯＫＡＭＯＴＯ’Ｓ「「ＨＥＬＬＯ　ＷＯＲＬＤ」オリジナル・サウンドトラック」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/09/18</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,850(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/622045">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/620744">宿命</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/620744"><img src="/scale/jackets/00000127/250x250_P2_G8388312W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「宿命」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/07/31</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;770(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/620744">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/616310">Ｐｒｅｔｅｎｄｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/616310"><img src="/scale/jackets/00000125/250x250_P2_G4412963W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｐｒｅｔｅｎｄｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/05/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,100(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/616310">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/616309">Ｐｒｅｔｅｎｄｅｒ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/616309"><img src="/scale/jackets/00000125/250x250_P2_G4412962W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｐｒｅｔｅｎｄｅｒ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/05/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,750(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/616309">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602239">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602239"><img src="/scale/jackets/00000124/250x250_P2_G4410927W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602239">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602238">Ｓｙｍｐａ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602238"><img src="/scale/jackets/00000124/250x250_P2_G4410926W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｓｙｍｐａ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,954(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602238">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/602237">Ｓｙｍｐａ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/602237"><img src="/scale/jackets/00000124/250x250_P2_G4410925W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｓｙｍｐａ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2019/01/16</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,972(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/602237">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/600267">Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/600267"><img src="/scale/jackets/00000121/250x250_P2_G2929775W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/10/17</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,320(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/600267">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/600266">Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/600266"><img src="/scale/jackets/00000121/250x250_P2_G2929774W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｓｔａｎｄ　Ｂｙ　Ｙｏｕ　ＥＰ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/10/17</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,420(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/600266">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/599030">Ｐｒａｙｅｒ　Ｘ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/599030"><img src="/scale/jackets/00000122/250x250_P2_G6401871W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｐｒａｙｅｒ　Ｘ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/09/19</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,019(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/599030">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/617313">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/617313"><img src="/scale/jackets/00000119/250x250_P2_G5971457W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/617313">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/589035">ノーダウト</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/589035"><img src="/scale/jackets/00000119/250x250_P2_G6396012W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ノーダウト」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;550(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/589035">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/588998">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/588998"><img src="/scale/jackets/00000119/250x250_P2_G5971457W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,080(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/588998">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/588997">エスカパレード</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/588997"><img src="/scale/jackets/00000119/250x250_P2_G5971456W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「エスカパレード」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2018/04/11</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;3,850(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/588997">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/566924">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/566924"><img src="/scale/jackets/00000114/250x250_P2_G6375319W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/10/25</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/566924">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/566703">Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/566703"><img src="/scale/jackets/00000114/250x250_P2_G6375319W.JPG" alt="Ｋｉｎｇ　Ｇｎｕ「Ｔｏｋｙｏ　Ｒｅｎｄｅｚ－Ｖｏｕｓ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/10/25</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,834(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/566703">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/550313">レポート</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/550313"><img src="/scale/common/250x250_img_noimage.png" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「レポート」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/04/19</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,241(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/550313">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/536545">Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/536545"><img src="/scale/jackets/00000108/250x250_P2_G8286810W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/11/02</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,760(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/536545">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/536544">Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/536544"><img src="/scale/jackets/00000108/250x250_P2_G2820536W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「Ｗｈａｔ’ｓ　Ｇｏｉｎｇ　Ｏｎ？」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/11/02</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;2,200(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/536544">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/523846">ＭＡＮ　ＩＮ　ＴＨＥ　ＭＩＲＲＯＲ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/523846"><img src="/scale/jackets/00000105/250x250_P2_G2788103W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ＭＡＮ　ＩＮ　ＴＨＥ　ＭＩＲＲＯＲ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2016/06/15</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,650(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/523846">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/486259">ラブとピースは君の中</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/486259"><img src="/scale/jackets/00000096/250x250_P2_G5768470W.JPG" alt="Ｏｆｆｉｃｉａｌ髭男ｄｉｓｍ「ラブとピースは君の中」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2015/04/22</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,980(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/486259">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+              </div>
+      <div class="buyArea__slideBtn cf">
+        <div class="buyArea__leftBtn">
+          <img class="js_img_switch" src="/common/img/d_news/image/buy-left-arrow_sp.gif" alt="">
+        </div>
+        <div class="buyArea__rightBtn">
+          <img class="js_img_switch" src="/common/img/d_news/image/buy-right-arrow_sp.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <!--buyArea-->
+  </div>
+  <!-- / .buyArea_wrap -->
+  <!--sldier-end-->
+
+        </div>
+      </div>
+      <!-- / .leftBox -->
+      <div class="rightBox">
+        
+          <section class="access_rank">
+    <h3 class="ttl_01">ACCESS RANKING<p class="sp_obj">アクセスランキング</p></h3>
+    <ol>
+          <li>
+        <a href="/d_news/detail/89125/" class="hover">
+          <p class="lank">1</p>
+          <p>藤田恵名、『バキ』ED曲MVが公開＆監督は井口昇</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89138/" class="hover">
+          <p class="lank">2</p>
+          <p>【先ヨミ】KinKi Kids『KANZAI BOYA』16万枚セールスで現在シングル首位、ゴールデンボンバーがトップ5浮上</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89133/" class="hover">
+          <p class="lank">3</p>
+          <p>【SUMMER SONIC】オンラインフェスティバル開催、Mr.Children、BTS、レディオヘッドなどのアーカイブ配信</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89140/" class="hover">
+          <p class="lank">4</p>
+          <p>【先ヨミ】ENDRECHERIのニューアルバム『LOVE FADERS』が45,584枚を売り上げ現在首位　SiM／虹コンが続く</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89153/" class="hover">
+          <p class="lank">5</p>
+          <p>SKY-HI、配信ライブで無観客ならではの演出「ライブができて、幸せです」</p>
+        </a>
+      </li>
+        </ol>
+  </section>
+  <!-- / .access_rank -->
+        
+        <!-- /83555300/hcl-c/billboard-japan/pc_article_right_1 -->
+<div id='div-gpt-ad-pc_article_right_1' class="ad_area hover adjust_banner notrans g_banner_layout02">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_article_right_1'); });
+</script>
+</div>        
+          <div class="special">
+    <h3 class="ttl_01">SPECIAL<p class="sp_obj">インタビュー・タイムマシン</p></h3>
+    <p class="moreBtn pc_obj"><a href="/special/" class="hover">more</a></p>
+    <ul class="special__list">
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2945" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_1.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></div>
+          <div class="textBox">Quarter Century『SPEED STAR』デビュー記念インタビュー            <p class="subttl pc_obj">CHERRY(LINDBERG)×寺田岳史(ex.晴晴&quot;)J-POPユニット結成！ </p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2944" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_2.jpg" alt="＜インタビュー＞野村達矢（日本音楽制作者連盟　理事長） 「このままだと日本の音楽文化が失われてしまう」　#MusicCrossAid "></div>
+          <div class="textBox">＜インタビュー＞野村達矢（日本音楽制作者連盟　理事長） 「このままだと日本の音楽文化が失われてしまう」　#MusicCrossAid             <p class="subttl pc_obj"></p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2941" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_3.jpg" alt="2020年冬ドラマの視聴率とタイアップ楽曲のチャート変遷の関係を分析　～Billboard JAPAN Hot 100より～"></div>
+          <div class="textBox">2020年冬ドラマの視聴率とタイアップ楽曲のチャート変遷の関係を分析　～Billboard JAPAN Hot 100より～            <p class="subttl pc_obj">ドラマ視聴率の変遷とタイアップ曲のチャート変遷を分析</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2942" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_4.jpg" alt="【TikTok 2020年上半期楽曲ランキング】が発表　拡散する独自のミーム/『鬼滅の刃』や『恋つづ』の影響/日常の“エモい”BGM"></div>
+          <div class="textBox">【TikTok 2020年上半期楽曲ランキング】が発表　拡散する独自のミーム/『鬼滅の刃』や『恋つづ』の影響/日常の“エモい”BGM            <p class="subttl pc_obj">音楽シーンと密接に結びついた2020年前半、TikTokを彩った楽曲を振り返る</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2937" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_5.jpg" alt="Billboard Japan 2020年上半期チャート発表"></div>
+          <div class="textBox">Billboard Japan 2020年上半期チャート発表            <p class="subttl pc_obj">Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に </p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2936" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_6.jpg" alt="Official髭男dism、Billboard Japan上半期“HOT 100”＆TOP Artists 首位記念インタビュ"></div>
+          <div class="textBox">Official髭男dism、Billboard Japan上半期“HOT 100”＆TOP Artists 首位記念インタビュ            <p class="subttl pc_obj">こんなにもたくさんの方が自分たちの音楽を聴いて下さっているという事に感謝の気持ちが溢れています。</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/common/special/others/stayhome_bbj/index.html" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_7.jpg" alt="#stayhome プレイリスト　"></div>
+          <div class="textBox">#stayhome プレイリスト　            <p class="subttl pc_obj">PLAY IT LOUD. まずは、音楽を鳴らしましょう（ただし家で）。<br />
+</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2930" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_8.jpg" alt="＜Chart Insight＞亀田誠治インタビュー 日本の音楽の未来に向けて、今できること "></div>
+          <div class="textBox">＜Chart Insight＞亀田誠治インタビュー 日本の音楽の未来に向けて、今できること             <p class="subttl pc_obj">誰にでも幅広いジャンルの音楽を聴くためのチャンスがあれば</p>
+          </div>
+        </a></li>
+          </ul>
+    <p class="btn sp_obj"><a href="/special/" class="hover">more</a></p>
+  </div>
+        
+        
+          <section class="hot_images">
+    <h3 class="ttl_01">HOT IMAGES<p class="sp_obj">注目の画像</p></h3>
+    <ul class="cf">
+                        <li><a class="hover" href="/d_news/detail/89125/"><img src="/scale/news/00000089/89125/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/40331/"><img src="/scale/news/00000040/40331/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/31465/"><img src="/scale/news/00000031/31465/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/89153/"><img src="/scale/news/00000089/89153/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/21108/"><img src="/scale/news/00000021/21108/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/28479/"><img src="/scale/news/00000028/28479/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/36263/"><img src="/scale/news/00000036/36263/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/74822/"><img src="/scale/news/00000074/74822/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/40041/"><img src="/scale/news/00000040/40041/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/85168/"><img src="/scale/news/00000085/85168/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/29425/"><img src="/scale/news/00000029/29425/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/87713/"><img src="/scale/news/00000087/87713/80x_image.jpg" alt=""></a></li>
+                </ul>
+  </section>
+<!-- / .hot_images -->
+        
+      </div>
+      <!-- / .rightBox -->
+            <div class="contents_banner"><!-- googleバナー -->
+        <!-- SP -->
+        <div class="sp_obj">
+		
+<!-- /83555300/hcl-c/billboard-japan/sp_all_footer -->
+<div id='div-gpt-ad-sp_all_footer' class="ad_area hover adjust_banner notrans">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-sp_all_footer'); });
+</script>
+</div>
+		
+      </div>
+	  
+
+
+        <!-- PC -->
+        <div class="pc_obj">
+		
+
+<!-- /83555300/hcl-c/billboard-japan/pc_all_footer -->
+<div id='div-gpt-ad-pc_all_footer' style='height:90px; width:728px;' class="ad_area adjust_banner hover">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_footer'); });
+</script>
+</div>
+
+      </div>
+	  
+		  
+      <!-- Contents Banner -->
+            <!-- yahoo AD ここから -->
+      <!-- 広告配信用JSファイルの読み込み -->
+	  <script type="text/javascript" src="https://yads.c.yimg.jp/js/yads-async.js"></script>
+	  <script type="text/javascript"src="https://s.yimg.jp/images/listing/tool/yads/yads-timeline-ex.js"></script>
+
+<div class="y_add">
+<script type="text/javascript" language="JavaScript">
+yads_ad_ds = '16441_233808';
+</script>
+<script type="text/javascript" language="JavaScript" src="//yads.c.yimg.jp/js/yads.js"></script>
+</div>    </div>
+    <!-- / .inner -->
+  </div>
+  <!-- / #content2 .cf -->
+</div>
+<!-- #wrapper -->
+
+<div id="footer"><!-- フッターここから -->
+  <p id="pagetop"><a href="#" class="hover"><img class="js_img_switch" src="/common/img/pagetop_sp.gif" alt="TOP"></a></p>
+  <footer class="footer_inner cf">
+    <div class="menu_wrapper cf">
+      <div class="f_menu_01 cf">
+        <ul class="cf">
+          <li class="pc_chart"><a href="/chart_insight/" class="hover">CHART INSIGHT</a></li>
+          <li class="sp_chart"><a href="/chart_insight/" class="hover">CHART INSIGHT</a></li>
+          <li class="accordion">
+            <p class="aco_ttl"><a href="/charts/" class="sp_nolink hover">CHARTS</a><span>＋</span></p>
+            <ul class="aco_content">
+              <li><a href="/charts/" class="hover">JAPAN CHARTS</a></li>
+              <li><a href="/charts/oversea/" class="hover">WORLD CHARTS</a></li>
+              <li><a href="/charts/year_end/" class="hover">YEAR END (JAPAN)</a></li>
+              <li><a href="/charts/year_end_oversea/" class="hover">YEAR END (WORLD)</a></li>
+            </ul>
+            <!-- / .aco_content -->
+          </li>
+          <!-- / .accordion -->
+        </ul>
+        <ul class="cf">
+          <li class="accordion">
+            <p class="aco_ttl"><a href="/d_news/" class="sp_nolink hover">NEWS</a><span>＋</span></p>
+            <ul class="aco_content">
+              <li><a href="/d_news/" class="hover">ALL</a></li>
+              <li><a href="/d_news/jpn/" class="hover">JAPAN</a></li>
+              <li><a href="/d_news/overseas/" class="hover">OVERSEAS</a></li>
+            </ul>
+            <!-- / .aco_content -->
+          </li>
+          <!-- / .accordion -->
+          <li><a href="/special/" class="hover">SPECIAL</a></li>
+        </ul>
+        <ul class="cf">
+          <li><a href="http://www.billboard-live.com/" target="_blank" class="blank hover">BILLBOARD LIVE</a></li>
+          <li class="pc_shopcart"><a href="http://www.vanda.co.jp/billboard/cart/" class="btn_shopcart hover">SHOPPING CART</a></li>
+          <li class="sp_shopcart"><a href="http://www.vanda.co.jp/billboard/sp/cart/" class="btn_shopcart hover">SHOPPING CART</a></li>
+        </ul>
+      </div>
+      <!-- / .f_menu_01 -->
+      
+      <ul id="utility2" class="f_menu_02 inner cf">
+        <li><a href="/contacts/">お問い合わせ</a></li>
+        <li><a href="/common/artistlist/">アーティストリスト</a></li>
+        <li><a href="mailto:press_bbj@hcl-c.com">プレスリリース受付</a></li>
+        <li><a href="/common/cslink/">リンク</a></li>
+        <li><a href="http://www.billboard-japan.com/common/kiyaku/p.html" target="_blank">プライバシーポリシー</a></li>
+        <li><!-- google翻訳 -->
+          <!-- 言語指定版 -->
+          <div id="google_translate_element"></div><script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'en,ja,ko,ru,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- 言語指定版 -->
+        </li>
+      </ul>
+      <!-- / #utility2 .f_menu_02 -->
+    </div>
+    <!-- / .menu_wrappr -->
+
+    <ul class="f_menu_03 inner cf">
+      <li><a class="hover" href="https://billboard-official.dwango.jp/" target="_blank">Billboard x dwango</a></li>
+      <li><a class="hover" href="http://www.billboard-live.com/" target="_blank">Billboard Live</a></li>
+      <li><a class="hover" href="http://billboard-cc.com/" target="_blank">Billboard Classics</a></li>
+      <li class="last"><a class="hover" href="http://billboardrec.com/" target="_blank">Billboard Records</a></li>
+    </ul>
+    <!-- / .f_menu_03 -->
+    
+    <div id="copy" class="inner">
+      <p class="logo"><a class="hover" href="/"><img src="/common/img/img_footer_sitelogo.png" width="100%" alt="Billboard JAPAN"></a></p>
+      <address>&copy; 2018 <a href="http://hcl-c.com/outline/summary.html" target="_blank">Hanshin Contents Link Corporation</a> , <a href="http://www.hotexpress.co.jp/plantech/gaiyo/" target="_blank">PLANTECH Co.,Ltd.</a> &amp; Billboard IP Holdings, LLC.<br>“Billboard”&reg; charts, content, name and logo used by permission of Billboard IP Holdings, LLC.- All Rights Reserved</address>
+      <p><img src="/common/img/img_ELmark.png" alt="エルマーク">このエルマークは、レコード会社・映像制作会社が提供する<br class="sp_obj">コンテンツを示す登録商標です RIAJ80010003</p>
+    </div>
+    <!-- / #copy -->
+    
+  </footer>
+  <!-- / .footer_inner -->
+</div>
+<!-- #footer -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 947499321;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""
+src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947499321/?v
+alue=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- フッターここまで -->
+
+  <!--Taboola-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+  <!--Taboola-->
+
+<script type="text/javascript">(function(d,u){var b=d.getElementsByTagName("script")[0],j=d.createElement("script");j.async=true;j.src=u;b.parentNode.insertBefore(j,b);})(document,"//img.ak.impact-ad.jp/ut/9c56b721b1bc0578_5351.js");</script>
+
+
+</body>
+</html>

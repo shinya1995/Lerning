@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>6. テキスト処理サービス &#8212; Python 3.6.10 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Python 3.6.10 ドキュメント 内を検索"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="このドキュメントについて" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="copyright" title="著作権" href="../copyright.html" />
+    <link rel="next" title="6.1. string --- 一般的な文字列操作" href="string.html" />
+    <link rel="prev" title="5. 組み込み例外" href="exceptions.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+    <link rel="canonical" href="https://docs.python.org/3/library/text.html" />
+    
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/switchers.js"></script>
+    
+    
+ 
+
+  </head><body>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="string.html" title="6.1. string --- 一般的な文字列操作"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="exceptions.html" title="5. 組み込み例外"
+             accesskey="P">前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python 標準ライブラリ</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="text-processing-services">
+<span id="textservices"></span><span id="stringservices"></span><h1><span class="section-number">6. </span>テキスト処理サービス<a class="headerlink" href="#text-processing-services" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>この章で説明するモジュールは幅広い文字列操作や様々なテキスト処理サービスを提供しています。</p>
+<p><a class="reference internal" href="codecs.html#module-codecs" title="codecs: Encode and decode data and streams."><code class="xref py py-mod docutils literal notranslate"><span class="pre">codecs</span></code></a> モジュールはテキスト処理と高い関連性を持った <a class="reference internal" href="binary.html#binaryservices"><span class="std std-ref">バイナリデータ処理</span></a> のなかで説明されています。加えて Python の組み込み文字列型の <a class="reference internal" href="stdtypes.html#textseq"><span class="std std-ref">テキストシーケンス型 --- str</span></a> のドキュメントも参照して下さい。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="string.html">6.1. <code class="xref py py-mod docutils literal notranslate"><span class="pre">string</span></code> --- 一般的な文字列操作</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="string.html#string-constants">6.1.1. 文字列定数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html#custom-string-formatting">6.1.2. カスタムの文字列書式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html#format-string-syntax">6.1.3. 書式指定文字列の文法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="string.html#format-specification-mini-language">6.1.3.1. 書式指定ミニ言語仕様</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string.html#format-examples">6.1.3.2. 書式指定例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="string.html#template-strings">6.1.4. テンプレート文字列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="string.html#helper-functions">6.1.5. ヘルパー関数</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="re.html">6.2. <code class="xref py py-mod docutils literal notranslate"><span class="pre">re</span></code> --- 正規表現操作</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="re.html#regular-expression-syntax">6.2.1. 正規表現のシンタックス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html#module-contents">6.2.2. モジュールコンテンツ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html#regular-expression-objects">6.2.3. 正規表現オブジェクト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html#match-objects">6.2.4. match オブジェクト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="re.html#regular-expression-examples">6.2.5. 正規表現の例</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="re.html#checking-for-a-pair">6.2.5.1. ペアの確認</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#simulating-scanf">6.2.5.2. scanf() をシミュレートする</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#search-vs-match">6.2.5.3. search() vs. match()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#making-a-phonebook">6.2.5.4. 電話帳の作成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#text-munging">6.2.5.5. テキストの秘匿</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#finding-all-adverbs">6.2.5.6. 全ての副詞を見つける</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#finding-all-adverbs-and-their-positions">6.2.5.7. 全ての副詞と、その位置を見つける</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#raw-string-notation">6.2.5.8. Raw String記法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="re.html#writing-a-tokenizer">6.2.5.9. トークナイザを書く</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="difflib.html">6.3. <code class="xref py py-mod docutils literal notranslate"><span class="pre">difflib</span></code> --- 差分の計算を助ける</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="difflib.html#sequencematcher-objects">6.3.1. SequenceMatcherオブジェクト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="difflib.html#sequencematcher-examples">6.3.2. SequenceMatcher の例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="difflib.html#differ-objects">6.3.3. Differ オブジェクト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="difflib.html#differ-example">6.3.4. Differ の例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="difflib.html#a-command-line-interface-to-difflib">6.3.5. difflib のコマンドラインインタフェース</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="textwrap.html">6.4. <code class="xref py py-mod docutils literal notranslate"><span class="pre">textwrap</span></code> --- テキストの折り返しと詰め込み</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unicodedata.html">6.5. <code class="xref py py-mod docutils literal notranslate"><span class="pre">unicodedata</span></code> --- Unicode データベース</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stringprep.html">6.6. <code class="xref py py-mod docutils literal notranslate"><span class="pre">stringprep</span></code> --- インターネットのための文字列調製</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readline.html">6.7. <code class="xref py py-mod docutils literal notranslate"><span class="pre">readline</span></code> --- GNU readline のインタフェース</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#init-file">6.7.1. 初期化ファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#line-buffer">6.7.2. 行バッファ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#history-file">6.7.3. 履歴ファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#history-list">6.7.4. 履歴リスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#startup-hooks">6.7.5. 開始フック</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#completion">6.7.6. 補完</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readline.html#example">6.7.7. 使用例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rlcompleter.html">6.8. <code class="xref py py-mod docutils literal notranslate"><span class="pre">rlcompleter</span></code> --- GNU readline向け補完関数</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rlcompleter.html#completer-objects">6.8.1. Completerオブジェクト</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="exceptions.html"
+                        title="前の章へ"><span class="section-number">5. </span>組み込み例外</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="string.html"
+                        title="次の章へ"><span class="section-number">6.1. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">string</span></code> --- 一般的な文字列操作</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../bugs.html">バグ報告</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.6/Doc/library/text.rst"
+            rel="nofollow">ソースコードを表示
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="string.html" title="6.1. string --- 一般的な文字列操作"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="exceptions.html" title="5. 組み込み例外"
+             >前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="../copyright.html">著作権</a> 2001-2020, Python Software Foundation.
+    <br />
+    Python Software Foundation は非営利団体です。
+    <a href="https://www.python.org/psf/donations/">寄付</a>
+    <br />
+    最終更新: 6月 10, 2020
+    <a href="../bugs.html">バグを見つけたら</a>?
+    <br />
+    このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.3.1 を使って作成されました。
+    </div>
+
+  </body>
+</html>

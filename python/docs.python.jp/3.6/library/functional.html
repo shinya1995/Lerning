@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>10. 関数型プログラミング用モジュール &#8212; Python 3.6.10 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Python 3.6.10 ドキュメント 内を検索"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="このドキュメントについて" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="copyright" title="著作権" href="../copyright.html" />
+    <link rel="next" title="10.1. itertools --- 効率的なループ実行のためのイテレータ生成関数" href="itertools.html" />
+    <link rel="prev" title="9.7. statistics --- 数理統計関数" href="statistics.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+    <link rel="canonical" href="https://docs.python.org/3/library/functional.html" />
+    
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/switchers.js"></script>
+    
+    
+ 
+
+  </head><body>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="itertools.html" title="10.1. itertools --- 効率的なループ実行のためのイテレータ生成関数"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="statistics.html" title="9.7. statistics --- 数理統計関数"
+             accesskey="P">前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python 標準ライブラリ</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="functional-programming-modules">
+<h1><span class="section-number">10. </span>関数型プログラミング用モジュール<a class="headerlink" href="#functional-programming-modules" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>この章では、関数型プログラミングスタイルをサポートする呼び出し可能で汎用な操作を実現する関数やクラスについて説明します。</p>
+<p>この章では以下のモジュールが解説されています:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="itertools.html">10.1. <code class="xref py py-mod docutils literal notranslate"><span class="pre">itertools</span></code> --- 効率的なループ実行のためのイテレータ生成関数</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="itertools.html#itertool-functions">10.1.1. Itertool関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="itertools.html#itertools-recipes">10.1.2. Itertools レシピ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functools.html">10.2. <code class="xref py py-mod docutils literal notranslate"><span class="pre">functools</span></code> --- 高階関数と呼び出し可能オブジェクトの操作</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functools.html#partial-objects">10.2.1. <code class="xref py py-class docutils literal notranslate"><span class="pre">partial</span></code> オブジェクト</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operator.html">10.3. <code class="xref py py-mod docutils literal notranslate"><span class="pre">operator</span></code> --- 関数形式の標準演算子</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operator.html#mapping-operators-to-functions">10.3.1. 演算子から関数への対応表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operator.html#inplace-operators">10.3.2. インプレース演算子</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="statistics.html"
+                        title="前の章へ"><span class="section-number">9.7. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">statistics</span></code> --- 数理統計関数</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="itertools.html"
+                        title="次の章へ"><span class="section-number">10.1. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">itertools</span></code> --- 効率的なループ実行のためのイテレータ生成関数</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../bugs.html">バグ報告</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.6/Doc/library/functional.rst"
+            rel="nofollow">ソースコードを表示
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="itertools.html" title="10.1. itertools --- 効率的なループ実行のためのイテレータ生成関数"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="statistics.html" title="9.7. statistics --- 数理統計関数"
+             >前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="../copyright.html">著作権</a> 2001-2020, Python Software Foundation.
+    <br />
+    Python Software Foundation は非営利団体です。
+    <a href="https://www.python.org/psf/donations/">寄付</a>
+    <br />
+    最終更新: 6月 10, 2020
+    <a href="../bugs.html">バグを見つけたら</a>?
+    <br />
+    このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.3.1 を使って作成されました。
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>35.3. spwd --- シャドウパスワードデータベース &#8212; Python 3.6.10 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Python 3.6.10 ドキュメント 内を検索"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="このドキュメントについて" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="copyright" title="著作権" href="../copyright.html" />
+    <link rel="next" title="35.4. grp --- グループデータベースへのアクセス" href="grp.html" />
+    <link rel="prev" title="35.2. pwd --- パスワードデータベースへのアクセスを提供する" href="pwd.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+    <link rel="canonical" href="https://docs.python.org/3/library/spwd.html" />
+    
+    <script type="text/javascript" src="../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../_static/switchers.js"></script>
+    
+    
+ 
+
+  </head><body>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="grp.html" title="35.4. grp --- グループデータベースへのアクセス"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="pwd.html" title="35.2. pwd --- パスワードデータベースへのアクセスを提供する"
+             accesskey="P">前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unix.html" accesskey="U"><span class="section-number">35. </span>Unix 固有のサービス</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-spwd">
+<span id="spwd-the-shadow-password-database"></span><h1><span class="section-number">35.3. </span><a class="reference internal" href="#module-spwd" title="spwd: The shadow password database (getspnam() and friends). (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">spwd</span></code></a> --- シャドウパスワードデータベース<a class="headerlink" href="#module-spwd" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<hr class="docutils" />
+<p>このモジュールは Unix のシャドウパスワードデータベースへのアクセスを提供します。様々な Unix 環境で利用できます。</p>
+<p>シャドウパスワードデータベースへアクセスできる権限が必要(大抵の場合 root である必要があります)です。</p>
+<p>シャドウパスワードデータベースのエントリはタプル状のオプジェクトで提供され、その属性は <code class="docutils literal notranslate"><span class="pre">spwd</span></code> 構造のメンバーに対応しています（以下を参照してください。<code class="docutils literal notranslate"><span class="pre">&lt;shadow.h&gt;</span></code> を参照):</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 27%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>インデックス</p></th>
+<th class="head"><p>属性</p></th>
+<th class="head"><p>意味</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_namp</span></code></p></td>
+<td><p>ログイン名</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_pwdp</span></code></p></td>
+<td><p>暗号化されたパスワード</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_lstchg</span></code></p></td>
+<td><p>最終更新日</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_min</span></code></p></td>
+<td><p>パスワード変更が出来るようになるまでの最小日数</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_max</span></code></p></td>
+<td><p>パスワードを変更しなくても良い最大日数</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_warn</span></code></p></td>
+<td><p>パスワードが期限切れになる前に、期限切れが近づいている旨の警告をユーザに出しはじめる日数</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_inact</span></code></p></td>
+<td><p>パスワードが期限切れになってからアカウントが無効になるまでの日数</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_expire</span></code></p></td>
+<td><p>アカウントが期限切れになる日の 1970-01-01 からの日数</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sp_flag</span></code></p></td>
+<td><p>将来のために予約</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>sp_namp</em> と <em>sp_pwdp</em> は文字列で、他は全て整数です。エントリが見つからなかった時は <a class="reference internal" href="exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> が起きます。</p>
+<p>以下の関数が定義されています:</p>
+<dl class="function">
+<dt id="spwd.getspnam">
+<code class="sig-prename descclassname">spwd.</code><code class="sig-name descname">getspnam</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#spwd.getspnam" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>与えられたユーザ名に対応するシャドーパスワードデータベースのエントリを返します。</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">バージョン 3.6 で変更: </span>ユーザが権限を持っていない場合、 <a class="reference internal" href="exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> の代わりに <a class="reference internal" href="exceptions.html#PermissionError" title="PermissionError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">PermissionError</span></code></a> を送出します。</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="spwd.getspall">
+<code class="sig-prename descclassname">spwd.</code><code class="sig-name descname">getspall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#spwd.getspall" title="この定義へのパーマリンク">¶</a></dt>
+<dd><p>このモジュールでは以下を定義しています。</p>
+</dd></dl>
+
+<div class="admonition seealso">
+<p class="admonition-title">参考</p>
+<dl class="simple">
+<dt><a class="reference internal" href="grp.html#module-grp" title="grp: The group database (getgrnam() and friends). (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">grp</span></code></a> モジュール</dt><dd><p>このモジュールに似た、グループデータベースへのアクセスを提供するモジュール。</p>
+</dd>
+<dt><a class="reference internal" href="pwd.html#module-pwd" title="pwd: The password database (getpwnam() and friends). (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pwd</span></code></a> モジュール</dt><dd><p>このモジュールに似た通常のパスワードデータベースへのインタフェース。</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="pwd.html"
+                        title="前の章へ"><span class="section-number">35.2. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">pwd</span></code> --- パスワードデータベースへのアクセスを提供する</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="grp.html"
+                        title="次の章へ"><span class="section-number">35.4. </span><code class="xref py py-mod docutils literal notranslate"><span class="pre">grp</span></code> --- グループデータベースへのアクセス</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../bugs.html">バグ報告</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.6/Doc/library/spwd.rst"
+            rel="nofollow">ソースコードを表示
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Pythonモジュール索引"
+             >モジュール</a> |</li>
+        <li class="right" >
+          <a href="grp.html" title="35.4. grp --- グループデータベースへのアクセス"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="pwd.html" title="35.2. pwd --- パスワードデータベースへのアクセスを提供する"
+             >前へ</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="https://www.python.org/">Python</a> &#187;</li>
+        <li>
+          <span class="language_switcher_placeholder">ja</span>
+          <span class="version_switcher_placeholder">3.6.10</span>
+          <a href="../index.html">ドキュメント</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >Python 標準ライブラリ</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unix.html" ><span class="section-number">35. </span>Unix 固有のサービス</a> &#187;</li>
+    <li class="right">
+        
+
+    <div class="inline-search" style="display: none" role="search">
+        <form class="inline-search" action="../search.html" method="get">
+          <input placeholder="クイック検索" type="text" name="q" />
+          <input type="submit" value="検索" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+    <script type="text/javascript">$('.inline-search').show(0);</script>
+         |
+    </li>
+
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; <a href="../copyright.html">著作権</a> 2001-2020, Python Software Foundation.
+    <br />
+    Python Software Foundation は非営利団体です。
+    <a href="https://www.python.org/psf/donations/">寄付</a>
+    <br />
+    最終更新: 6月 10, 2020
+    <a href="../bugs.html">バグを見つけたら</a>?
+    <br />
+    このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.3.1 を使って作成されました。
+    </div>
+
+  </body>
+</html>

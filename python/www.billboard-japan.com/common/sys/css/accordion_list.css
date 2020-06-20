@@ -1,0 +1,5 @@
+ /* 広告用エリア　デフォルトで非表示 */
+.js_Invisible_text{
+    height:0px;
+    text-indent:-10000px;
+}

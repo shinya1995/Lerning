@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+    <meta name="keywords" content="ビルボードジャパン,Billboard JAPAN,Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ,チャート,音楽,洋楽,邦楽,ミュージック,アーティスト,ランキング,ニュース" />                <meta name="description" content="米国で最も権威のある音楽チャート・Billboard（ビルボード）の日本公式サイト。洋楽チャート、邦楽チャート、音楽ニュース、プレゼント情報などを提供。" />      <meta property="og:locale"      content="ja_JP">
+  <meta property="og:site_name"   content="Billboard JAPAN">
+  <meta property="og:title"       content="Quarter Century『SPEED STAR』デビュー記念インタビュー | Special | Billboard JAPAN">
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="http://www.billboard-japan.com/special/detail/2945">
+    <meta property="og:image"       content="http://www.billboard-japan.com/scale/special/00000002/2945/x200_image.jpg">
+    <meta property="og:description" content="米国で最も権威のある音楽チャート・Billboard（ビルボード）の日本公式サイト。洋楽チャート、邦楽チャート、音楽ニュース、プレゼント情報などを提供。">
+    <title>Quarter Century『SPEED STAR』デビュー記念インタビュー | Special | Billboard JAPAN</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@billbord_JAPAN">
+  <meta name="twitter:url" content="http://www.billboard-japan.com/special/detail/2945">
+  <meta name="twitter:title" content="Quarter Century『SPEED STAR』デビュー記念インタビュー">
+  <meta name="twitter:description" content="CHERRY(LINDBERG)×寺田岳史(ex.晴晴&amp;quot;)J-POPユニット結成！">
+  <meta name="twitter:image:src" content="http://www.billboard-japan.com/common/sys/img/special/00000002/2945/image.jpg">
+  
+      <script src="/common/js/jquery.min.js"></script>
+    <script src="/common/js/jquery.common.js"></script>
+  <script src="/common/js/jquery.carouFredSel.js"></script>
+  <script src="/common/js/jquery.tile.js"></script>
+  <script src="/common/sys/js/jquery.cookie.js"></script>
+  <script src="/common/sys/js/accordion_list.js"></script>
+  <script type="text/javascript" src="/common/js/ydn.js"></script>
+  <script src="/common/js/jquery.easing.1.3.js" type="text/javascript"></script>
+      <script src="/common/sys/js/publicity.js"></script>
+  <script src="/common/sys/js/side_chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="/common/css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/common/sys/css/publicity.css">
+  <link rel="stylesheet" type="text/css" href="/common/sys/css/accordion_list.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/socialcomment.css">
+  <script src="/common/js/search.js"></script>
+    <!--[if lt IE 9]>
+  <script src="/common/js/IE9.js"></script>
+  <![endif]-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32178381-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/new/buyarea_slide.css" />
+	<script type="text/javascript" src="/common/js/jquery.heightLine.js"></script>
+	<script type="text/javascript" src="/common/js/slick.min.js"></script>
+	<script type="text/javascript" src="/common/js/new/buyarea_slide.js"></script>
+	<script type="text/javascript">
+	$(document).ready(
+		function ()
+		{
+			if($("div#html_contents_1").size() > 0)
+			{
+       	        $("div#pager").css("display", "block");
+				initialDispPage("1");
+			}
+		}
+	);
+
+
+	function initialDispPage(pageNo){
+	    switchDispPage(pageNo);
+	}
+
+ 	function dispPage(pageNo)
+ 	{
+        switchDispPage(pageNo);
+	    $("html,body").scrollTop($("#specialImport").offset().top);
+	}
+
+ 	function switchDispPage(pageNo)
+ 	{
+        var no            = parseInt(pageNo);
+        var sp_page_total = $("input#sp_page_total").val();
+
+		if(pageNo == "1")
+		{
+   	        $("li#sp_prev").html("＜　Prev");
+   	        $("li#sp_next").html("<a href=\"#\" onclick=\"dispPage(" + (no + 1) + "); return false;\">Next　＞</a>");
+		}
+		else if(pageNo == sp_page_total)
+		{
+   	        $("li#sp_prev").html("<a href=\"#\" onclick=\"dispPage(" + (no - 1) + "); return false;\">＜　Prev</a>");
+   	        $("li#sp_next").html("Next　＞");
+	    }
+		else
+		{
+   	        $("li#sp_prev").html("<a href=\"#\" onclick=\"dispPage(" + (no - 1) + "); return false;\">＜　Prev</a>");
+   	        $("li#sp_next").html("<a href=\"#\" onclick=\"dispPage(" + (no + 1) + "); return false;\">Next　＞</a>");
+		}
+
+        for (i=1; i<=5; i++)
+        {
+	        if($("li#sp_link_" + i).size() <= 0)
+	        {
+                continue;
+	        }
+
+			if ("html_contents_" + i == "html_contents_" + pageNo)
+			{
+       	        $("li#sp_link_" + i).html(i);
+				$("li#sp_link_" + i).addClass("select");
+    			$("div#html_contents_" + i).css("display", "block");
+			}
+			else
+			{
+                $("li#sp_link_" + i).removeClass("select");
+               	$("li#sp_link_" + i).html("<a href=\"#\" onclick=\"dispPage(" + i + "); return false;\">" + i + "</a>");
+        	    $("div#html_contents_" + i).css("display", "none");
+			}
+        }
+	}
+	</script>
+	<SCRIPT LANGUAGE="JavaScript" src="/common/special/interview/js/jquery.fancybox.js"></SCRIPT>
+	<link rel="stylesheet" type="text/css" href="/common/special/interview/css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" href="/common/special/interview/css/interviewTmp.css" />    <meta name="google-translate-customization" content="adb8cdd56f6046dc-072c0ff82a717427-gb7c019822dddd6a7-17">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <script type="text/javascript">
+  if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)) {
+      document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+    }else{
+      document.write('<meta name="viewport" content="width=1300">');
+    }
+  </script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!--ここから追記分-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common_header.css">
+  <link rel="stylesheet" type="text/css" href="/common/css/new/common_footer.css">
+  <script src="/common/js/new/new_common.js"></script>
+  <!--ここまで追記分-->
+  <script type="text/javascript" src="https://www.fourmtagservices.com/f.js"></script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {
+};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script type="text/javascript">
+  var path_value = location.pathname.substr(0, 40);
+  var parameter_value = location.search.substr(0, 40);
+  var ref_value = "null";
+  if (document.referrer) {
+  var ref_array = [];
+  ref_array = document.referrer.split("/");
+  ref_value = ref_array[2];
+  }
+  
+  googletag.cmd.push(function () {
+  googletag.pubads().setTargeting('URLs', path_value).setTargeting('Para', parameter_value).setTargeting('Ref', ref_value);
+  googletag.pubads().collapseEmptyDivs();
+  });
+  </script> 
+
+<script>googletag.cmd.push(function() {
+    // Size mapping for div-gpt-ad-pc_all_header, div-gpt-ad-pc_all_billboard, div-gpt-ad-pc_article_right_1, div-gpt-ad-pc_article_right_2, div-gpt-ad-pc_all_footer(request only on desktop: width > 480px)
+var mapping1 = googletag.sizeMapping()
+  .addSize([728, 0], [[1, 1], [300, 250], [300, 600], [320, 50], [320, 100], [320, 180], [336, 280], [1130, 220], 'fluid', [728, 90], [970, 250], [970, 90]])
+  .addSize([481, 0], [[1, 1], [300, 250], [300, 600], [320, 50], [320, 100], [320, 180], [336, 280], 'fluid'])
+  .build();
+// Size mapping for div-gpt-ad-sp_all_header, div-gpt-ad-sp_home_undertitle, div-gpt-ad-sp_home_inarticle, div-gpt-ad-sp_article_underarticle, div-gpt-ad-sp_all_footer(request only on smartphone: width <= 480px)
+var mapping2 = googletag.sizeMapping()
+  .addSize([481, 0], [])
+  .addSize([336, 0], [[1, 1], [300, 250], [320, 50], [320, 100], [320, 180], [336, 280], 'fluid'])
+  .addSize([0, 0], [[1, 1], [300, 250], [320, 50], [320, 100], [320, 180], 'fluid'])
+  .build();
+
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_header', [], 'div-gpt-ad-pc_all_header').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_billboard', [], 'div-gpt-ad-pc_all_billboard').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_article_right_1', [], 'div-gpt-ad-pc_article_right_1').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_article_right_2', [], 'div-gpt-ad-pc_article_right_2').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/pc_all_footer', [], 'div-gpt-ad-pc_all_footer').defineSizeMapping(mapping1).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_all_header', [], 'div-gpt-ad-sp_all_header').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_home_undertitle', [], 'div-gpt-ad-sp_home_undertitle').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_article_underarticle', [], 'div-gpt-ad-sp_article_underarticle').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+googletag.defineSlot('/83555300/hcl-c/billboard-japan/sp_all_footer', [], 'div-gpt-ad-sp_all_footer').defineSizeMapping(mapping2).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true,true);
+googletag.enableServices();
+});</script>
+  <!--Taboola-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/billboard-japan/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+  <!--Taboola-->
+	<!-- google ad -->
+<!-- google ad -->
+</head><body class="special_dit">
+<div id="cm_wrapper">
+  
+  <div style="display:none;">
+<span id="js_cm_title"></span>
+</div>
+<div id="cm_header" class="cf">
+<header>
+  <h1 id="cm_sitelogo"><a href="/"><img src="/common/img/img_sitelogo.png" alt="Billboard JAPAN"></a></h1>
+  <a href="javascript:showMain();" class="button skip">このページをスキップする</a>
+</header>
+</div>
+<div id="cm_content"  class="cf">
+<input type ="hidden" id ="js_publicity_url" value = "">
+<div id="widebanner"></div>
+    <article>
+	<!-- CM -->
+    <div id="cm">
+    <p>
+    </p>
+    </div>
+	<!-- /CMここまで -->
+    </article>
+    <br />
+</div>  
+</div>
+<!-- / #cm_wrapper -->
+
+<div id="wrapper">
+  
+    <!-- ヘッダーここから -->
+  <div id="header" class="cf">
+    <header class="inner">
+      <div class="header_inner cf">
+        <h1 id="sitelogo"><a class="hover" href="/"><img src="/common/img/img_header_sitelogo.png" alt="Billboard JAPAN"></a></h1>
+        <div id="topbanner" class="pc_obj">
+
+<!-- /83555300/hcl-c/billboard-japan/pc_all_header -->
+<div id='div-gpt-ad-pc_all_header' style='height:90px; width:728px;' class="hover">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_header'); });
+</script>
+</div>
+		  
+        </div>
+        <!-- / #topbanner -->
+        <div class="menu_toggle sp_obj"><img src="/common/img/icon_menu_close.gif" alt=""></div>
+        <p class="search_btn search_toggle sp_obj"><img src="/common/img/icon_search_close.gif" alt="検索"></p>
+        <div class="form_area">
+          <form method="get" action="/common/search/index.html">
+            <fieldset>
+              <input id="searchtext" title="アーティスト名で検索" type="search" name="q" value="" placeholder="アーティスト名で検索" required />
+              <input class="hover" type="submit" id="searchsubmit" name="searchsubmit" value="検索" />
+            </fieldset>
+          </form>
+          <p class="search_toggle sp_obj">閉じる</p>
+        </div>
+        <!-- / .form_area -->
+      </div>
+      <!-- / .header_inner -->
+<noscript>
+<div class="no_script">
+<p>現在お使いのブラウザではJavascriptが有効となっていないため、サイトのコンテンツが正常に表示・動作されません。<br />
+Javascriptを有効にしてください。詳しくはお使いのブラウザのヘルプをご覧ください。</p>
+</div>
+</noscript>
+      <div class="menu_area">
+        <nav id="globalNavi">
+          <ul class="cf">
+            <li class="pc_chart"><a href="/chart_insight/">CHART INSIGHT</a></li>
+            <li class="sp_chart"><a href="/chart_insight/">CHART INSIGHT</a></li>
+            <li class="toggle_menu">
+              <a href="/charts/" class="sp_nolink slide_btn">CHARTS<span class="sp_obj">＋</span></a>
+              <div class="slide_menu">
+                <div class="slide_content">
+                  <!--<p class="sp_obj"><a href="/charts/">CHATRS TOP</a></p>-->
+                  <ul>
+                    <li><a href="/charts/">JAPAN CHARTS</a></li>
+                    <li><a href="/charts/oversea/">WORLD CHARTS</a></li>
+                    <li><a href="/charts/year_end/">YEAR END (JAPAN)</a></li>
+                    <li><a href="/charts/year_end_oversea/">YEAR END (WORLD)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- / .slide_menu -->
+            </li>
+            <li class="toggle_menu">
+              <a href="/d_news/" class="sp_nolink slide_btn">NEWS<span class="sp_obj">＋</span></a>
+              <div class="slide_menu">
+                <div class="slide_content">
+                  <!--<p class="sp_obj"><a href="/d_news/">NEWS TOP</a></p>-->
+                  <ul>
+                    <li><a href="/d_news/">ALL</a></li>
+                    <li><a href="/d_news/jpn/">JAPAN</a></li>
+                    <li><a href="/d_news/overseas/">OVERSEAS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- / .slide_menu -->
+            </li>
+            <li><a href="/special/">SPECIAL</a></li>
+            <li><a href="http://www.billboard-live.com/" target="_blank" class="blank">BILLBOARD LIVE</a></li>
+            <li class="pc_shopcart"><a href="http://www.vanda.co.jp/billboard/cart/" class="btn_shopcart">SHOPPING CART</a></li>
+            <li class="sp_shopcart"><a href="http://www.vanda.co.jp/billboard/sp/cart/" class="btn_shopcart">SHOPPING CART</a></li>
+          </ul>
+        </nav>
+        <!-- / #globalNavi -->
+        <div id="sns_navi">
+          <ul>
+            <li><a class="hover" href="https://twitter.com/Billboard_JAPAN" target="_blank"><img class="js_img_switch" src="/common/img/twitter_btn_pc.png" alt="twitter"></a></li>
+            <li><a class="hover" href="https://www.facebook.com/pages/Billboard-JAPAN/635768896442966?fref=ts" target="_blank"><img class="js_img_switch" src="/common/img/facebook_btn_pc.png"alt="facebook"></a></li>
+            <li><a class="hover" href="https://line.me/ti/p/%40oa-billboardnews" target="_blank"><img class="js_img_switch" src="/common/img/line_btn_pc.png" alt="LINE"></a></li>
+            <li><a class="hover" href="http://applemusic.com/billboard-japan"><img class="js_img_switch" src="/common/img/apple_icon_pc.png" alt="iTunes Store"></a></li>
+			<li><a class="hover" href="https://www.tiktok.com/@billboard_japan" target="_blank"><img class="js_img_switch" src="/common/img/tiktok_btn_pc.png" alt="Tik Tok"></a></li>
+            <li><a class="hover" href="http://www.billboard-japan.com/d_news/doc.xml"><img class="js_img_switch" src="/common/img/rss_btn_pc.png" alt="rss"></a></li>
+          </ul>
+        </div>
+        <!-- / #sns_navi -->
+      </div>
+      <!-- / .menu_area -->
+    <div class="chart_area scroll_wrap">
+      <div class="scroll_area">
+        <ul>
+          <li><a href="/tagindex/detail/4">Chart</a></li>
+          <li><a href="/tagindex/detail/32">Hot100</a></li>
+          <li><a href="/tagindex/detail/13">Report</a></li>
+          <li><a href="/tagindex/detail/31">Review</a></li>
+          <li><a href="/tagindex/detail/30">Interview</a></li>
+          <li><a href="/tagindex/detail/9">Movie</a></li>
+<!--          <li><a href="/tagindex/detail/20">BBL</a></li>-->
+          <li><a href="/tagindex/detail/1">Japan</a></li>
+          <li><a href="/tagindex/detail/26">Overseas</a></li>
+<!--		  <li><a href="/tagindex/detail/33">Hackasong</a></li>-->
+		  <li><a href="/tagindex/detail/38">コロナウイルス</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- / .chart_area -->
+
+    </header>
+    <div class="overlay search_toggle"></div><!-- 検索オーバーレイ -->
+  </div>
+  <!-- ヘッダーここまで -->
+  
+  <div id="content2" class="cf">
+    <div class="inner">
+            <div class="sp_obj"><!-- /83555300/hcl-c/billboard-japan/sp_all_header -->
+<div id='div-gpt-ad-sp_all_header' class="ad_area hover adjust_banner">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-sp_all_header'); });
+</script>
+</div></div><!-- Header Banner -->
+      <div class="pc_obj"><!-- /83555300/hcl-c/billboard-japan/pc_all_billboard -->
+<div id='div-gpt-ad-pc_all_billboard' class="top_banner hover adjust_banner">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_billboard'); });
+</script>
+</div></div><!-- Super Wide Banner -->
+            <div class="leftBox">
+        <div id="main2">
+                                          
+<div class="sp_only_inner">
+<!-- スペシャルここから -->
+    <div id="specialContent">
+    <article>
+    <script src="/common/js/jquery.sharrre-1.3.2.js"></script>
+      <!-- socialbtn -->
+  <div id="socialbtn">
+    <ul>
+      <li class="shareme" data-url="http://www.billboard-japan.com/special/detail/2945"></li>
+    </ul>
+  </div>
+  <!-- #socialbtn -->
+  <script>$('.shareme').sharrre({share: {twitter: true,facebook: true},template: '<div class="box"><div class="middle"><a class="facebook">Like!</a><a class="twitter">tweet</a><p class="total">4</p></div></div>',enableHover: false,enableTracking: true,render: function(api, options){$(api.element).on('click', '.twitter', function() {api.openPopup('twitter');});$(api.element).on('click', '.facebook', function() {api.openPopup('facebook');});}});</script>
+    <hgroup>
+    <h2><img src="/common/img/title_specialcontents.png" alt="Special Contents"></h2>
+    <h3>Quarter Century『SPEED STAR』デビュー記念インタビュー</h3>
+    <ul>
+        <li><a href="/artists/detail/911660">Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ</a></li>
+        </ul>
+    </hgroup>
+  	<!-- HTML挿入部分 -->
+    <section>
+    <div id="specialImport">
+    <p>
+    <div id="html_contents_1">﻿
+<script type="text/javascript">
+$(document).ready(function() {
+$('.imgPhoto a,#photothumb a').fancybox({
+padding: 0,
+openEffect : 'elastic',
+openSpeed  : 150,
+loop:false,
+closeEffect : 'elastic',
+closeSpeed  : 150,
+closeClick : true,
+helpers : {
+	overlay : null
+}
+});
+});
+$('a.caption,.video').fancybox({
+	maxWidth	: 600,
+	fitToView	: false,
+	width		: '70%',
+	height		: '70%',
+	autoSize	: true,
+	closeClick	: false,
+	openEffect	: 'none',
+	closeEffect	: 'none',
+});
+</script>
+<style>
+<!--
+.gakushi{ font-weight:bold; color:#5c8d95; }
+.cherry{ font-weight:bold; color:#79794c; }
+.c_interviewer{ color:#72654c; font-size:100%; font-size:15px;}
+.boxmini{background-color: #eee;padding: 15px; margin:2em 0;border: 1px solid #ccc;}
+.boxmini p{margin-bottom:15px!important;}
+.boxmini p:last-child{ margin-bottom:0!important; }
+#maintext{font-size:15px;}
+p{font-size:15px;}
+p.opening{margin: 10px 0px 0px 0px;}
+p.opening2{margin: 0px 0px 10px 0px;}
+
+h6 {
+color: #000000;/*文字色*/
+border: solid 1px #003333;/*線色*/
+padding: 1em;/*文字周りの余白*/
+border-radius: 0.5em;/*角丸*/
+text-align: center;
+font-size:15px;
+margin: 0px 0px 30px 0px;
+}
+
+.video {
+position: relative;
+height: 0;
+padding: 30px 0 56.25%;
+overflow: hidden;
+}
+
+.video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+-->
+</style>
+<hgroup>
+<p><img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century.jpg" alt="Quarter Century『SPEED STAR』インタビュー" width="100%"></p>
+<div>
+
+<p>　2020年でデビュー30周年のLINDBERG・小柳“Cherry”昌法と、アニメ『ONE PIECE～呪われた聖剣』主題歌などでお馴染みの寺田岳史（ex.晴晴゛）。J-POPをこよなく愛するふたりが新ユニット・Quarter Centuryを結成！ 年の差四半世紀の彼らが如何にして出逢い、共に音楽を奏でることになったのか。デビュー作『SPEED STAR』発売直前に語ってくれた。あらゆる年代のJ-POPフリークにご覧頂きたい。</p>
+
+</div>
+</hgroup>
+<div id="maintext" style="font-size:15px;">
+<h5>「フラれたらどうしよう？」ってマジで不安だったんですよ（笑）</h5>
+
+<p class="c_interviewer">－－まず岳史さん（以下、ガクシ）とCHERRYさん（以下、チェリー）が出逢った経緯を教えてもらえますか？</p>
+
+<p class="imgPhoto"><a href="http://www.youtube.com/embed/Aj9KoyRRRXM?autoplay=1" class="video fancybox.iframe" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/pv001.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/pv001.jpg" alt="Quarter Century「SPEED STAR」"></a><br>Quarter Century「SPEED STAR」</p>
+
+<span class="cherry">チェリー</span>：初めて会ったのは、2002年か2003年ぐらいじゃなかったっけ？</p>
+
+<span class="gakushi">ガクシ</span>：僕が17歳か18歳ぐらいのとき、晴晴゛でソニーからデビューする前にアーティスト寮に入っていたんですが、そこにスタジオがありまして。いろんな人が出入りしていたんですけど、いきなりLINDBERGのチェリーさんがぽこっと現れたんですよ。「なんでここにチェリーさんがいるんだろう？」と驚いたのが最初の出逢いですね。</p>
+
+<span class="cherry">チェリー</span>：2002年でLINDBERGが1回解散した後に、NSPのバックバンドを務めていたんです。当時のイベンターの人が紹介してくれたんですけど、その流れでスタジオに入ったときに偶然出逢っちゃった。</p>
+
+<span class="gakushi">ガクシ</span>：それからしばらく時が経って、晴晴゛も解散したあとの話になるんですけど、Whiteberryの前田由紀がウチの事務所に入ってきたんです。それで「夏祭り」を歌いに行くキャンペーンで全国各地を一緒にまわっていまして、7年前ぐらいかな？ 青森県のお祭りに出演したときに「あれ？晴晴゛のガクシくんじゃない？」と声をかけて下さったのがチェリーさんだったんです。でも、僕は最初の出逢いから十数年経っているし、当時はクソガキだったからただただポカーンとしていたんですよ。なので「なんでLINDBERGのチェリーさんが僕なんかに声をかけてくれるんだろう？」と思って、昔のスタッフとかにも連絡しまくって確認したら「アーティスト寮で会ったときのことを憶えていてくれたんじゃない？」って。</p>
+
+<span class="cherry">チェリー</span>：その時は坂本サトルくんのソロプロジェクトに参加していたんですけど、青森は彼の故郷だったんです。それで「地元でライブする」って言うから僕も行って、本番前のステージ袖で見かけて「あれ？」みたいな。</p>
+
+<span class="gakushi">ガクシ</span>：そうなんです！ そんな中、大先輩のチェリーさんが僕なんかのことをちゃんと憶えてくれていたのに、本当に失礼な話なんですが、自分は最初の出逢いをしっかり憶えていなかったんですよね～。なので、打ち上げの時に正座してめっちゃ謝りました（笑）。</p>
+
+<span class="cherry">チェリー</span>：正座は嘘（笑）。</p>
+
+<span class="gakushi">ガクシ</span>：あと、チェリーさんはスーパーミュージシャンだから、僕の師匠筋の方やお世話になった人たちとも仕事されていて、共通の知っている人たちとの仕事の話で会っていなかった期間を埋められる、そんな打ち上げになったんですよね。そこから仲良くさせて頂けるようになったんですけど、2020年に僕もこの業界に入ってからちょうど20周年を迎えることになりまして、LINDBERGさんもデビュー30周年、そして、チェリーさん自身も還暦を迎えたりと。そんないろんなアニバーサリーが詰まった年にどうしても一緒に何かをやりたかったんです。あと、僕はソロシンガーで活動するよりも「相方が必要だ」と常々思っていたんですけど、どう考えても『小柳“Cherry”昌法』しかいなかったんですよね。</p>
+
+<p class="c_interviewer">－－なるほど。</p>
+
+<p class="imgPhoto"><a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century002.jpg" rel="photo" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/201617_quarter_century002.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td002.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a><br>▲左から：チェリー／ガクシ</p>
+
+<span class="gakushi">ガクシ</span>：「同じ世代でバンド組める人なんていくらでもいるじゃないか」と思われるかもしれないんですけど、そうじゃないんですよね。僕は理想的な相方を求めていたんですよ。で、恐縮ながら、自分と並んだときの身長や髪型といったビジュアルワーク的な相性もそうだし、腕は確かだし、ネームバリューもあるし、チェリーさんは僕にとってまさしく理想的な相方だったんです。それで、僕から「一緒にやってください」と告白するわけなんですけど、コクる前日から緊張して眠れなくて！</p>
+
+<span class="cherry">チェリー</span>：ハハハハ！</p>
+
+<span class="gakushi">ガクシ</span>：「フラれたらどうしよう？」ってマジで不安だったんですよ（笑）。だって、断られてしまったら、もう誰も相方にしたい人なんていないわけですから！「チェリーさんにフラれたらもう諦めよう」ぐらいの気持ちだったんです。で、眠れぬ夜が明けて電話するわけです。「僕と一緒にデビューしませんか？」とコクって。そしたら「LINDBERGのアニバーサリーツアーも控えているから、スタッフにも確認してみないと。一緒にやるとなったら真剣にやりたいし。だから半日ぐらい時間くれる？」ということで、その返事を待っている間は心臓バクバクですよ！ ケータイの前でずーっと待機していました。</p>
+
+<p class="c_interviewer">－－エピソードが完全に恋愛ですね（笑）。</p>
+
+<span class="cherry">チェリー</span>：不思議な感じですよね（笑）。</p>
+
+<span class="gakushi">ガクシ</span>：だって、いろいろ考えると思うんですよ。年の差もかなり離れていますし、自分の親と同世代ですから。相手の気持ちになって考えてみたら「なんでこんなクソガキと付き合わなきゃいけねーんだ」と思うかもしれないじゃないですか！ そんなことを考えながら半日過ごしていたんですけど、夕方ぐらいにチェリーさんから電話が来て、それをワンコールで取って（笑）。「OKです！よろしくね！」と。めちゃくちゃ嬉しかったんですけど、もう『あしたのジョー』のラストシーン状態でしたね。部屋のすみっこで燃え尽きていました（笑）。</p>
+
+<div id="pager" class="cf">
+   <span>NEXT PAGE</span>
+    <ol>
+    <li>僕は90年代の音楽がどうしても好きなんですよね</li>
+    <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+</div>
+
+<div id="photothumb">
+
+<h6>インタビュー写真</h6>
+<p>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century001.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century001.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td001.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century002.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century002.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td002.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century003.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century003.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td003.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+</p>
+</div><!-- #photothumb -->
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="https://rosecreate.jp/quartercentury/" target="_blank">Quarter Century ローズクリエイトによるアーティストページ</a></li>
+</ul>
+<p class="writerName">Interviewer：平賀哲雄</p>
+</div><!-- #sublinks -->
+
+</div><!-- #maintext -->
+</div><div id="html_contents_2">﻿
+<div id="maintext" style="font-size:15px;">
+<h5>僕は90年代の音楽がどうしても好きなんですよね</h5>
+
+<p class="c_interviewer">－－そうして見事ここにQuarter Centuryを結成するに至ったわけですけど、チェリーさんはガクシさんに対してどんな印象を持たれていたんでしょう？</p>
+
+<p class="imgPhoto"><a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century001.jpg" rel="photo" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/201617_quarter_century001.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td001.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a><br>▲チェリー</p>
+
+<span class="cherry">チェリー</span>：久しぶりに会ったときは『社長さん』のイメージだったんですよね。「ギタリストなんだけれど、今は事務所の社長さんもやっているんだ」って。で、社長になる人って考え方とか行動とかいろんなことが僕らとは違うと思っていたので、やっぱり「ちゃんとしてる」っていうかね。歳は下なんだけど、細かいところまで神経が行き届くし、先のこともちゃんと考えているし。その「ちゃんとしてる」人からコクられたので（笑）、これはちゃんとやっていけるかもしれないなと思いました。そもそも25歳年下の人からコクられることってなかなかないんですよ。それは純粋にうれしかったです。若者と一緒に音楽をやれるのはワクワクするし。あと、コンセプトが「90年代のポップスをもう1回掘り起こしていこうじゃないか」みたいな話だったので、それは僕にとってはすごく自然なんですよね。だから全然気負いもなく「一緒にやりましょう」と。</p>
+
+<p class="c_interviewer">－－では、音楽家としてのガクシさんにはどんな印象を？</p>
+
+<span class="cherry">チェリー</span>：曲もすごくポップでキャッチーなモノを書けるし、ギタリストとしても細かいところまですごく拘りがある人なので、多彩だし、面白いミュージシャンだなと思います。ただ、ライブはまだ1回しか一緒にやったことがないんですよ。だから、ふたりでこれからどんなパフォーマンスをしていけるのかもすごく楽しみです。</p>
+
+<p class="c_interviewer">－－ガクシさんは、チェリーさんがドラマーを務めるLINDBERGには、どんな印象を持たれていたんですか？</p>
+
+<p class="imgPhoto"><a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century003.jpg" rel="photo" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/201617_quarter_century003.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td003.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a><br>▲ガクシ</p>
+
+<span class="gakushi">ガクシ</span>：LINDBERGと言えば「今すぐKiss Me」や「BELIEVE IN LOVE」でハマった人がほとんどだと思うんですけど、僕は『平成イヌ物語バウ』というアニメがきっかけで好きになったんです。小学校3,4年生の頃に観ていたアニメなんですけど、その主題歌「大キライ!」と「二人きりで行こうよ」をLINDBERGが手掛けていて。学校の帰り道、その2曲を口ずさみながら歩いていましたね。なので、チェリーさんに初めて逢った時は「あっ！バウの人だ！」っていうのが心の叫びでした。当然ながらLINDBERGのチェリーさんはスゴイ人なんですが、あえてスゴい人と思わないようにしているんですよね。なぜなら、大先輩が相方ってことを意識してしまうと緊張して本来の力が発揮できないからなんです（笑）。だから僕からコクっておいてアレなんですけど、フラれたほうが気がラクだったかもしれませんね。</p>
+
+<p>一同：（笑）</p>
+
+<span class="gakushi">ガクシ</span>：これだけスゴい人と何かやるというのは、やっぱりプレッシャーでもあるんですよ。僕はメンタルがあんまり強くないんで（笑）。事務所の社長としては冷静に捉えられるんですけど、アーティストとしてはふたりが並んでいる写真を見るだけでちょっとビビっちゃうんですよね！</p>
+
+<span class="cherry">チェリー</span>：ハハハハ！</p>
+
+<span class="gakushi">ガクシ</span>：それは音にも出ちゃうから、あんまり考えすぎないようにしないとなって。たまに手が震えているときとかあるんで（笑）。でも、チェリーさんは物凄くやさしい人だし、一緒に音楽を作っていてやりやすいところがたくさんあって。</p>
+
+<span class="cherry">チェリー</span>：一緒に音を出すと「やりやすい」「歌いやすい」と言ってくれる。そういう人が増えていくのは嬉しいことで。歳だけは取っていくんですけど（笑）、それだけ積み重ねてきた分、アーティストとの繋がりも増えていって、そこから吸収できることもたくさんあったし、それをQuarter Centuryでも活かしていきたいなと思っています。</p>
+
+<p class="c_interviewer">－－チェリーさんの持つリズムやグルーヴって親しみやすいじゃないですか。知らず知らずに僕らの体に沁みついているモノなので、チェリーさんほど「90年代のポップスをもう1回掘り起こしていこう」というコンセプトに相応しいドラマーもいないですよね。</p>
+
+<span class="gakushi">ガクシ</span>：まさにその通りで！ 僕は90年代の音楽がどうしても好きなんですよね。一度聴いたら忘れられないキャッチーさがある。学校の帰りに口ずさんでいた「二人きりで行こうよ」はチェリーさんが作曲しているんですけど、やっぱりキャッチーだからずっと自分の中に残っていると思うんですよね。いまだに歌いますし。で、CMでも何でもそうなんですけど、結局、90年代の曲が使われることが多いから、新しい音楽を否定するわけではないんですけれども、90年代の音楽の良さを今の時代に再現したらどういう化学反応が起きるのかなって。それがチェリーさんと音楽をやっていく上での楽しみなんですよね。</p>
+
+<div id="pager" class="cf">
+   <span>NEXT PAGE</span>
+    <ol>
+    <li id="sp_prev"><a href="#">＜　Prev</a></li>
+    <li>J-POPの良さを僕らが世界中に伝えられたら</li>
+    <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+</div>
+
+<div id="photothumb">
+
+<h6>インタビュー写真</h6>
+<p>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century001.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century001.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td001.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century002.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century002.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td002.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century003.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century003.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td003.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+</p>
+</div><!-- #photothumb -->
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="https://rosecreate.jp/quartercentury/" target="_blank">Quarter Century ローズクリエイトによるアーティストページ</a></li>
+</ul>
+<p class="writerName">Interviewer：平賀哲雄</p>
+</div><!-- #sublinks -->
+
+</div><!-- #maintext -->
+</div><div id="html_contents_3">﻿
+<div id="maintext" style="font-size:15px;">
+<h5>J-POPの良さを僕らが世界中に伝えられたら</h5>
+
+<p class="c_interviewer">－－そのユニットの名前をQuarter Centuryにしようと思ったのは？</p>
+
+<p class="imgPhoto"><a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century004.jpg" rel="photo" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/201617_quarter_century004.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td004.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a><br></p>
+
+<span class="gakushi">ガクシ</span>：去年の冬ぐらいに都内の喫茶店で、ふたりで打ち合わせしてた時、ふとチェリーさんが「そういえば、俺らって歳いくつ離れてるんだっけ？」って言い出して、25歳差であることに気が付いて。そしたら「四半世紀かぁ。四半世紀って英語にすると何なんだろう？」って調べたら、Quarter Centuryだったんですよね。それで「じゃあ、Quarter Century、クオセンでいきますか？」みたいな。25歳差の2人組っておそらく音楽シーンにいないと思うんですよね。だって、それだけ年齢が離れていたら普通は音楽性も違うじゃないですか。でも、チェリーさんはそれを感じさせない人だったんです。いまだに「この人、本当に俺の25歳上なのかな？」って不思議に思いますもん。でも、だからこそ「90年代のポップスをもう1回掘り起こしていこう」というコンセプトにも自然に打ち込める。</p>
+
+<span class="cherry">チェリー</span>：すごく自然だよね。</p>
+
+<span class="gakushi">ガクシ</span>：あと、僕はアニメでLINDBERGを好きになり、自分も『ワンピース』や『ガンダム』の楽曲を手掛けてきました。なので、いずれクオセンでもアニメの曲を作れたらなという想いもあるんです。僕らにとってそれもすごく自然なことだと思うので。</p>
+
+<p class="c_interviewer">－－そんなクオセンのデビュー作『SPEED STAR』。実際に一緒に作ってみていかがでした？</p>
+
+<p class="imgPhoto"><a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century005.jpg" rel="photo" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/201617_quarter_century005.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td005.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a><br>▲『SPEED STAR』ジャケット</p>
+
+<span class="cherry">チェリー</span>：曲がすごくキャッチーなので、自然に演奏できたんですよね。なので、逆に凝ったことをあんまりしないようにしました。</p>
+
+<span class="gakushi">ガクシ</span>：もちろん僕も一緒にレコーディングに入ったんですけど、ひとつお願いしたんです。「あんまり上手く叩かないでください」と（笑）。「ベテランの凄腕ドラマーが叩いていると思わせないように、2,30年ぐらい前に戻った感じでお願いします」って。</p>
+
+<span class="cherry">チェリー</span>：要するに「オヤジ感を出すな」っていうことなんですよ（笑）。でもね、LINDBERGを再結成したときも、昔の曲を演奏するとノリがおっさんになっちゃっていて、みんなで「若返ろう、若返ろう」って意識しながら演奏してきていたので、そのおかげでガクシくんのリクエストにも応えられました。</p>
+
+<p class="c_interviewer">－－あらゆる年代の演奏が出来るんですね。</p>
+
+<span class="gakushi">ガクシ</span>：チェリーさんは、矢沢永吉さんや頭脳警察などの大御所のバック、その一方で新人アーティストのドラムも叩いているので、めちゃくちゃ幅が広いんですよ。なので、いずれは難しい曲にも挑戦したいんですけど、まずクオセンの第一弾としては「キャッチーであること」が最重要だったので、今回は若返ってもらいました（笑）。難しいことをやろうと思えばいくらでも出来ちゃうと思うんですけど、それって90年代のJ-POP的ではないので。あと、チェリーさんとハイレベルな音楽をやっている先輩方に対抗しようとも思っていないので、クオセンのチェリーさんはキャッチーでいてもらいたいなと。実際、理想的なドラムをレコーディングしてくれて、そのおかげで僕も気持ち良く歌えましたし、ギターも弾くことが出来ました。ダントツですよ！ こんなに踊りやすい土台を用意してくれるドラマーは、チェリーさん以外にいないと思います。</p>
+
+<p class="c_interviewer">－－本当に理想的な相方だったんですね。</p>
+
+<p class="imgPhoto"><a href="http://www.youtube.com/embed/WfTkaKqQbGA?autoplay=1" class="video fancybox.iframe" onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/pv002.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/pv002.jpg" alt="LINDBERG / 今すぐKiss Me"></a><br>LINDBERG / 今すぐKiss Me</p>
+
+<span class="gakushi">ガクシ</span>：こちらの要望に対するレスポンスがめちゃくちゃ速いんです。ひとつ伝えたらいくつも形にして返してくれる。なので、1日に10曲録ったこともあるんですよ。まわりから「そんなの無理だよ」って言われましたけど、予定より3時間ぐらい早く終わって、余った時間で寿司食いましたからね（笑）。基本的に一発録りでレコーディングしまくって来ている人なんですよ。</p>
+
+<span class="cherry">チェリー</span>：そうなんです。短期決戦型なので、何度も録り直すとだんだんダメになっていくタイプなんです（笑）。だから序盤で決める。それはデビュー当時から変わらないですね。LINDBERG「今すぐKiss Me」のドラムイントロも、プリプロまで無かったんですけど、本番でアドリブで叩いてみたらそのまま採用されたモノなんですよ。</p>
+
+<p class="c_interviewer">－－90年代最も有名なJ-POPのイントロはアドリブだったんですね！</p>
+
+<span class="gakushi">ガクシ</span>：そういうちょっと抜いている感じ。たくさんのドラマーの方がソレを必死に練習して習得しようとしているわけですけど、チェリーさんは自然体で体現できちゃうから本当に凄いなと思います。</p>
+
+<p class="c_interviewer">－－そんな最強の相方とデビューするクオセンですが、最後に、今後の夢や目標があったら教えてください。</p>
+
+<span class="gakushi">ガクシ</span>：ライブが出来る状況になったら、打ち上げがしたいです。早くチェリーさんと呑みたい（笑）。最高のライブをやって、大好きなスタッフたちも交えて最高の酒を呑む。そういう1日1日を大事にしていけるような音楽ライフを歩んでいきたいですね。</p>
+
+<span class="cherry">チェリー</span>：いろんなところに行ってみたいですね。日本はもちろん、アジアでもヨーロッパでもどこでも良いんですけど、どこに行っても喜んでもらえるようなユニットになりたいなと思いますね。</p>
+
+<span class="gakushi">ガクシ</span>：日本のJ-POPの良さを僕らが世界中に伝えられたら、そんなに嬉しいことはないですね。そういうユニットになれるように頑張ります！</p>
+
+<p class="writerName"><right>Interviewer：平賀哲雄</right></p>
+
+<div id="photothumb">
+
+<h6>Quarter Century「SPEED STAR」</h6>
+<div class="video">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Aj9KoyRRRXM?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h6>インタビュー写真</h6>
+<p>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century001.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century001.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td001.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century002.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century002.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td002.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+<a href="/common/special/interview/201617_quarter_century/img/201617_quarter_century003.jpg" rel="photos"  onClick="javascript:_gaq.push(['_trackPageview', '/special/detail/2945/photo201617_quarter_century003.jpg']);">	<img src="/common/special/interview/201617_quarter_century/img/201617_quarter_century_td003.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></a>
+</p>
+</div><!-- #photothumb -->
+
+<div id="sublinks">
+
+<h6>関連リンク</h6>
+<ul>
+<li><a href="https://rosecreate.jp/quartercentury/" target="_blank">Quarter Century ローズクリエイトによるアーティストページ</a></li>
+</ul>
+<p class="writerName">Interviewer：平賀哲雄</p>
+</div><!-- #sublinks -->
+
+</div><!-- #maintext -->
+</div>    </p>
+    </div>
+	</section>
+    <!-- HTML挿入部分ここまで -->
+	<section>
+    <!-- 記事挿入部分 -->
+    <div id="specialImportBody">
+    <p></p>
+    </div>
+    <!-- 記事挿入部分ここまで -->
+    </section>
+    <nav>
+            <div id="pager" class="cf" style="display:none;">
+    <input type="hidden" id="sp_page_total" value="3">
+    <ol>
+    <li id="sp_prev"><a href="#">＜　Prev</a></li>
+        <li id="sp_link_1"><a href="#" onclick="dispPage(1); return false;">1</a></li>
+        <li id="sp_link_2"><a href="#" onclick="dispPage(2); return false;">2</a></li>
+        <li id="sp_link_3"><a href="#" onclick="dispPage(3); return false;">3</a></li>
+        <li id="sp_next"><a href="#">Next　＞</a></li>
+    </ol>
+    </div>
+            <p><a href="/artists/detail/911660">[Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ その他の画像・最新情報へ]</a></p>
+        </nav>
+    <!-- エレメント：作品情報 -->
+    
+        <section>
+    <!-- 作品情報掲載 -->
+    <div id="SpecialCDinfo" class="cf">
+    <p>
+    <a href="/goods/detail/648311"><img src="/scale/jackets/00000132/200x200_P2_G6416098W.JPG" alt="Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ「ＳＰＥＥＤ　ＳＴＡＲ」" /></a>
+    </p>
+    <h4><a href="/goods/detail/648311">ＳＰＥＥＤ　ＳＴＡＲ</a></h4>
+        <p>2020/07/01 RELEASE<br>AFR-1&nbsp;&yen; 1,320（税込）</p>
+        <p><a href="/goods/detail/648311" class="btn_buyb">詳細・購入はこちら</a>
+    <div class="tracklist cf">
+    <div>
+        </div>
+    </div><!-- /tracklist -->
+
+    </div><!-- /SpecialCDinfo -->
+    </section>
+    
+        <section>
+    <div class="tag">
+    <h4>関連キーワード</h4>
+    <ul>
+                    <li><a href="/artists/detail/573045">寺田岳史</a></li>
+                <li><a href="/artists/detail/821014">小柳”ＣＨＥＲＲＹ”昌法</a></li>
+                </ul>
+        <h4 class="h4Tag">TAG</h4>
+    <ul>
+        <li><a href="/tagindex/detail/30">Interview</a></li>
+        <li><a href="/tagindex/detail/1">Japan</a></li>
+        <li><a href="/tagindex/detail/35">PR</a></li>
+        </ul>
+        </div>
+    </section>
+	</article>
+ </div>
+<!-- スペシャルここまで -->
+</div>
+<!-- / .sp_only_inner -->
+
+  <!--sldier-->
+  <div class="buyArea_wrap">
+    <p class="buyArea__ttl">関連商品</p>
+    <div class="buyArea">
+      <!-- ///////////////////////////////PC////////////////////////////////// -->
+      <div class="inner slide_selector pc_obj" id="js-changeList">
+                          <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/648311">ＳＰＥＥＤ　ＳＴＡＲ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/648311"><img src="/scale/jackets/00000132/80x80_P2_G6416098W.JPG" alt="Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ「ＳＰＥＥＤ　ＳＴＡＲ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/07/01</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,320(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/648311">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/580114">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/580114"><img src="/scale/common/80x80_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/580114">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/579754">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/579754"><img src="/scale/common/80x80_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/579754">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/577142">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/577142"><img src="/scale/common/80x80_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/577142">
+                        <img src="/common/img/d_news/image/buy-btn_pc.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+              </div>
+      <!-- ////////////////////////////SP///////////////////////////// -->
+      <div class="inner slide_selector sp_obj" id="js-changeList_SP">
+                          <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/648311">ＳＰＥＥＤ　ＳＴＡＲ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/648311"><img src="/scale/jackets/00000132/250x250_P2_G6416098W.JPG" alt="Ｑｕａｒｔｅｒ　Ｃｅｎｔｕｒｙ「ＳＰＥＥＤ　ＳＴＡＲ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2020/07/01</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,320(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/648311">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/580114">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/580114"><img src="/scale/common/250x250_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/580114">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/579754">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/579754"><img src="/scale/common/250x250_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/579754">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+                  <div class="buyArea__BoxWrap">
+                                  <div class="buyArea__DetailBox">
+              <dl>
+                <dt class="buyArea__Name"><a href="/goods/detail/577142">ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ</a></dt>
+                <dd class="cf">
+                  <div class="buyArea__Image">
+                    <a href="/goods/detail/577142"><img src="/scale/common/250x250_img_noimage.png" alt="小柳”ＣＨＥＲＲＹ”昌法「ＤＥＶＯＴＩＯＮ～ＷＡＫＡＮ　ＴＡＮＫＡ」" /></a>
+                  </div>
+                  <div class="buyArea__detailList">
+                    <p class="buyArea__Date">2017/12/13</p>
+                    <p class="buyArea__Category">[CD]</p>
+                    <p class="buyArea__Price matchHeightPrice">&yen;1,324(税込)</p>
+                    <div class="buyArea__Btn">
+                      <a href="/goods/detail/577142">
+                        <img src="/common/img/d_news/image/buy-btn_sp.gif" alt="購入画面へ">
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+                    </div>
+              </div>
+      <div class="buyArea__slideBtn cf">
+        <div class="buyArea__leftBtn">
+          <img class="js_img_switch" src="/common/img/d_news/image/buy-left-arrow_sp.gif" alt="">
+        </div>
+        <div class="buyArea__rightBtn">
+          <img class="js_img_switch" src="/common/img/d_news/image/buy-right-arrow_sp.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <!--buyArea-->
+  </div>
+  <!-- / .buyArea_wrap -->
+  <!--sldier-end-->
+
+        </div>
+      </div>
+      <!-- / .leftBox -->
+      <div class="rightBox">
+        
+          <section class="access_rank">
+    <h3 class="ttl_01">ACCESS RANKING<p class="sp_obj">アクセスランキング</p></h3>
+    <ol>
+          <li>
+        <a href="/d_news/detail/89125/" class="hover">
+          <p class="lank">1</p>
+          <p>藤田恵名、『バキ』ED曲MVが公開＆監督は井口昇</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89138/" class="hover">
+          <p class="lank">2</p>
+          <p>【先ヨミ】KinKi Kids『KANZAI BOYA』16万枚セールスで現在シングル首位、ゴールデンボンバーがトップ5浮上</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89133/" class="hover">
+          <p class="lank">3</p>
+          <p>【SUMMER SONIC】オンラインフェスティバル開催、Mr.Children、BTS、レディオヘッドなどのアーカイブ配信</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89140/" class="hover">
+          <p class="lank">4</p>
+          <p>【先ヨミ】ENDRECHERIのニューアルバム『LOVE FADERS』が45,584枚を売り上げ現在首位　SiM／虹コンが続く</p>
+        </a>
+      </li>
+          <li>
+        <a href="/d_news/detail/89153/" class="hover">
+          <p class="lank">5</p>
+          <p>SKY-HI、配信ライブで無観客ならではの演出「ライブができて、幸せです」</p>
+        </a>
+      </li>
+        </ol>
+  </section>
+  <!-- / .access_rank -->
+        
+        <!-- /83555300/hcl-c/billboard-japan/pc_article_right_1 -->
+<div id='div-gpt-ad-pc_article_right_1' class="ad_area hover adjust_banner notrans g_banner_layout02">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_article_right_1'); });
+</script>
+</div>        
+          <div class="special">
+    <h3 class="ttl_01">SPECIAL<p class="sp_obj">インタビュー・タイムマシン</p></h3>
+    <p class="moreBtn pc_obj"><a href="/special/" class="hover">more</a></p>
+    <ul class="special__list">
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2945" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_1.jpg" alt="Quarter Century『SPEED STAR』デビュー記念インタビュー"></div>
+          <div class="textBox">Quarter Century『SPEED STAR』デビュー記念インタビュー            <p class="subttl pc_obj">CHERRY(LINDBERG)×寺田岳史(ex.晴晴&quot;)J-POPユニット結成！ </p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2944" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_2.jpg" alt="＜インタビュー＞野村達矢（日本音楽制作者連盟　理事長） 「このままだと日本の音楽文化が失われてしまう」　#MusicCrossAid "></div>
+          <div class="textBox">＜インタビュー＞野村達矢（日本音楽制作者連盟　理事長） 「このままだと日本の音楽文化が失われてしまう」　#MusicCrossAid             <p class="subttl pc_obj"></p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2941" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_3.jpg" alt="2020年冬ドラマの視聴率とタイアップ楽曲のチャート変遷の関係を分析　～Billboard JAPAN Hot 100より～"></div>
+          <div class="textBox">2020年冬ドラマの視聴率とタイアップ楽曲のチャート変遷の関係を分析　～Billboard JAPAN Hot 100より～            <p class="subttl pc_obj">ドラマ視聴率の変遷とタイアップ曲のチャート変遷を分析</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2942" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_4.jpg" alt="【TikTok 2020年上半期楽曲ランキング】が発表　拡散する独自のミーム/『鬼滅の刃』や『恋つづ』の影響/日常の“エモい”BGM"></div>
+          <div class="textBox">【TikTok 2020年上半期楽曲ランキング】が発表　拡散する独自のミーム/『鬼滅の刃』や『恋つづ』の影響/日常の“エモい”BGM            <p class="subttl pc_obj">音楽シーンと密接に結びついた2020年前半、TikTokを彩った楽曲を振り返る</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2937" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_5.jpg" alt="Billboard Japan 2020年上半期チャート発表"></div>
+          <div class="textBox">Billboard Japan 2020年上半期チャート発表            <p class="subttl pc_obj">Official髭男dismが【TOP Artists】と【HOT 100】、King Gnuが【HOT Albums】首位に </p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2936" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_6.jpg" alt="Official髭男dism、Billboard Japan上半期“HOT 100”＆TOP Artists 首位記念インタビュ"></div>
+          <div class="textBox">Official髭男dism、Billboard Japan上半期“HOT 100”＆TOP Artists 首位記念インタビュ            <p class="subttl pc_obj">こんなにもたくさんの方が自分たちの音楽を聴いて下さっているという事に感謝の気持ちが溢れています。</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/common/special/others/stayhome_bbj/index.html" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_7.jpg" alt="#stayhome プレイリスト　"></div>
+          <div class="textBox">#stayhome プレイリスト　            <p class="subttl pc_obj">PLAY IT LOUD. まずは、音楽を鳴らしましょう（ただし家で）。<br />
+</p>
+          </div>
+        </a></li>
+                      <li class="list__item"><a href="http://www.billboard-japan.com/special/detail/2930" class="hover">
+          <div class="img"><img src="/scale/specialbanner/1084/130x130_image_s_8.jpg" alt="＜Chart Insight＞亀田誠治インタビュー 日本の音楽の未来に向けて、今できること "></div>
+          <div class="textBox">＜Chart Insight＞亀田誠治インタビュー 日本の音楽の未来に向けて、今できること             <p class="subttl pc_obj">誰にでも幅広いジャンルの音楽を聴くためのチャンスがあれば</p>
+          </div>
+        </a></li>
+          </ul>
+    <p class="btn sp_obj"><a href="/special/" class="hover">more</a></p>
+  </div>
+        
+        
+          <section class="hot_images">
+    <h3 class="ttl_01">HOT IMAGES<p class="sp_obj">注目の画像</p></h3>
+    <ul class="cf">
+                        <li><a class="hover" href="/d_news/detail/89125/"><img src="/scale/news/00000089/89125/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/40331/"><img src="/scale/news/00000040/40331/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/31465/"><img src="/scale/news/00000031/31465/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/89153/"><img src="/scale/news/00000089/89153/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/21108/"><img src="/scale/news/00000021/21108/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/28479/"><img src="/scale/news/00000028/28479/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/36263/"><img src="/scale/news/00000036/36263/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/74822/"><img src="/scale/news/00000074/74822/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/40041/"><img src="/scale/news/00000040/40041/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/85168/"><img src="/scale/news/00000085/85168/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/29425/"><img src="/scale/news/00000029/29425/80x_image.jpg" alt=""></a></li>
+                              <li><a class="hover" href="/d_news/detail/87713/"><img src="/scale/news/00000087/87713/80x_image.jpg" alt=""></a></li>
+                </ul>
+  </section>
+<!-- / .hot_images -->
+        
+      </div>
+      <!-- / .rightBox -->
+            <div class="contents_banner"><!-- googleバナー -->
+        <!-- SP -->
+        <div class="sp_obj">
+		
+<!-- /83555300/hcl-c/billboard-japan/sp_all_footer -->
+<div id='div-gpt-ad-sp_all_footer' class="ad_area hover adjust_banner notrans">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-sp_all_footer'); });
+</script>
+</div>
+		
+      </div>
+	  
+
+
+        <!-- PC -->
+        <div class="pc_obj">
+		
+
+<!-- /83555300/hcl-c/billboard-japan/pc_all_footer -->
+<div id='div-gpt-ad-pc_all_footer' style='height:90px; width:728px;' class="ad_area adjust_banner hover">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-pc_all_footer'); });
+</script>
+</div>
+
+      </div>
+	  
+		  
+      <!-- Contents Banner -->
+            <!-- yahoo AD ここから -->
+      <!-- 広告配信用JSファイルの読み込み -->
+	  <script type="text/javascript" src="https://yads.c.yimg.jp/js/yads-async.js"></script>
+	  <script type="text/javascript"src="https://s.yimg.jp/images/listing/tool/yads/yads-timeline-ex.js"></script>
+
+<div class="y_add">
+<script type="text/javascript" language="JavaScript">
+yads_ad_ds = '16441_233808';
+</script>
+<script type="text/javascript" language="JavaScript" src="//yads.c.yimg.jp/js/yads.js"></script>
+</div>    </div>
+    <!-- / .inner -->
+  </div>
+  <!-- / #content2 .cf -->
+</div>
+<!-- #wrapper -->
+
+<div id="footer"><!-- フッターここから -->
+  <p id="pagetop"><a href="#" class="hover"><img class="js_img_switch" src="/common/img/pagetop_sp.gif" alt="TOP"></a></p>
+  <footer class="footer_inner cf">
+    <div class="menu_wrapper cf">
+      <div class="f_menu_01 cf">
+        <ul class="cf">
+          <li class="pc_chart"><a href="/chart_insight/" class="hover">CHART INSIGHT</a></li>
+          <li class="sp_chart"><a href="/chart_insight/" class="hover">CHART INSIGHT</a></li>
+          <li class="accordion">
+            <p class="aco_ttl"><a href="/charts/" class="sp_nolink hover">CHARTS</a><span>＋</span></p>
+            <ul class="aco_content">
+              <li><a href="/charts/" class="hover">JAPAN CHARTS</a></li>
+              <li><a href="/charts/oversea/" class="hover">WORLD CHARTS</a></li>
+              <li><a href="/charts/year_end/" class="hover">YEAR END (JAPAN)</a></li>
+              <li><a href="/charts/year_end_oversea/" class="hover">YEAR END (WORLD)</a></li>
+            </ul>
+            <!-- / .aco_content -->
+          </li>
+          <!-- / .accordion -->
+        </ul>
+        <ul class="cf">
+          <li class="accordion">
+            <p class="aco_ttl"><a href="/d_news/" class="sp_nolink hover">NEWS</a><span>＋</span></p>
+            <ul class="aco_content">
+              <li><a href="/d_news/" class="hover">ALL</a></li>
+              <li><a href="/d_news/jpn/" class="hover">JAPAN</a></li>
+              <li><a href="/d_news/overseas/" class="hover">OVERSEAS</a></li>
+            </ul>
+            <!-- / .aco_content -->
+          </li>
+          <!-- / .accordion -->
+          <li><a href="/special/" class="hover">SPECIAL</a></li>
+        </ul>
+        <ul class="cf">
+          <li><a href="http://www.billboard-live.com/" target="_blank" class="blank hover">BILLBOARD LIVE</a></li>
+          <li class="pc_shopcart"><a href="http://www.vanda.co.jp/billboard/cart/" class="btn_shopcart hover">SHOPPING CART</a></li>
+          <li class="sp_shopcart"><a href="http://www.vanda.co.jp/billboard/sp/cart/" class="btn_shopcart hover">SHOPPING CART</a></li>
+        </ul>
+      </div>
+      <!-- / .f_menu_01 -->
+      
+      <ul id="utility2" class="f_menu_02 inner cf">
+        <li><a href="/contacts/">お問い合わせ</a></li>
+        <li><a href="/common/artistlist/">アーティストリスト</a></li>
+        <li><a href="mailto:press_bbj@hcl-c.com">プレスリリース受付</a></li>
+        <li><a href="/common/cslink/">リンク</a></li>
+        <li><a href="http://www.billboard-japan.com/common/kiyaku/p.html" target="_blank">プライバシーポリシー</a></li>
+        <li><!-- google翻訳 -->
+          <!-- 言語指定版 -->
+          <div id="google_translate_element"></div><script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'en,ja,ko,ru,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- 言語指定版 -->
+        </li>
+      </ul>
+      <!-- / #utility2 .f_menu_02 -->
+    </div>
+    <!-- / .menu_wrappr -->
+
+    <ul class="f_menu_03 inner cf">
+      <li><a class="hover" href="https://billboard-official.dwango.jp/" target="_blank">Billboard x dwango</a></li>
+      <li><a class="hover" href="http://www.billboard-live.com/" target="_blank">Billboard Live</a></li>
+      <li><a class="hover" href="http://billboard-cc.com/" target="_blank">Billboard Classics</a></li>
+      <li class="last"><a class="hover" href="http://billboardrec.com/" target="_blank">Billboard Records</a></li>
+    </ul>
+    <!-- / .f_menu_03 -->
+    
+    <div id="copy" class="inner">
+      <p class="logo"><a class="hover" href="/"><img src="/common/img/img_footer_sitelogo.png" width="100%" alt="Billboard JAPAN"></a></p>
+      <address>&copy; 2018 <a href="http://hcl-c.com/outline/summary.html" target="_blank">Hanshin Contents Link Corporation</a> , <a href="http://www.hotexpress.co.jp/plantech/gaiyo/" target="_blank">PLANTECH Co.,Ltd.</a> &amp; Billboard IP Holdings, LLC.<br>“Billboard”&reg; charts, content, name and logo used by permission of Billboard IP Holdings, LLC.- All Rights Reserved</address>
+      <p><img src="/common/img/img_ELmark.png" alt="エルマーク">このエルマークは、レコード会社・映像制作会社が提供する<br class="sp_obj">コンテンツを示す登録商標です RIAJ80010003</p>
+    </div>
+    <!-- / #copy -->
+    
+  </footer>
+  <!-- / .footer_inner -->
+</div>
+<!-- #footer -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 947499321;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""
+src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947499321/?v
+alue=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- フッターここまで -->
+
+  <!--Taboola-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+  <!--Taboola-->
+
+<script type="text/javascript">(function(d,u){var b=d.getElementsByTagName("script")[0],j=d.createElement("script");j.async=true;j.src=u;b.parentNode.insertBefore(j,b);})(document,"//img.ak.impact-ad.jp/ut/9c56b721b1bc0578_5351.js");</script>
+
+
+</body>
+</html>
